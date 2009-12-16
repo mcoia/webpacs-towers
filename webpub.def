@@ -1,0 +1,152 @@
+# -----------------------------------------------------
+# Converted by cvpubdef from pubdef
+# -----------------------------------------------------
+#
+#
+# converted by cvpubdef from HOLDINGS_POS: atpeR
+#
+#
+# converted from HOLDINGS_POS field tag: 'a'
+#
+b|a|110|-6|Corp Author||b|
+b|a|111|-6|Conference||b|
+b|a||-6|Author||b|
+#
+# converted from HOLDINGS_POS field tag: 't'
+#
+b|t|130|-6|Unif Title||b|
+b|t|240|-6|Unif Title||b|
+b|t||-6|Title||b|
+#
+# converted from HOLDINGS_POS field tag: 'p'
+#
+b|p|270|-6|Address||b|
+b|p||-6|Published||b|
+#
+# converted from HOLDINGS_POS field tag: 'e'
+#
+b|e||-6|Edition||b|
+#
+# end HOLDINGS_POS
+#
+#
+# next line added by cvpubdef
+b|H|||||
+b|T|||||
+#
+b|r|306|-6|Time||b|
+b|r|307|-6|Hours||b|
+b|r|310|-6|Frequency||b|
+b|r|315|-6|Frequency||b|
+b|r|321|-6|Frequency||b|
+b|r|350|-6|||b|
+b|r|362|-6|Pub Date||b|
+b|r||-6|Descript||b|
+b|s||-6|Series||b|
+b|n|501|-6|With:||b|
+b|n|502|-6|Thesis||b|
+b|n|504|-6|Bibliog.||b|
+b|n|505|-6|Contents||b|
+b|n|506|-6|Access||b|
+b|n|508|-6|Credits||b|
+b|n|510|-6|Indexed In:||b|
+b|n|511[^1]|-6|Performer||b|
+b|n|5111|-6|Cast||b|
+b|n|516|-6|File Type||b|
+b|n|520|-6|Summary||b|
+b|n|521|-6|Audience||b|
+b|n|524|-6|Cite As:||b|
+b|n|533|-6|Reproduction||b|
+b|n|538|-6|System Det||b|
+b|n|550|-6|Issued By||b|
+b|n|555[^0]|-6|Indexes||b|
+b|n|5550|-6|Finding Aids||b|
+b|n|561|-6|Provenance||b|
+b|n|586|-6|Awards||b|
+b|n|59[0-9]|-6|Local Note||b|
+b|n||-6|Note||b|
+b|v||-6|Local Note||b|
+b|f|970|-6|||b|
+b|f||-6|Contents||b|
+b|x|780.0|-6|Continues||b|
+b|x|780.1|-6|Cont In Part||b|
+b|x|780.2|-6|Supersedes||b|
+b|x|780.3|-6|Sup In Part||b|
+b|x|780.4|-6|Formed By||b|
+b|x|780.5|-6|Absorbed||b|
+b|x|780.6|-6|Absrbd In Pt||b|
+b|x|780.7|-6|Sep From||b|
+b|x||-6|Continues||b|
+b|z|785.0|-6|Cont By||b|
+b|z|785.1|-6|Cont In Part ||b|
+b|z|785.2|-6|Supersd By||b|
+b|z|785.3|-6|Sup In Pt By||b|
+b|z|785.4|-6|Absorbd By||b|
+b|z|785.5|-6|Abs In Pt By||b|
+b|z|785.6|-6|Split Into||b|
+b|z|785.7|-6|Merged With ||b|
+b|z|785.8|-6|Changed To ||b|
+b|z||-6|Cont'd By||b|
+b|q||-6|Related To||b|
+b|d|655|-26|Genre||b|
+b|d|69[0-9]|-26|Local Subj||b|
+b|d||-26|LC SUBJECT||b|
+b|m||-26|Child Subj||b|
+b|b||-6|Add Author||b|
+b|u|210|-6|Key Title||b|
+b|u|222|-6|Key Title||b|
+b|u|2460|-6|Note||b|
+b|u|2461 |-6|Note||b|
+b|u|2461[01]|-6|||b|
+b|u|24612|-6|Distinct Ti||b|
+b|u|24613|-6|Other Ti||b|
+b|u|24614|-6|Cover Ti||b|
+b|u|24615|-6|Add Tp Ti||b|
+b|u|24616|-6|Caption Ti||b|
+b|u|24617|-6|Running Ti||b|
+b|u|24618|-6|Spine Ti||b|
+b|u|2463|-6|Alt Title||b|
+b|u|24700|-6|Former Ti||b|
+b|u|24701|-6|||b|
+b|u|24710|-6|Former Ti||b|
+b|u|24711|-6|||b|
+b|u||-6|Add Title||b|
+b|k|655.7|-26|Genre/Form||b|
+b|k||-26|Add Keyword||b|
+b|g||-6|Gov Doc #||b|
+b|i|020|-6c|ISBN||b|
+b|i|022|-6c|ISSN||b|
+b|i|028|-6c|Music #||b|
+b|i||-6c|Standard #||b|
+b|o||-6|OCLC #||b|
+b|l||-6|LC CARD #||b|
+b|y|856|u|Url||b|
+b|y|[^8]..|u|||b|
+b|y|8[^5].|u|||b|
+b|y|85[^6]|u|||b|
+b|y||u|Misc||b|
+c|$||+|Location||b|&nbsp;
+c|C||&|||b|&nbsp;
+c|Q||||b|
+c|i||a|Identity||b|
+c|2||+|Latest Received||b|&nbsp;
+c|3||+|Latest Received||b|
+c|Q||||b|
+c|h||-8x|Lib Has||b|
+c|n||+|Note||b|
+#
+# end pubdef
+#
+#
+# -----------------------------------------------------
+# Converted by cvpubdef from item_col_width: 1(23),Cv#!(30),%
+# -----------------------------------------------------
+i|1||||29|b|
+i|C||||0|b|&nbsp;
+i|v||||0|b|&nbsp;
+i|#||||0|b|&nbsp;
+i|!||||38|b|
+i|Q||||b|
+i|%||||0|b|
+#
+#end converted webpub.def
