@@ -1,0 +1,105 @@
+<!-- 2006 WebPAC Pro Version, set from 21 November, 2006 -->
+<!-- This file last changed: 15 October, 2006 -->
+<!-- In order for the tabbed display to work when using the bib_display.html and bibdisplay.js provided in the Pro sample set, the
+     customer needs to have bibdisplay.js and the conditional IE comments added into the INSERTTAG_INHEAD wwwoption.
+	 See release notes for exact wwwoption details -->
+<!--{toplogo}-->
+<br>
+<!--{ifbibdisplay}-->
+<!--{xif}-->
+<!--{catedit}-->
+<center>
+<!--{navrow}-->
+</center>
+<center>
+<!--{innreach}-->
+<!--{searchhistory}-->
+</center>
+<br>
+<center>
+<!--{searchtool}-->
+</center>
+<center>
+<!--{pager}-->
+</center>
+<table width="100%">
+	<tr>
+		<td width="75%" align="left">
+<!--{recordinfo:!}-->
+		</td>
+		<td width="25%" align="center">
+<!--{bibimage}-->
+		</td>
+	</tr>
+</table>
+<!--{linkeddocs}-->
+<!--{URLS}-->
+<!--{holdingslink}-->
+<!--{bloblinks}-->
+<!--{imagelinks}-->
+<!--{artthumb}-->
+<!--{xmlframe}-->
+<!--{holds}-->
+<!--{holdings}-->
+<!--{booking}-->
+<!--{items}-->
+<!-- this div starts hidden and is just a note -->
+<div style='visibility:hidden' id='info'>You could get out a piece of paper, find a pencil, and write down this call 
+number so that you can find it in the stacks.  Or you could text it to your 
+phone!  The text message will contain the location, call number, and title 
+of the item on this page.  Be careful if you don't have a text messaging 
+plan for your phone - carrier charges may apply.<br><a href="#here" onClick="document.getElementById('info').style.visibility='hidden';return false" style='text-align:center'>close</a></div>
+
+
+<!-- this is the button set we'll hide it if the BIB has no items -->
+<div id=smsfeatures align="center" style="margin-top:10px">
+
+<a href="#here" name=smsbutton id=smsbutton onClick="showsms();return false;"><img src="/screens/b_send.png" border=0></a>&nbsp;&nbsp;
+<a href="#here" onClick="findPos(document.getElementById('smsbutton'),document.getElementById('info'),-350,-100);document.getElementById('info').style.visibility='visible';return false;"><img src='/screens/b_help.png' border=0></a><br>
+</div>
+
+
+<!-- a quick script to hide the SMS menu if there are no items. same as the javascript in the SMS form, but it's really just to see if the items exist.  If they don't, we hide the buttons -->
+
+<script>
+  var f = document.getElementById('bib_detail');
+try { 
+ var itms = document.getElementById('bib_items');
+ var tr = itms.getElementsByTagName('TR');
+  for(i = 1; i < tr.length; i++) {
+    var x=tr[i].getElementsByTagName('TD');
+    if (x.length == 3) {
+      var loc = x[0].innerHTML.replace(/(<([^>]+)>|&nbsp;)/ig,"");
+      var call = x[1].innerHTML.replace(/(<([^>]+)>|&nbsp;)/ig,"");
+      var status = x[2].innerHTML.replace(/(<([^>]+)>|&nbsp;)/ig,"");
+    }
+ }	
+
+} catch (e) {
+document.getElementById('smsfeatures').style.visibility='hidden';
+}
+
+</script>
+
+<!--{orders}-->
+<br>
+<!--{ifTOC}-->
+<!--{TOC}-->
+<!--{xif}-->
+<!--{recordlink}-->
+<!--{recordinfo:crnfvwsdkmiolbuxz}-->
+<center>
+<!--{pager}-->
+</center>
+<center>
+<!--{navrow}-->
+</center>
+<center>
+<!--{searchhistory}-->
+</center>
+<!-- just a placeholder for the sms form -->
+<div id='sms' style="visibility:hidden;display:none">
+</div>
+
+<!--{botlogo}-->
+
