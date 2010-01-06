@@ -20,13 +20,13 @@ INSERTTAG_INHEAD wwwotion.  The correct conditional statement follows:
 /* is set by Web Option STYLESHEET */
 
 /* COLOR SCHEME (use find & replace to swap colors */
-/* border and tab light blue : e8e8e8 */
+/* border and tab light grey : e8e8e8 */
 /* manilla background color: F7F7E4 */
 /* medium blue: 0132A7 */
-/* dark blue: 004731*/
-/* very dark blue: 004730 */
+/* dark green: 004731*/
+/* very dark green: 004730 */
 /* light orange : F5D9A3 */
-/* light blue used in table striping : f8f8f8 */
+/* light grey used in table striping : f0f0f0 */
 /* light yellow used in table highlighting : EEEEDD */
 /* light gray for .authPublicNote : F7F4F4 */ 
 
@@ -237,7 +237,7 @@ A.pageNavAreaText:ACTIVE, A.pageNavAreaText:HOVER {  color: #F7F7E4; text-decora
 
 .briefcitResultInfo { text-align: left; font-size:90%; }
 
-.briefcitRequest { font-size: 75%; text-align:left; padding:0 0 0 5px; }
+.briefcitRequest { font-size: 75%; text-align:center; padding:0 0 0 5px; }
 
 .briefCitRow { border-top:1px solid #e8e8e8; }
 
@@ -816,11 +816,11 @@ div.bibContentBox div a:hover {text-decoration:underline; font-weight:bold;outli
 
 /* table striping styles */
 /* for brief citation */
-td.odd { background:#f8f8f8; }
+td.odd { background:#f0f0f0; }
 td.highlight {background:#EEEEDD;}
 
 /* for browse entries */
-tr.odd { background:#f8f8f8; }
+tr.odd { background:#f0f0f0; }
 tr.highlight {background:#EEEEDD;}
 
 /*styles for pirnt view and web view toggles in bib_display.html*/
