@@ -156,7 +156,11 @@ STARTOVER=/search
 STATGROUP=login
 STYLESHEET=/screens/towers_styles.css
 TABLEPARAM_BROWSE=BORDER=0 Width="100%" cellspacing=0
-TABLEPARAM_BIB=BORDER=0 WIDTH=100%|BORDER=0
+TABLEPARAM_BIB=BORDER=0 WIDTH=100%|BORDER=0
+
+TABLEPARAM_BIB_DETAIL=id='bib_detail' width="100%" border="0" cellspacing="1"
+
+TABLEPARAM_BIB_ITEMS=id='bib_items' width="100%" border="3" cellspacing="1"
 TIMEOUT=600;URL=http://towers.missouri.edu/search/
 
 # My Millennium Options
@@ -354,3 +358,4 @@ BIBIMAGE=http://www.syndetics.com/index.aspx?isbn=%s/SC.GIF&client=northmsu|I|ht
 BIBIMAGE_TEXT=Book Jacket
 
 SORT_BROWSE4=t:Title|a:Author|r:Year
+
