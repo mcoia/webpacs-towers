@@ -276,7 +276,8 @@ span.syn_av_tag {
        font-size:80%;
 }
 
-#info {top:500}
+#info {top:500;
+      width:70%;}
 
 #sms {font-size:70%}
 
