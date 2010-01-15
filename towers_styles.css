@@ -259,3 +259,30 @@ span.syn_av_tag {
   font-weight:bold;
 }
 
+#info, #sms {
+       border:1px solid #36647b;
+       position:absolute;
+       top:250;
+       left:50; 
+       z-index:1000;
+       background:#fff;
+       padding:10px;
+       margin:10px;
+       background:#efefcf;
+}
+
+#sms .eg {
+       font-style:italic;
+       font-size:80%;
+}
+
+#info {top:500;
+      width:70%;}
+
+#sms {font-size:70%}
+
+#smsfeatures {
+  padding-top:1em;
+  text-align:center;
+  width:100%;
+}
