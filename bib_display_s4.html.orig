@@ -1,0 +1,302 @@
+<<<<<<< HEAD
+<!-- 2006 WebPAC Pro Version, set from 26 March, 2007 -->
+=======
+<!-- 2006 WebPAC Pro Version, set from 21 November, 2006 -->
+>>>>>>> ncsms
+<!-- This file last changed: 15 October, 2006 -->
+<!-- In order for the tabbed display to work when using the bib_display.html and bibdisplay.js provided in the Pro sample set, the
+     customer needs to have bibdisplay.js and the conditional IE comments added into the INSERTTAG_INHEAD wwwoption.
+	 See release notes for exact wwwoption details -->
+<<<<<<< HEAD
+
+<!--{toplogo}-->
+
+<!--{ifbibdisplay}-->
+<!--{xif}-->
+<div class="topDiv">
+
+<div>
+<!--{catedit}-->
+<!--{navrow}-->
+<!--{searchhistory}-->
+
+<div style="margin-top:5px">
+<div id="bibLeft">&nbsp;</div>
+<div id="bibContent">
+<div class="raised">
+<b class="top"><b class="b1"></b><b class="b2"></b><b class="b3"></b><b class="b4"></b></b>
+<div class="tool">
+<!--{searchtool}-->
+<!--{availlim}-->
+</div>
+<b class="bottom"><b class="b4b"></b><b class="b3b"></b><b class="b2b"></b><b class="b1b"></b></b>
+</div>
+</div>
+<div id="bibRight"></div>
+</div>
+<div class="clear"></div>
+</div>
+</div>
+<div style="margin:0 0 0 2px;">
+<div id="infoTable">
+<div class="bibPager">
+<!--{pager}-->
+</div>
+<!--{recordinfo:!}-->
+=======
+<!--{toplogo}-->
+<br>
+<!--{ifbibdisplay}-->
+<!--{xif}-->
+<div class="topDiv">
+<!--{catedit}-->
+<center>
+<!--{navrow}-->
+</center>
+</div>
+<center>
+<!--{innreach}-->
+<!--{searchhistory}-->
+</center>
+<br>
+<center>
+<!--{searchtool}-->
+</center>
+<center>
+<!--{pager}-->
+</center>
+<table width="100%">
+	<tr>
+		<td width="75%" align="left">
+<!--{recordinfo:!}-->
+		</td>
+		<td width="25%" align="center" style="padding:10px;">
+<!--{bibimage}-->
+<div id="syn_summary_link"></div>
+<div id="syn_toc_link"></div>
+<div id="syn_chreview_link"></div>
+<div id="syn_dbchatper_link"></div>
+<div id="syn_ljreview_link"></div>
+<div id="syn_pwreview_link"></div>
+<div id="syn_avsummary_link"></div>
+<div id="syn_fiction_link"></div>
+<div id="syn_fiction_search_link"></div>
+
+		</td>
+	</tr>
+</table>
+>>>>>>> ncsms
+<!--{linkeddocs}-->
+<!--{URLS}-->
+<!--{holdingslink}-->
+<!--{bloblinks}-->
+<!--{imagelinks}-->
+<!--{artthumb}-->
+<<<<<<< HEAD
+<br/>
+<!--{xmlframe}-->
+<div>
+
+
+<div id="bibCopyStatus" class="bibTabOn">
+<b class="tabTop"><b id="copyB1" class="selected1"></b><b id="copyB2" class="selected2"></b><b id="copyB3" class="selected3"></b><b id="copyB4" class="selected4"></b></b>
+<div class="bibContentBox"><div id="copyContent" class="bibTabSelected"><a href="#" id="copySelect">Copy Status</a></div></div>
+</div>
+
+<div id="bibMoreDetails" class="bibTabOff">
+<b class="tabTop"><b id="moreB1" class="option1"></b><b id="moreB2" class="option2"></b><b id="moreB3" class="option3"></b><b id="moreB4" class="option4"></b></b>
+<div class="bibContentBox"><div id="moreContent" class="bibTabContent">
+<a href="#" id="moreSelect">More Details</a></div></div>
+</div>
+
+<div id="bibSimilarItems" class="bibSimTabOff">
+<b class="tabTop"><b id="simItB1" class="option1"></b><b id="simItB2" class="option2"></b><b id="simItB3" class="option3"></b><b id="simItB4" class="option4"></b></b>
+<div class="bibContentBox"><div id="simContent" class="bibSimTabContent">
+<a href="#" id="simSelect">Find Similar Items</a></div></div>
+</div>
+
+<div id="bibFullRecord" class="bibTabOff">
+<b class="tabTop"><b id="fullB1" class="option1"></b><b id="fullB2" class="option2"></b><b id="fullB3" class="option3"></b><b id="fullB4" class="option4"></b></b>
+<div class="bibContentBox"><div id="fullContent" class="bibTabContent">
+<a href="#" id="fullSelect">Full Record</a></div></div>
+</div>
+<div id="printView"><a href="#" id="printcss">Print Version</a></div>
+<div id="webView"><a href="#" id="webcss">Web View</a></div>
+</div>
+<div>
+<div class="bibContentWrapper">
+<br/>
+<span id="copySection" class="bibContentSectionDefault">
+<span style="text-align:left;font-size:85%;">
+<!--{holds}-->
+<!--{holdings}-->
+</span>
+<span class="booking">
+<!--{booking}-->
+</span>
+<span class="bibItems">
+<!--{items}-->
+</span>
+
+<span class="bibItems">
+<!--{orders}-->
+</span>
+</span>
+<span id="moreSection" class="bibContentSectionOptions">
+<br />
+
+
+<!--{recordinfo:crnwiol}-->
+<!--{ifTOC}-->
+<!--{TOC}-->
+<!--{xif}-->
+
+</span>
+<span id="similarSection" class="bibContentSectionOptions">
+<!--{recordinfo:sdmbuqxz}-->
+</span>
+<span id="fullSection" class="bibContentSectionOptions">
+<!--{recordinfo:crnwiolsdmbuqxz}--> 
+
+<span style="text-align:left;font-size:85%;">
+<!--{holds}-->
+<!--{holdings}-->
+</span>
+<span class="booking">
+<!--{booking}-->
+</span>
+<span class="bibItems">
+<!--{items}-->
+</span>
+<span class="bibItems">
+<!--{orders}-->
+</span>
+<!--{ifTOC}-->
+<!--{TOC}-->
+<!--{xif}-->
+</span>
+</div>
+<b class="conbottom"><b class="conb4"></b><b class="conb3"></b><b class="conb2"></b><b class="conb1"></b></b>
+</div>
+
+<!-- this is the button set we'll hide it if the BIB has no items -->
+<div id="smsdisplay" align="center">
+<br>
+<!--{recordlink}-->
+<div id="cite_link"></div>
+<div id="smsfeatures" style="margin-top:10px">
+<a href="#here" name=smsbutton id=smsbutton onClick="showsms();return false;"><img src="/screens/smsbutton.gif" border=0></a>&nbsp;&nbsp;
+<a href="#here" onClick="findPos(document.getElementById('smsbutton'),document.getElementById('info'),18,-68);document.getElementById('info').style.visibility='visible';return false;"><img src='/screens/smsq.gif' border=0></a><br>
+</div>
+</div>
+
+</div>
+</div>
+<br/>
+
+<div id="sidebarContent">
+<div id="revandRate">
+<div class="sidecontentHeading">Additional Info:</div>
+<!--{bibimage}-->
+<div id="syn_summary_link"></div>
+<div id="syn_toc_link"></div>
+<div id="syn_chreview_link"></div>
+<div id="syn_dbchatper_link"></div>
+<div id="syn_ljreview_link"></div>
+<div id="syn_pwreview_link"></div>
+<div id="syn_avsummary_link"></div>
+<div id="syn_fiction_link"></div> 
+<div id="syn_fiction_search_link"></div> 
+<br/>
+<!--{ifhaspatrate}-->
+<!--{ratings}-->
+<!--{xif}-->
+<div class="resTab">
+<div id="fulltext_link"></div>
+<!--{innreach}-->
+<script src="//www.nwmissouri.edu/library/app/AddLinks/AddLinks.js"></script>
+<div id="amazon_link"></div>
+<div id="google_link"></div>
+<!--{relsearch}-->
+</div>
+</div>
+</div>
+<div class="clear2"></div>
+=======
+<!--{xmlframe}-->
+<!--{holds}-->
+<!--{holdings}-->
+<!--{booking}-->
+<!--{items}-->
+<!--{orders}-->
+<br>
+
+
+<!--{ifTOC}-->
+<!--{TOC}-->
+<!--{xif}-->
+<!--{recordlink}-->
+<!--{recordinfo:crnfvwsdmiolbuqxz}-->
+<br>
+<hr />
+
+>>>>>>> ncsms
+<div id="syn_summary"></div>
+<div id="syn_toc"></div>
+<div id="syn_chreview"></div>
+<div id="syn_dbchatper"></div>
+<div id="syn_ljreview"></div>
+<div id="syn_pwreview"></div>
+<div id="syn_avsummary"></div>
+<<<<<<< HEAD
+<div id="syn_fiction"></div> 
+<div id="syn_fiction_search"></div> 
+
+<!-- just a placeholder for the sms form -->
+<div id='sms' style="visibility:hidden;display:none"></div>
+<!-- this div starts hidden and is just a note -->
+<div align="center">
+<div style='visibility:hidden' id='info'>You can text the information to your phone<br> or write it down so you can find it.<br><a href="#here" onClick="document.getElementById('info').style.visibility='hidden';return false" style='text-align:center'>close</a></div>
+</div>
+
+<script type="text/javascript" src='/screens/sms.js'> </script>
+<!-- a quick script to hide the SMS menu if there are no items. same as the javascript in the SMS form, but it's really just to see if the items exist.  If they don't, we hide the buttons -->
+
+<script>
+try { 
+ var itms = document.getElementById('bib_items');
+ var tr = itms.getElementsByTagName('TR');
+  for(i = 1; i < tr.length; i++) {
+    var x=tr[i].getElementsByTagName('TD');
+    if (x.length == 3) {
+      var loc = x[0].innerHTML.replace(/(<([^>]+)>|&nbsp;)/ig,"");
+      var call = x[1].innerHTML.replace(/(<([^>]+)>|&nbsp;)/ig,"");
+      var status = x[2].innerHTML.replace(/(<([^>]+)>|&nbsp;)/ig,"");
+    }
+ }	
+
+} catch (e) {
+document.getElementById('smsfeatures').style.visibility='hidden';
+}
+</script>
+<!-- move from toplogo to speed up the page... -->
+<script src="http://plus.syndetics.com/widget.php?id=northmsu" type="text/javascript"></script>
+
+<!--{botlogo}-->
+=======
+<div id="syn_fiction"></div>
+<div id="syn_fiction_search"></div>
+
+
+<center>
+<!--{pager}-->
+</center>
+<center>
+<!--{navrow}-->
+</center>
+<center>
+<!--{searchhistory}-->
+</center>
+<!--{botlogo}-->
+
+>>>>>>> ncsms
