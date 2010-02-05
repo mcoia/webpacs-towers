@@ -56,11 +56,11 @@ function mainNavLinks(nosearchtips)
 	var linkLocation = document.getElementById('mainNavLinks');
 	if (linkLocation)
 		linkLocation.innerHTML = '<div class="roundedContent"><b class="xtop"><b class="xb1"></b><b class="xb2"></b><b class="xb3"></b><b class="xb4"></b></b><div class="roundedContentInfo">'
-		+ '<div align="center"><img src="/screens/nwmsuf.jpg" alt="Welcome to Owens Library"/></div>'
+		+ '<div align="center"><img src="/screens/nwmsuf.png" alt="Welcome to Owens Library"/></div>'
 		+ '<div><img src="/screens/greenpaw.gif" alt=""/>&nbsp;<a href="http://www.nwmissouri.edu/library/question/index.htm">Ask a Librarian</a></div>'
-		+ '<div><img src="/screens/greenpaw.gif" alt=""/>&nbsp;<a href="http://www.nwmissouri.edu/library/services/forms.htm">Forms</a></div><div>'
-		+ '<img src="/screens/greenpaw.gif" alt=""/>&nbsp;<a href="http://www.nwmissouri.edu/library/teams/cmrform.htm">Suggest a Purchase</a></div>'
-		+ '<div><img src="/screens/greenpaw.gif" alt=""/>&nbsp;<a href="http://www.amazon.com/gp/registry/wishlist/20TMZY56HZY02">Library Wish List</a></div>'
+		+ '<div><img src="/screens/greenpaw.gif" alt=""/>&nbsp;<a href="http://www.nwmissouri.edu/library/services/forms.htm">Forms</a></div>'
+		+ '<div><img src="/screens/greenpaw.gif" alt=""/>&nbsp;<a href="http://www.nwmissouri.edu/library/teams/cmrform.htm">Suggest a Purchase</a></div>'
+		// + '<div><img src="/screens/greenpaw.gif" alt=""/>&nbsp;<a href="http://www.amazon.com/gp/registry/wishlist/20TMZY56HZY02">Library Wish List</a></div>'
 		+ '<div><img src="/screens/greenpaw.gif" alt=""/>&nbsp;<a href="http://www.nwmissouri.edu/library/app/newbooks">New Books List</a></div>'
 		+ '<div><img src="/screens/greenpaw.gif" alt=""/>&nbsp;<a href="/search~S4/p">Course Reserves</a></div>'
 		// + '<div><img src="/screens/greenpaw.gif" alt=""/>&nbsp;<a href="/search~S4">Search</a></div>'
