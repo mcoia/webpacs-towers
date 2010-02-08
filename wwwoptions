@@ -353,7 +353,7 @@ ICON_SPELLCHECK_SEARCH=Search
 SPELLCHECK=<span class="spellcheckTool">Did you mean %a?</span> %s
 # BIBIMAGE=http://www.syndetics.com/index.aspx?isbn=%s/SC.GIF&client=northmsu&showCaptionBelow=t|i|http://www.syndetics.com/index.aspx?isbn=%s/index.html&client=northmsu&type=rw12&popup=yes
 
-BIBIMAGE=http://www.syndetics.com/index.aspx?isbn=%s/SC.GIF&client=northmsu|I|http://syndetics.com/hw7.pl?isbn=%s/LC.gif&client=northmsu
+# BIBIMAGE=http://www.syndetics.com/index.aspx?isbn=%s/SC.GIF&client=northmsu|I|http://syndetics.com/hw7.pl?isbn=%s/LC.gif&client=northmsu
 
 BIBIMAGE_TEXT=Book Jacket
 
