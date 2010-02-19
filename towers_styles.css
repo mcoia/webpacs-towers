@@ -88,16 +88,39 @@ TD.browseEntryData { background-color: #FFCC99; color: #000000; font-weight: bol
 
 /* Syndetics Styles */
 
+.syn_div {
+  clear:both;
+  width:100%;
+  margin:0em .25em 1em .25em;
+}
+
 .syn_title {
-  padding: 5px; 
-  text-align: center; 
   font-weight: bold;
-  
+  width:15%;
+  float:left;
+  margin: 1em 0;
+  padding:0px;
+  margin:0px;
 } 
 
 .syn_body {
-  padding: 5px 5px 20px 5px;
   text-align: left;
+  width:75%;
+  margin:0px;
+  padding:0 3px;
+  float:left;
+}
+
+.syn_body p {
+  margin-top:0;
+}
+
+.syn_body {
+  text-align: left;
+  width:75%;
+  margin:0px;
+  padding:0 3px;
+  float:left;
 }
 
 .syn_body a:link,
@@ -285,4 +308,24 @@ span.syn_av_tag {
   padding-top:1em;
   text-align:center;
   width:100%;
+}
+
+#sidebarContent {
+float:left;
+padding:0 0 0 5px;
+width:21%;
+text-align:center;
+}
+
+#infoTable {
+float:left;
+width:75%;
+}
+
+.clear2 {
+  clear:both;
+}
+
+.topDiv {
+  text-align:center;
 }
