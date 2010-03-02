@@ -1,0 +1,193 @@
+<!-- 2006 WebPAC Pro Version, set from 26 March, 2007 -->
+<!-- This file last changed: 15 October, 2006 -->
+<!-- In order for the tabbed display to work when using the bib_display.html and bibdisplay.js provided in the Pro sample set, the
+     customer needs to have bibdisplay.js and the conditional IE comments added into the INSERTTAG_INHEAD wwwoption.
+	 See release notes for exact wwwoption details -->
+<!--{toplogo}-->
+<!--{ifbibdisplay}-->
+<!--{xif}-->
+<br>
+<!--{ifbibdisplay}-->
+<!--{xif}-->
+<!--{catedit}-->
+<center>
+<!--{navrow}-->
+</center>
+<center>
+<!--{innreach}-->
+<!--{searchhistory}-->
+</center>
+<br>
+<center>
+<!--{searchtool}-->
+</center>
+<center>
+<!--{pager}-->
+</center>
+<div style="margin:0 0 0 2px;">
+<div id="infoTable">
+<!--{recordinfo:!}-->
+<!--{linkeddocs}-->
+<!--{URLS}-->
+<!--{holdingslink}-->
+<!--{bloblinks}-->
+<!--{imagelinks}-->
+<!--{artthumb}-->
+     <br/>
+<!--{xmlframe}-->
+     <div>
+<!--{holds}-->
+<!--{holdings}-->
+<!--{booking}-->
+<!--{items}-->
+<!--{orders}-->
+          <br>
+<!--{ifTOC}-->
+<!--{TOC}-->
+<!--{xif}-->
+<!--{recordlink}-->
+<!--{recordinfo:crnfvwsdkmiolbuxz}-->
+
+
+
+     </div>   
+
+<div class="syn_div">
+<div id="syn_summary"></div>
+
+<div id="syn_blreview"></div>
+
+<div id="syn_chreview"></div>
+
+<div id="syn_kireview"></div>
+
+<div id="syn_ljreview"></div>
+
+<div id="syn_pwreview"></div>
+
+<div id="syn_toc"></div>
+
+<div id="syn_anotes"></div>
+
+<div id="syn_awards"></div>
+
+<div id="syn_fiction"></div>
+
+<div id="syn_fiction_search"></div>
+
+<div id="syn_avsummary"></div>
+
+<div id="syn_avprofile"></div>
+</div>
+</div>
+
+<br/>
+
+<div id="sidebarContent">
+<div id="revandRate">
+<!--{bibimage}-->
+
+<div id="syn_summary_link"></div>
+
+<div id="syn_blreview_link"></div>
+
+<div id="syn_chreview_link"></div>
+
+<div id="syn_kireview_link"></div>
+
+<div id="syn_ljreview_link"></div>
+
+<div id="syn_pwreview_link"></div>
+
+<div id="syn_toc_link"></div>
+
+<div id="syn_anotes_link"></div>
+
+<div id="syn_awards_link"></div>
+
+<div id="syn_fiction_link"></div>
+
+<div id="syn_fiction_search_link"></div>
+
+<div id="syn_avsummary_link"></div>
+
+<div id="syn_avprofile_link"></div>
+
+<div id="googlebooks" align="center"> </div>
+
+<div id="amazonlink" align="center"></div>
+
+<!--{ifhaspatrate}-->
+<!--{ratings}-->
+<!--{xif}-->
+<div class="resTab">
+<!--{ifhasresourcetable}-->
+<!--{resourcetable}-->
+<!--{xif}-->
+<!--{relsearch}-->
+</div>
+</div>
+</div>
+<div class="clear2"></div>
+<!-- Script borrowed from http://library.wmitchell.edu -->
+<!-- googlebook search -->
+
+<script type="text/javascript">
+
+        
+
+		var tr = document.getElementsByTagName('TR');
+		var isbnnumber = "";
+		for(i = 0; i < tr.length; i++) {
+			var x=tr[i].getElementsByTagName('td');
+			if (x.length == 2 && x[0].innerHTML == "ISBN") {
+				isbnnumber = x[1].innerHTML;
+				
+				isbnnumber = isbnnumber.replace(/[^\d]+/ig,"");
+
+			}
+		}
+		
+
+          if (isbnnumber.length > 0) {
+
+
+	  
+
+        var cburl = "http://books.google.com/books";
+    
+        // Retrieve the info for these bibkeys           
+
+       
+         var api_url = cburl + "?jscmd=viewapi&bibkeys=" + isbnnumber;
+        document.write(unescape("%3Cscript src=" + api_url +
+          " type='text/javascript'%3E%3C/script%3E"));
+                  
+          }else {
+          
+          }
+      </script>
+
+           <script type="text/javascript">
+        var buttonImg =
+          'http://code.google.com/apis/books/images/gbs_preview_button1.gif';
+        for (isbn in _GBSBookInfo) {
+          var b = _GBSBookInfo[isbn];
+          if (b && (b.preview == "full" || b.preview == "partial")) {
+          
+            document.getElementById("googlebooks").innerHTML = "<a href='"+ b.preview_url + "'><img src='"+ buttonImg + "' style='border:0; margin:3px;'></a>";
+
+          }
+        }
+	
+	     document.getElementById("amazonlink").innerHTML = '<a href="http://amazon.com/dp/' + isbnnumber + '"><img src="https://www.nwmissouri.edu/library/app/AddLinks/amreview_btn.png" border="0" style="margin: 4"/></a>'
+	
+      </script>
+	   
+      
+      <!-- end of googlebook search -->
+
+<!--{botlogo}-->
+
+
+
