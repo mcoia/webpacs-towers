@@ -46,7 +46,10 @@
 <!--{TOC}-->
 <!--{xif}-->
 <!--{recordlink}-->
-<!--{recordinfo:crnfvwsdkmiolbuxz}-->	  
+<!--{recordinfo:crnfvwsdkmiolbuxz}-->
+
+
+
      </div>   
 
 <div class="syn_div">
@@ -110,7 +113,10 @@
 
 <div id="syn_avprofile_link"></div>
 
-<br/>
+<div id="googlebooks" align="center"> </div>
+
+<div id="amazonlink" align="center"></div>
+
 <!--{ifhaspatrate}-->
 <!--{ratings}-->
 <!--{xif}-->
@@ -123,5 +129,65 @@
 </div>
 </div>
 <div class="clear2"></div>
+<!-- Script borrowed from http://library.wmitchell.edu -->
+<!-- googlebook search -->
+
+<script type="text/javascript">
+
+        
+
+		var tr = document.getElementsByTagName('TR');
+		var isbnnumber = "";
+		for(i = 0; i < tr.length; i++) {
+			var x=tr[i].getElementsByTagName('td');
+			if (x.length == 2 && x[0].innerHTML == "ISBN") {
+				isbnnumber = x[1].innerHTML;
+				
+				isbnnumber = isbnnumber.replace(/[^\d]+/ig,"");
+
+			}
+		}
+		
+
+          if (isbnnumber.length > 0) {
+
+
+	  
+
+        var cburl = "http://books.google.com/books";
+    
+        // Retrieve the info for these bibkeys           
+
+       
+         var api_url = cburl + "?jscmd=viewapi&bibkeys=" + isbnnumber;
+        document.write(unescape("%3Cscript src=" + api_url +
+          " type='text/javascript'%3E%3C/script%3E"));
+                  
+          }else {
+          
+          }
+      </script>
+
+           <script type="text/javascript">
+        var buttonImg =
+          'http://code.google.com/apis/books/images/gbs_preview_button1.gif';
+        for (isbn in _GBSBookInfo) {
+          var b = _GBSBookInfo[isbn];
+          if (b && (b.preview == "full" || b.preview == "partial")) {
+          
+            document.getElementById("googlebooks").innerHTML = "<a href='"+ b.preview_url + "'><img src='"+ buttonImg + "' style='border:0; margin:3px;'></a>";
+
+          }
+        }
+	
+	     document.getElementById("amazonlink").innerHTML = '<a href="http://amazon.com/dp/' + isbnnumber + '"><img src="https://www.nwmissouri.edu/library/app/AddLinks/amreview_btn.png" border="0" style="margin: 4"/></a>'
+	
+      </script>
+	   
+      
+      <!-- end of googlebook search -->
+
 <!--{botlogo}-->
+
+
 
