@@ -764,7 +764,7 @@ span#searchTips {padding:5px 5px 5px 5px;font-size:85%; display: none;border:1px
 #moreInfo {display:none; padding:0 3px 0 3px; }
 #moreCategories {display:none; padding:0 3px 0 3px;}
 #revandRate { text-align:center; background:#e8e8e8; padding:0 0 3px 0;}
-.sidecontentHeading { background:#004731; color:#fff; font-size:80%; font-style:italic; font-weight:bold; border-bottom:1px solid #7e4a1f; width:100%; margin:0 0 3px 0;}
+.sidecontentHeading { background:#004731; color:#fff; font-size:100%; font-style:italic; font-weight:bold; border-bottom:1px solid #7e4a1f; width:100%; margin:0 0 3px 0; padding: 3px 0;}
 .conHead {background:#004730; color:#fff; font-size:85%; font-style:italic; font-weight:bold; border-bottom:1px solid #FFB515; width:100%; padding:2px 0 2px 6px;}
 .booking {text-align:center; margin:0 0 5px 0;}
 #bibMenuLinks {padding: 0 5px 3px 5px; text-align:center;}
