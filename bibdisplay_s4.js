@@ -3,12 +3,10 @@
 function contentDisplay(id) {
 
 	document.getElementById("copySection").style.display = 'none';
-	document.getElementById("moreSection").style.display = 'none';
 	document.getElementById("similarSection").style.display = 'none';
 	document.getElementById("fullSection").style.display = 'none';
 	
 	document.getElementById(id).style.display = 'block';
-
 }
 
 function bibTabChange(one,two,three,four,five,six) {
@@ -46,10 +44,6 @@ function bibTabswitcher() {
 	document.getElementById("copyB2").className = 'option2';
 	document.getElementById("copyB3").className = 'option3';
 	document.getElementById("copyB4").className = 'option4';
-	document.getElementById("moreB1").className = 'option1';
-	document.getElementById("moreB2").className = 'option2';
-	document.getElementById("moreB3").className = 'option3';
-	document.getElementById("moreB4").className = 'option4';
 	document.getElementById("simItB1").className = 'option1';
 	document.getElementById("simItB2").className = 'option2';
 	document.getElementById("simItB3").className = 'option3';
@@ -61,12 +55,10 @@ function bibTabswitcher() {
 
 
 	document.getElementById("bibCopyStatus").className = 'bibTabOff';
-	document.getElementById("bibMoreDetails").className = 'bibTabOff';
 	document.getElementById("bibSimilarItems").className = 'bibSimTabOff';
 	document.getElementById("bibFullRecord").className = 'bibTabOff';
 
 	document.getElementById("copyContent").className = 'bibTabContent';
-	document.getElementById("moreContent").className = 'bibTabContent';
 	document.getElementById("simContent").className = 'bibSimTabContent';
 	document.getElementById("fullContent").className = 'bibTabContent';
 }
@@ -110,9 +102,7 @@ function webReturn(){
 	var webSwitch = document.getElementById("webcss");
 	webSwitch.onclick = function() {
 	  setActiveStyleSheet("web");
- 	  contentDisplay("copySection");
-	  bibTabswitcher();
-	  bibTabChange('copyB1','copyB2','copyB3','copyB4','bibCopyStatus','copyContent');
+		defaultTab();
     }
 }
 
@@ -130,8 +120,10 @@ function initTabs(){
 	if (!document.getElementById("printcss")) return false;
 	fullSelect();
 	simSelect();
-	moreSelect();
 	copySelect();
+
+/*Change to default Tab */
+	defaultTab();
 /*for IE caching problem */
 	setActiveStyleSheet("web");
 }
@@ -153,14 +145,6 @@ function simSelect(){
 	  bibSimTabChange('simItB1','simItB2','simItB3','simItB4','bibSimilarItems','simContent');
 	}
 }
-function moreSelect(){
-	var tab = document.getElementById("moreSelect");
-	tab.onclick = function() {
-	  contentDisplay("moreSection");
-	  bibTabswitcher();
-	  bibTabChange('moreB1','moreB2','moreB3','moreB4','bibMoreDetails','moreContent');;
-	}
-}
 
 function copySelect(){
 	var tab = document.getElementById("copySelect");
@@ -169,6 +153,12 @@ function copySelect(){
 	  bibTabswitcher();
 	  bibTabChange('copyB1','copyB2','copyB3','copyB4','bibCopyStatus','copyContent');
 	}
+}
+
+function defaultTab(){
+	  contentDisplay("fullSection");
+	  bibTabswitcher();
+	  bibTabChange('fullB1','fullB2','fullB3','fullB4','bibFullRecord','fullContent');
 }
 
 addLoadEvent(addPrintStyles);
