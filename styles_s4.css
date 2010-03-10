@@ -105,11 +105,11 @@ A.pageNavAreaText:ACTIVE, A.pageNavAreaText:HOVER {  color: #F7F7E4; text-decora
 
 .bibInfo { }
 
-.bibInfoData {font-size:75%; }
+.bibInfoData {font-size:90%; }
 
 .bibInfoEntry { }
 
-.bibInfoLabel { width: 15%; font-size:75%; text-align: right; padding-right: 1em; background-color: #e8e8e8; font-weight: bold; font-style: italic; }
+.bibInfoLabel { width: 15%; font-size:90%; text-align: right; padding-right: 1em; background-color: #e8e8e8; font-weight: bold; font-style: italic; }
 
 .bibItems { border:0px; padding:0 3px 3px 3px; margin:0px;}
 
@@ -298,7 +298,7 @@ TD.browseEntryData { background-color: transparent; border:0; border-top:1px sol
 
 .browseResourceTableEntry { color: #000000; background:#e8e8e8; font-size: 85%; font-weight: normal; text-align: center; padding-left: 1px;  }
 
-.browseSaveJump { color: #000000; background: #FFFFFF; text-align: left; }
+.browseSaveJump { color: #000000; text-align: left; }
 
 .browseSaveJump form { display: inline; }
 
@@ -704,7 +704,7 @@ div.DisplayBoxContent div a:hover {text-decoration:underline; font-weight:bold;o
 .mainActiveContentTable {width:100%;font-size:90%;}
 .mainContentHead {font-weight:bold;}
 span#searchTips {padding:5px 5px 5px 5px;font-size:85%; display: none;border:1px solid #000}
-.textFix {font-size:100%}
+.textFix {font-size:100%; width:100%;}
 #topLogohead {background-color:#e8e8e8; padding:3px 5px 3px 5px;margin:0 0 10px 0;border-bottom:2px solid #004731;}
 #topLogohead span {color:#fff; font-weight:bold;}
 #topLogohead form {padding:0; margin:auto;}
