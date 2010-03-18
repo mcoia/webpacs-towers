@@ -285,13 +285,14 @@ span.syn_av_tag {
 #info, #sms {
        border:1px solid #36647b;
        position:absolute;
-       top:250;
-       left:50; 
+       top:50;
+       left:450;
        z-index:1000;
        background:#fff;
        padding:10px;
        margin:10px;
        background:#efefcf;
+       width:50em;
 }
 
 #sms .eg {
@@ -305,7 +306,8 @@ span.syn_av_tag {
 #sms {font-size:70%}
 
 #smsfeatures {
-  padding-top:1em;
+  padding:0;
+  margin:0;
   text-align:center;
   width:100%;
 }
