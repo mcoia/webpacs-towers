@@ -25,7 +25,7 @@ INSERTTAG_INHEAD wwwotion.  The correct conditional statement follows:
 /* dark blue: 004731 */
 /* very dark blue: 004730 */
 /* light orange : F5D9A3 */
-/* light blue used in table striping : f8f8f8 */
+/* light blue used in table striping : f0f0f0 */
 /* light yellow used in table highlighting : EEEEDD */
 /* light gray for .authPublicNote : F7F4F4 */ 
 
@@ -138,3 +138,4 @@ div.bibContentBox div a:hover {color:#004731;text-decoration:none; font-weight:b
 /* this style corrects the IE rendering bug for the bottom rounded corner overflow */
 .ieFix {margin:0 1px 0 1px} 
 
+.textFix {WIDTH: 90%; FONT-SIZE: 100%}
