@@ -59,14 +59,14 @@ function mainNavLinks(nosearchtips)
 		linkLocation.innerHTML = '<div class="roundedContent"><b class="xtop"><b class="xb1"></b><b class="xb2"></b><b class="xb3"></b><b class="xb4"></b></b><div class="roundedContentInfo">'
 		+ '<div align="center"><img src="/screens/nwmsuf.png" alt="Welcome to Owens Library"/></div>'
 		+ '<div><img src="/screens/greenpaw.gif" alt=""/>&nbsp;<a href="http://www.nwmissouri.edu/library/question/index.htm">Ask a Librarian</a></div>'
-		+ '<div><img src="/screens/greenpaw.gif" alt=""/>&nbsp;<a href="http://www.nwmissouri.edu/library/services/forms.htm">Forms</a></div>'
+		+ '<div><img src="/screens/greenpaw.gif" alt=""/>&nbsp;<a href="http://www.nwmissouri.edu/library/ill/index.htm">Interlibrary Loan</a></div>'
 		+ '<div><img src="/screens/greenpaw.gif" alt=""/>&nbsp;<a href="http://www.nwmissouri.edu/library/teams/cmrform.htm">Suggest a Purchase</a></div>'
 		// + '<div><img src="/screens/greenpaw.gif" alt=""/>&nbsp;<a href="http://www.amazon.com/gp/registry/wishlist/20TMZY56HZY02">Library Wish List</a></div>'
 		+ '<div><img src="/screens/greenpaw.gif" alt=""/>&nbsp;<a href="http://www.nwmissouri.edu/library/app/newbooks">New Books List</a></div>'
 		// + '<div><img src="/screens/greenpaw.gif" alt=""/>&nbsp;<a href="/search~S4">Search</a></div>'
-		+ '<div><img src="/screens/greenpaw.gif" alt=""/>&nbsp;<a href="http://www.nwmissouri.edu/library/articles/captivate/MOBIUSKC/How%20to%20request%20a%20book%20through%20MOBIUS%20for%20KC.htm">Videos about MOBIUS</a></div>'
 		+ '<div><img src="/screens/greenpaw.gif" alt=""/>&nbsp;<a href="/patroninfo~S4">Your Account</a></div>'
-		+ '<div><img src="/screens/greenpaw.gif" alt=""/>&nbsp;<a href="http://www.nwmissouri.edu/library/comments.htm">Comments</a></div>'
+		+ '<div><img src="/screens/greenpaw.gif" alt=""/>&nbsp;<a href="http://www.nwmissouri.edu/library/hours/hours.htm">Library Hours</a></div>'
+		+ '<div><img src="/screens/greenpaw.gif" alt=""/>&nbsp;<a href="http://www.nwmissouri.edu/library/articles/captivate/MOBIUSKC/How%20to%20request%20a%20book%20through%20MOBIUS%20for%20KC.htm">Videos about MOBIUS</a></div>'
 		+ '<div><img src="/screens/greenpaw.gif" alt=""/>&nbsp;<a href="http://www.nwmissouri.edu/library/CATALOG/FAQ.HTM">FAQs</a></div>'
 		+ '</div><b class="xbottom"><b class="xb4"></b><b class="xb3"></b><b class="xb2"></b><b class="xb1"></b></b></div>';
 		if (!nosearchtips)
