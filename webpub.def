@@ -117,6 +117,7 @@ b|g||-6|Gov Doc #||b|
 b|i|020|-6c|ISBN||b|
 b|i|022|-6c|ISSN||b|
 b|i|028|-6c|Music #||b|
+b|i|0284|-6c|Video Number #||b|
 b|i||-6c|Standard #||b|
 b|o||-6|OCLC #||b|
 b|l||-6|LC CARD #||b|
