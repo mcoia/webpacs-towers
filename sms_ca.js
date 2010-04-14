@@ -76,7 +76,7 @@ function showsms() {
    sms.style.visibility = 'visible';
    sms.style.display = 'block';
 	// some fancy positioning
-findPos(document.getElementById('smsbutton'),sms,500,-320);
+findPos(document.getElementById('smsbutton'),sms,-500,-320);
 } catch (e) {
 	// doesn't work?  hide the SMS buttons
 document.getElementById('smsfeatures').style.visibility='hidden';
