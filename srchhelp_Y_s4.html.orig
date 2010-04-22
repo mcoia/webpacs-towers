@@ -9,147 +9,6 @@
 </head>
 <!--{advancedsearchbody}-->
 <!--{toplogo}-->
-<br>
-<div>
-
-<div class="folderWrapper"><!-- "folder" interface wrapper div-->
-	<div class="mainSpacer"><!--wrapper div that contains the selection tabs-->
-		<div class="mainInactiveTab"><!--inactive tab-->
-			<b class="tabTop"><b class="inactive1"></b><b class="inactive2"></b><b class="inactive3"></b><b class="inactive4"></b></b>
-			<div class="DisplayBoxContent"><div class="menuTabContent"><a href="/search~S4">Keyword</a></div></div>
-		</div><!--close inactive tab-->
-		<div class="mainInactiveTab"><!--inactive tab-->
-			<b class="tabTop"><b class="inactive1"></b><b class="inactive2"></b><b class="inactive3"></b><b class="inactive4"></b></b>
-			<div class="DisplayBoxContent"><div class="menuTabContent"><a href="/search~S4/t">Title</a></div></div>
-		</div><!--close inactive tab-->
-		<div class="mainInactiveTab"><!--inactive tab-->
-			<b class="tabTop"><b class="inactive1"></b><b class="inactive2"></b><b class="inactive3"></b><b class="inactive4"></b></b>
-			<div class="DisplayBoxContent"><div class="menuTabContent"><a href="/search~S4/a">Author</a></div></div>
-		</div><!--close inactive tab-->
-		<div class="mainInactiveTab"><!--inactive tab-->
-			<b class="tabTop"><b class="inactive1"></b><b class="inactive2"></b><b class="inactive3"></b><b class="inactive4"></b></b>
-			<div class="DisplayBoxContent"><div class="menuTabContent"><a href="/search~S4/d">Subject</a></div></div>
-		</div><!--close inactive tab-->
-		<div class="mainActiveTab"><!--active tab-->
-			<b class="tabTop"><b class="active1"></b><b class="active2"></b><b class="active3"></b><b class="active4"></b></b>
-			<div class="DisplayBoxContent"><div class="menuTabActive"><a href="/search~S4/Y">Advanced</a></div></div>
-		</div><!--close inactive tab-->
-	</div>
-	<div class="mainSpacer"><!-- main content wrapper div -->
-		<div class="mainActiveContent">
-<table class="textFix"><tr><td valign="top">
-<table border="0">
-<tr>
-<td colspan="3">
-<!--{msg}-->
-<!--{spellcheck}-->
-<!-- Note: if you use a character set other than utf-8, change the charset declaration in the enctype attribute below accordingly. -->
-<!--{advancedsearchformbegin}-->
-<p>
-Please fill in the form, select limits, and click Submit. &nbsp; &nbsp;
-<input name="reset" type="reset" value="Clear Form">
-
-</p>
-<!--{advancedsearch}-->
-<p>
-<input type="hidden" name="startLimit" />
-</p>
-<table border="0">
-<tr>
-<td align="left" valign="top">
-<p class="pageMainAreaSubHeader">Limited to:</p>
-<p>
-<!--{availlim}-->
-</p>
-&nbsp;Scope:
-<!--{scope}-->
-<!--{branch}-->
-<!--{mattype}-->
-<!--{lang}-->
-<!--{DOCDATE}-->
-<!--{publish}-->
-</td>
-<td align="left" valign="top">
-<p class="pageMainAreaSubHeader">Sorted By:</p>
-<p>
-<!--{sort}-->
-</p>
-<!--{advancedsubmit}-->
-</td>
-</tr>
-</table>
-<input type="hidden" name="endLimit" />
-
-
-<!--{advancedsearchformend}-->
-</td></tr></table>
-</td><!--<td valign="top"></td>--></tr></table>
-
-
-		</div>
-<div >
-	<b class="conbottom"><b class="conb4"></b><b class="conb3"></b><b class="conb2"></b><b class="conb1"></b></b>
-</div>
-	</div><!--close main content wrapper div-->
-</div><!--close wrapper of "folder interface"-->
-<div class="mainNavLinksWrapper">
-<div id="mainNavLinks">
-<script>
-addLoadEvent(mainNavLinks(1));
-</script>
-</div>
-<div class="roundedContent">
-<b class="xtop"><b class="xb1"></b><b class="xb2"></b><b class="xb3"></b><b class="xb4"></b></b>
-<div class="roundedContentInfo">
-<table class="searchTipTable">
-<tr><td colspan="2" align="center" style="font-size:125%;border-bottom:1px solid #000"><strong>Search Tips</strong></td></tr>
-<tr valign="top"><th align="left">Adjacency</th>
-<td>Multiple words are searched together as one phrase.<br/>
-<span style="text-decoration:underline">Example</span> : world health organization</td>
-</tr>
-<tr valign="top"><th align="left">Wildcards</th>
-<td>
-Words may be right-hand truncated using an asterisk. '*' for 1-5 characters, '**' for open-ended truncation, '?' to replace a single character anywhere within a word.<br/>
-<span style="text-decoration:underline">Examples</span> : environment* polic*, comput**, wom?n</td>
-</tr>
-<tr valign="top"><th align="left">Boolean Operators</th>
-<td>
-Use "and" or "or" to specify multiple words in any field, any order. Use "and not" to exclude words.<br/>
-<span style="text-decoration:underline">Example</span>: stocks and bonds <br/>
-<span style="text-decoration:underline">Example</span>: (alaska or canada) and (adventure and not vacation)</td>
-</tr>
-<tr valign="top"><th align="left">Proximity Operators</th>
-<td>
-Use "near" to specify words close to each other, in any order.<br/>
-<span style="text-decoration:underline">Example</span> : california near university</td>
-</tr>
-<tr valign="top"><th align="left">Field limits</th>
-<td>
-A field limit causes the system to search only the specified field for the specified word(s).</td>
-</tr>
-<tr valign="top">
-<th align="left">Grouping</th>
-<td>
-Keyword search results are usually grouped by relevance to bring the most likely titles to the top of the list. Each group represents a similar level of relevance and results are sorted within the group by date or title. To get an ungrouped result set, use boolean operators to form a complex query.
-</td>
-</tr>
-</table>
-</div>
-<b class="xbottom"><b class="xb4"></b><b class="xb3"></b><b class="xb2"></b><b class="xb1"></b></b>
-</div>
-
-
-
-
-</div>
-</div>
-<div style="clear:both"></div>
-<script type="text/javascript" src="/screens/search_s4.js"></script>
-
-<!--{botlogo}-->
-</body>
-</html>
-
 =======
 
 
@@ -589,237 +448,153 @@ function GoBack() {
 
 
 
-<table width="100%" border="0" cellspacing="0" cellpadding="0">
-        <tr>
-            <td bgcolor="#993300" nowrap width="1%" height="2"><IMG SRC="/screens/shim.gif" HEIGHT="2" WIDTH="1" BORDER="0" ALT=""></td>
-            <td rowspan="4" width="98%">&nbsp;</td>
-            <td rowspan="4" width="1%"><a href="http://towers.missouri.edu/"><IMG SRC="/screens/towers_small.gif" HEIGHT="80" WIDTH="126" ALT=" Towers Library Catalog " BORDER="0" ></a></td>
-        </tr>
-        <tr> 
-            <td bgcolor="#FFCC99" nowrap width="1%"><font face="Arial, Helvetica, sans-serif" color="#333300"><b>
-
-<a href="http://mobius.umsystem.edu/search" style="text-decoration:none">MOBIUS</a> &gt; 
-<a href="http://towers.missouri.edu/search~" style="text-decoration:none">Towers</a> &gt; 
-<a href="http://towers.missouri.edu/search~S4" style="text-decoration:none">Northwest Missouri State University</a></b></font>
- 
-<font color="#333300" face="Arial, Helvetica, sans-serif" size="-2" class="blurb"> | 
-
-<a href="http://towers.missouri.edu/" style="text-decoration:none">Towers Home </a> | 
-
-<a href="http://www.nwmissouri.edu/library/index.html" style="text-decoration:none">Library's Home </a> | 
-
-<a href="/screens/help.html" style="text-decoration:none">Help</a> 
-
-</font></td>
-        </tr>
-        <tr> 
-            <td width="1%" height="4"><IMG SRC="/screens/shim.gif" HEIGHT="4" WIDTH="1" BORDER="0" ALT=""></td>
-        </tr>
-        <tr> 
-			<td><a href="http://towers.missouri.edu/search~S4" style="text-decoration:none">
-            
-				<IMG SRC="/screens/nwmsu.gif" HEIGHT="73" WIDTH="316" ALT="" BORDER="0" >
-			</a></td>
-        </tr>
-    </table>
+<!--{toplogo}-->
 
 
+>>>>>>> analytics
 <br>
+<div>
 
-<!--{patron}-->
-<!--{logout}-->
-
-<!-- Begin Search Help Text -->
-<center>
-<h3><b>Keyword Search</b></h3>
-
-<script language="JavaScript">
-
-<!-- hide from older browsers
-
-/*
-replace function from http://tech.irt.org/articles/js037/index.htm#3
-*/
-function replace(string,text,by) {
-// Replaces text with by in string
-    var strLength = string.length, txtLength = text.length;
-    if ((strLength == 0) || (txtLength == 0)) return string;
-
-    var i = string.indexOf(text);
-    if ((!i) && (text != string.substring(0,txtLength))) return string;
-    if (i == -1) return string;
-
-    var newstr = string.substring(0,i) + by;
-
-    if (i+txtLength < strLength)
-        newstr += replace(string.substring(i+txtLength,strLength),text,by);
-
-    return newstr;
-}
-
-function killScope(string) {
-    var out = "searchscope="; // replace this
-    var temp = "" + string; // temporary holder
-    var theBeginning = ""; // beginning of the string
-    var theRest = ""; // end of the string
-
-    var pos = temp.indexOf(out);
-    theBeginning = "" + temp.substring(0, pos) + "";
-    theRest = temp.substring((pos + out.length), temp.length);
-
-    // as long as the character at the beginning of theRest is a number or an ampersand, delete it
-    var firstChar = theRest.charAt(0);
-    while ( (firstChar >= "0" && firstChar <= "9") || ( firstChar == "&" ) ) {
-        theRest = theRest.substring(1);
-        firstChar = theRest.charAt(0);
-    }
-
-    temp = theBeginning + theRest;
-
-    return temp;
-
-}
-   var cURL=location.href;
-   var cOLD="towers.missouri.edu";
-   var cNEW="mobius.missouri.edu";
-   var cSRCH=cURL.indexOf("=");
-   var cIP="207.160.154.44";
-   var FinalURL= replace(cURL,cOLD,cNEW);
-   FinalURL= replace(FinalURL,cIP,cNEW); // so this will work with IPs as well as URLs
-   FinalURL= killScope(FinalURL); // drop the scope because INNReach doesn't like scopes
-   FinalURL= replace(FinalURL,"NOSRCH","SEARCH"); // the modify search screen doesn't make sense without this
-if (cSRCH != -1) {
-   document.write(' repeat search in the MOBIUS Union Catalog <a href="' + FinalURL + '"><img src="/screens/b_srchmobi.gif" border="0" alt=" Search MOBIUS "></a><p>');
-}
-
-// -->
-
-</script>
-<!--{spellcheck}-->
-<!-- begin advanced keyword search form -->
-
-<FORM NAME="frmAdvancedKeyword" ACTION="/search/Y" METHOD=GET>
-<TABLE BORDER=0 CELLPADDING=3 CELLSPACING=0 ALIGN="center" width="60%" BGCOLOR="#FFCC99">
-
-<TR>
-    <TD ALIGN=center colspan=2> <B><a name=AVS></a>Type the WORD(S) you want, select OPTIONS <br> and click on SEARCH: </B> <br>
-
+<div class="folderWrapper"><!-- "folder" interface wrapper div-->
+	<div class="mainSpacer"><!--wrapper div that contains the selection tabs-->
+		<div class="mainInactiveTab"><!--inactive tab-->
+			<b class="tabTop"><b class="inactive1"></b><b class="inactive2"></b><b class="inactive3"></b><b class="inactive4"></b></b>
+			<div class="DisplayBoxContent"><div class="menuTabContent"><a href="/search~S4">Keyword</a></div></div>
+		</div><!--close inactive tab-->
+		<div class="mainInactiveTab"><!--inactive tab-->
+			<b class="tabTop"><b class="inactive1"></b><b class="inactive2"></b><b class="inactive3"></b><b class="inactive4"></b></b>
+			<div class="DisplayBoxContent"><div class="menuTabContent"><a href="/search~S4/t">Title</a></div></div>
+		</div><!--close inactive tab-->
+		<div class="mainInactiveTab"><!--inactive tab-->
+			<b class="tabTop"><b class="inactive1"></b><b class="inactive2"></b><b class="inactive3"></b><b class="inactive4"></b></b>
+			<div class="DisplayBoxContent"><div class="menuTabContent"><a href="/search~S4/a">Author</a></div></div>
+		</div><!--close inactive tab-->
+		<div class="mainInactiveTab"><!--inactive tab-->
+			<b class="tabTop"><b class="inactive1"></b><b class="inactive2"></b><b class="inactive3"></b><b class="inactive4"></b></b>
+			<div class="DisplayBoxContent"><div class="menuTabContent"><a href="/search~S4/d">Subject</a></div></div>
+		</div><!--close inactive tab-->
+		<div class="mainActiveTab"><!--active tab-->
+			<b class="tabTop"><b class="active1"></b><b class="active2"></b><b class="active3"></b><b class="active4"></b></b>
+			<div class="DisplayBoxContent"><div class="menuTabActive"><a href="/search~S4/Y">Advanced</a></div></div>
+		</div><!--close inactive tab-->
+	</div>
+	<div class="mainSpacer"><!-- main content wrapper div -->
+		<div class="mainActiveContent">
+<table class="textFix"><tr><td valign="top">
+<table border="0">
+<tr>
+<td colspan="3">
 <!--{msg}-->
-<br>
-<input type="text" name="SEARCH" size="48" value="" />
-    </TD>
-</TR>
+<!--{spellcheck}-->
+<!-- Note: if you use a character set other than utf-8, change the charset declaration in the enctype attribute below accordingly. -->
+<!--{advancedsearchformbegin}-->
+<p>
+Please fill in the form, select limits, and click Submit. &nbsp; &nbsp;
+<input name="reset" type="reset" value="Clear Form">
 
-<TR>
-    <TD align="center" nowrap>
-<!--{lang}-->
-    </TD>
-    <TD align="center">
-Sort by:
-<select name="SORT">
-<option value="D">Date</option>
-<option value="A">Title</option>
-<option value="R">Relevance</option>
-</select>
-
-    </TD>
-</TR>
-
-<TR>
-    <TD ALIGN="center" colspan="2" nowrap>
-<!--{mattype}-->
-    </TD>
-</TR>
-
-<TR>
-    <TD align="center" nowrap>
-Scope: 
-<!--{scope}-->
-    </TD>
-    <TD align="center" nowrap>
-<!--{branch}-->
-    </TD>
-</TR>
-
-<TR>
-    <TD ALIGN="center" colspan="2" nowrap>
-<!--{publish}-->
-    </TD>
-</TR>
-
-<TR>
-    <TD ALIGN="center" colspan="2" nowrap>
-<!--{DOCDATE}-->
-    </TD>
-</TR>
-
-<TR>
-    <TD ALIGN="center" colspan="2" nowrap>
-        <INPUT TYPE=SUBMIT VALUE="SEARCH"><br>
+</p>
+<!--{advancedsearch}-->
+<p>
+<input type="hidden" name="startLimit" />
+</p>
+<table border="0">
+<tr>
+<td align="left" valign="top">
+<p class="pageMainAreaSubHeader">Limited to:</p>
+<p>
 <!--{availlim}-->
-    </TD>
-</TR>
+</p>
+&nbsp;Scope:
+<!--{scope}-->
+<!--{branch}-->
+<!--{mattype}-->
+<!--{lang}-->
+<!--{DOCDATE}-->
+<!--{publish}-->
+</td>
+<td align="left" valign="top">
+<p class="pageMainAreaSubHeader">Sorted By:</p>
+<p>
+<!--{sort}-->
+</p>
+<!--{advancedsubmit}-->
+</td>
+</tr>
+</table>
+<input type="hidden" name="endLimit" />
 
-</TABLE>
-</FORM>
 
-<!-- end advanced keyword search form -->
+<!--{advancedsearchformend}-->
+</td></tr></table>
+</td><!--<td valign="top"></td>--></tr></table>
 
-    <TABLE CELLPADDING=3 CELLSPACING=2 WIDTH="100%">
-        <TR> 
-            <TH WIDTH=10%>&nbsp;</TH>
-            <TH WIDTH=40%>Type in Words to search: </TH>
-            <TH WIDTH=50%>EXAMPLES:</TH>
-        </TR>
-        <TR> 
-            <TD WIDTH=100><b>ADJACENCY</b></TD>
-            <TD BGCOLOR="#FFCC99"> The order of words matters. Multiple words 
-                are searched together as one phrase. For different results, use 
-                <i><b>and</b></i> between each word or phrase.</TD>
-            <TD BGCOLOR="#FFCC99"> water resources<br>
-                colorado<b> and</b> geology<br>
-                electronic serial<b> and</b> physics</TD>
-        <TR> 
-            <TD WIDTH=100><b>TRUNCATION</b></TD>
-            <TD BGCOLOR="#FFCC99"> Words may be internally or right-hand truncated 
-                using an asterisk *. Use double asterisks ** for more than 6 characters. 
-            </TD>
-            <TD BGCOLOR="#FFCC99"> wom*n and librar*<br>
-                math**</TD>
-        <TR> 
-            <TD WIDTH=100><b>OPERATORS</b></TD>
-            <TD BGCOLOR="#FFCC99"> Use <i><b>and</b></i> or <i><b>or</b></i> to 
-                specify multiple words in any field, any order. Use the words <i><b>and 
-                not</b></i> to omit certain keywords. Use parentheses to group words when 
-                using multiple operators. </TD>
-            <TD BGCOLOR="#FFCC99"> cat <b>or</b> feline <br>
-                (alaska <b>or</b> canada)<b> and</b> (South America<b> and not</b> 
-                Brazil) </TD>
-        <TR> 
-            <TD WIDTH=100><b>PROXIMITY</b></TD>
-            <TD BGCOLOR="#FFCC99">Use <i><b>near</b></i> to specify words close 
-                to each other, in any order. Use <i><b>within #</b></i> to specify 
-                words within a set range of each other. Symbol # may stand for 
-                any number. </TD>
-            <TD BGCOLOR="#FFCC99"> California <b>near</b> university<br>
-                colorado<b> within 12 </b>wyoming</TD>
-        <TR> 
-            <TD WIDTH=100><b>FIELDS</b></TD>
-            <TD BGCOLOR="#FFCC99"> Specify fields to search, using field abbreviation. 
-                Fields available for this database are <b>a:</b> (author),<b> 
-                t:</b> (title),<b> s:</b> (subject), and<b> n:</b> (additional 
-                keywords.) Subjects are NOT cross-referenced. </TD>
-            <TD BGCOLOR="#FFCC99"><b> a:</b>twain <b>and t:</b>huck<br>
-                (<b>a:</b>frost <b> or a:</b>whitman) <b>and s:</b>poet* <br>
-                <b>t:</b>medicine <b>and (n:</b>research<b> or s:</b>information)</TD>
-        </TR>
-    </TABLE>
 
-    <p>&nbsp;</p>
+		</div>
+<div >
+	<b class="conbottom"><b class="conb4"></b><b class="conb3"></b><b class="conb2"></b><b class="conb1"></b></b>
+</div>
+	</div><!--close main content wrapper div-->
+</div><!--close wrapper of "folder interface"-->
+<div class="mainNavLinksWrapper">
+<div id="mainNavLinks">
+<script>
+addLoadEvent(mainNavLinks(1));
+</script>
+</div>
+<div class="roundedContent">
+<b class="xtop"><b class="xb1"></b><b class="xb2"></b><b class="xb3"></b><b class="xb4"></b></b>
+<div class="roundedContentInfo">
+<table class="searchTipTable">
+<tr><td colspan="2" align="center" style="font-size:125%;border-bottom:1px solid #000"><strong>Search Tips</strong></td></tr>
+<tr valign="top"><th align="left">Adjacency</th>
+<td>Multiple words are searched together as one phrase.<br/>
+<span style="text-decoration:underline">Example</span> : world health organization</td>
+</tr>
+<tr valign="top"><th align="left">Wildcards</th>
+<td>
+Words may be right-hand truncated using an asterisk. '*' for 1-5 characters, '**' for open-ended truncation, '?' to replace a single character anywhere within a word.<br/>
+<span style="text-decoration:underline">Examples</span> : environment* polic*, comput**, wom?n</td>
+</tr>
+<tr valign="top"><th align="left">Boolean Operators</th>
+<td>
+Use "and" or "or" to specify multiple words in any field, any order. Use "and not" to exclude words.<br/>
+<span style="text-decoration:underline">Example</span>: stocks and bonds <br/>
+<span style="text-decoration:underline">Example</span>: (alaska or canada) and (adventure and not vacation)</td>
+</tr>
+<tr valign="top"><th align="left">Proximity Operators</th>
+<td>
+Use "near" to specify words close to each other, in any order.<br/>
+<span style="text-decoration:underline">Example</span> : california near university</td>
+</tr>
+<tr valign="top"><th align="left">Field limits</th>
+<td>
+A field limit causes the system to search only the specified field for the specified word(s).</td>
+</tr>
+<tr valign="top">
+<th align="left">Grouping</th>
+<td>
+Keyword search results are usually grouped by relevance to bring the most likely titles to the top of the list. Each group represents a similar level of relevance and results are sorted within the group by date or title. To get an ungrouped result set, use boolean operators to form a complex query.
+</td>
+</tr>
+</table>
+</div>
+<b class="xbottom"><b class="xb4"></b><b class="xb3"></b><b class="xb2"></b><b class="xb1"></b></b>
+</div>
 
-</center>
-<p align="center"><A HREF="/search~S4"><IMG SRC="/screens/b_newsrch.gif" BORDER=0 ALT="[START OVER]"></A></p> 
 
+
+
+<<<<<<< HEAD
+</div>
+</div>
+<div style="clear:both"></div>
+<script type="text/javascript" src="/screens/search_s4.js"></script>
+
+<!--{botlogo}-->
+</body>
+</html>
+
+=======
 <center>
 <table border="0" cellpadding="6" cellspacing="0">
     <tr valign="top"> 
@@ -843,4 +618,4 @@ Scope:
 </center>
 </BODY>
 </HTML>
->>>>>>> ncsms
+>>>>>>> analytics
