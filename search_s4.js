@@ -66,7 +66,7 @@ function mainNavLinks(nosearchtips)
 		// + '<div><img src="/screens/greenpaw.gif" alt=""/>&nbsp;<a href="/search~S4">Search</a></div>'
 		+ '<div><img src="/screens/greenpaw.gif" alt=""/>&nbsp;<a href="/patroninfo~S4">Your Account</a></div>'
 		+ '<div><img src="/screens/greenpaw.gif" alt=""/>&nbsp;<a href="http://www.nwmissouri.edu/library/hours/hours.htm">Library Hours</a></div>'
-		+ '<div><img src="/screens/greenpaw.gif" alt=""/>&nbsp;<a href="http://www.nwmissouri.edu/library/articles/captivate/MOBIUSKC/How%20to%20request%20a%20book%20through%20MOBIUS%20for%20KC.htm">Videos about MOBIUS</a></div>'
+		+ '<div><img src="/screens/greenpaw.gif" alt=""/>&nbsp;<a href="http://www.nwmissouri.edu/library/catalog/mobius.htm">Videos about MOBIUS</a></div>'
 		+ '<div><img src="/screens/greenpaw.gif" alt=""/>&nbsp;<a href="http://www.nwmissouri.edu/library/CATALOG/FAQ.HTM">FAQs</a></div>'
 		+ '</div><b class="xbottom"><b class="xb4"></b><b class="xb3"></b><b class="xb2"></b><b class="xb1"></b></b></div>';
 		if (!nosearchtips)
