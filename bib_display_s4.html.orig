@@ -1,8 +1,55 @@
+<<<<<<< HEAD
+<!-- 2006 WebPAC Pro Version, set from 21 November, 2006 -->
+=======
 <!-- 2006 WebPAC Pro Version, set from 26 March, 2007 -->
+>>>>>>> nwredesign
 <!-- This file last changed: 15 October, 2006 -->
 <!-- In order for the tabbed display to work when using the bib_display.html and bibdisplay.js provided in the Pro sample set, the
      customer needs to have bibdisplay.js and the conditional IE comments added into the INSERTTAG_INHEAD wwwoption.
 	 See release notes for exact wwwoption details -->
+<<<<<<< HEAD
+<!--{toplogo}-->
+<br>
+<!--{ifbibdisplay}-->
+<!--{xif}-->
+<div class="topDiv">
+<!--{catedit}-->
+<center>
+<!--{navrow}-->
+</center>
+</div>
+<center>
+<!--{innreach}-->
+<!--{searchhistory}-->
+</center>
+<br>
+<center>
+<!--{searchtool}-->
+</center>
+<center>
+<!--{pager}-->
+</center>
+<table width="100%">
+	<tr>
+		<td width="75%" align="left">
+<!--{recordinfo:!}-->
+		</td>
+		<td width="25%" align="center" style="padding:10px;">
+<!--{bibimage}-->
+<div id="syn_summary_link"></div>
+<div id="syn_toc_link"></div>
+<div id="syn_chreview_link"></div>
+<div id="syn_dbchatper_link"></div>
+<div id="syn_ljreview_link"></div>
+<div id="syn_pwreview_link"></div>
+<div id="syn_avsummary_link"></div>
+<div id="syn_fiction_link"></div>
+<div id="syn_fiction_search_link"></div>
+
+		</td>
+	</tr>
+</table>
+=======
 
 <!--{toplogo}-->
 
@@ -38,12 +85,23 @@
 <!--{pager}-->
 </div>
 <!--{recordinfo:!}-->
+>>>>>>> nwredesign
 <!--{linkeddocs}-->
 <!--{URLS}-->
 <!--{holdingslink}-->
 <!--{bloblinks}-->
 <!--{imagelinks}-->
 <!--{artthumb}-->
+<<<<<<< HEAD
+<!--{xmlframe}-->
+<!--{holds}-->
+<!--{holdings}-->
+<!--{booking}-->
+<!--{items}-->
+<!--{orders}-->
+<br>
+
+=======
 <br/>
 <!--{xmlframe}-->
 <div>
@@ -107,10 +165,18 @@
 </span>
 
 <!--{recordinfo:crnfvwiolsdmbuqxz}--> 
+>>>>>>> nwredesign
 
 <!--{ifTOC}-->
 <!--{TOC}-->
 <!--{xif}-->
+<<<<<<< HEAD
+<!--{recordlink}-->
+<!--{recordinfo:crnfvwsdmiolbuqxz}-->
+<br>
+<hr />
+
+=======
 </span>
 </div>
 <b class="conbottom"><b class="conb4"></b><b class="conb3"></b><b class="conb2"></b><b class="conb1"></b></b>
@@ -161,6 +227,7 @@
 <div class="clear2"></div>
 
 <div class=syn_div>
+>>>>>>> nwredesign
 <div id="syn_summary"></div>
 <div id="syn_toc"></div>
 <div id="syn_chreview"></div>
@@ -168,6 +235,23 @@
 <div id="syn_ljreview"></div>
 <div id="syn_pwreview"></div>
 <div id="syn_avsummary"></div>
+<<<<<<< HEAD
+<div id="syn_fiction"></div>
+<div id="syn_fiction_search"></div>
+
+
+<center>
+<!--{pager}-->
+</center>
+<center>
+<!--{navrow}-->
+</center>
+<center>
+<!--{searchhistory}-->
+</center>
+<!--{botlogo}-->
+
+=======
 <div id="syn_fiction"></div> 
 <div id="syn_fiction_search"></div>
 </div>
@@ -204,3 +288,4 @@ document.getElementById('smsfeatures').style.visibility='hidden';
 
 <div class="clear2"></div>
 <!--{botlogo}-->
+>>>>>>> nwredesign

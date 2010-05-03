@@ -105,7 +105,9 @@ TOPLOGO2=@screens/toplogo_s2.html
 TOPLOGO3=@screens/toplogo_s3.html
 TOPLOGO4=@screens/toplogo_s4.html
 TOPLOGO5=@screens/toplogo_s5.html
-BOTLOGO=@screens/botlogo.html
+BOTLOGO=@screens/botlogo.html
+
+BOTLOGO4=@screens/botlogo_s4.html
 # BRIEF=P
 BROWSE_t=245/abpn/h|240/a/h|970/lt/cde
 # CHECKIN_BGCOLOR=<decide later>
