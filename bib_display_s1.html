@@ -128,7 +128,7 @@
 <!-- this is the button set we'll hide it if the BIB has no items -->
 <div id=smsfeatures align="center">
 
-<a href="#here" name=smsbutton id=smsbutton onClick="showsms();return false;"><img src="/screens/b_send_small.png" border=0></a>&nbsp;&nbsp;
+<a href="#here" name=smsbutton id=smsbutton onClick="showsms();return false;"><img src="/screens/b_send_small.png" class="resourceButton"></a>
 <br>
 </div>
 
@@ -243,14 +243,14 @@ document.getElementById('smsfeatures').style.visibility='hidden';
           var b = _GBSBookInfo[isbn];
           if (b && (b.preview == "full" || b.preview == "partial")) {
           
-            document.getElementById("googlebooks").innerHTML = "<a href='"+ b.preview_url + "'><img src='"+ buttonImg + "' style='border:0; margin:3px;'></a>";
+            document.getElementById("googlebooks").innerHTML = "<a href='"+ b.preview_url + "'><img src='"+ buttonImg + "' class='resourceButton'></a>";
 
           }
         }
 	
-	     document.getElementById("amazonlink").innerHTML = '<a href="http://amazon.com/dp/' + amazon_isbn + '"><img src="https://www.nwmissouri.edu/library/app/AddLinks/amreview_btn.png" border="0" style="margin: 4"/></a>';
-	     document.getElementById("barneslink").innerHTML = '<a href="http://search.barnesandnoble.com/booksearch/isbninquiry.asp?EAN=' + barnes_isbn + '"><img src="/screens/barnesandnoble.gif" border="0" style="margin: 4"/></a>';
-	     document.getElementById("borderslink").innerHTML = '<a href="http://www.borders.com/online/store/TitleDetail?sku=' + borders_isbn + '"><img src="/screens/borders.gif" border="0" style="margin: 4"/></a>';
+	     document.getElementById("amazonlink").innerHTML = '<a href="http://amazon.com/dp/' + amazon_isbn + '"><img src="https://www.nwmissouri.edu/library/app/AddLinks/amreview_btn.png" class="resourceButton"/></a>';
+	     document.getElementById("barneslink").innerHTML = '<a href="http://search.barnesandnoble.com/booksearch/isbninquiry.asp?EAN=' + barnes_isbn + '"><img src="/screens/barnesandnoble.gif" class="resourceButton"/></a>';
+	     document.getElementById("borderslink").innerHTML = '<a href="http://www.borders.com/online/store/TitleDetail?sku=' + borders_isbn + '"><img src="/screens/borders.gif" class="resourceButton"/></a>';
       </script>
 	   
       
