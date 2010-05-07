@@ -1,24 +1,4 @@
 <<<<<<< HEAD
-<!-- 2006 WebPAC Pro Version, set from 26 March, 2007 -->
-<tr>
-<td class="briefCitRow">
-<table width="100%" border="0" cellspacing="0" cellpadding="0">
-<tr valign="top">
-<td width="5%" align="center" class="briefcitEntry" rowspan="2">
-<div class="briefcitEntryNum">
-<!--{entrynum}-->
-</div>
-<!--{mark}-->
-</td>
-<td width="11%" align="center" rowspan="2">
-<!--{bookjacket}-->
-<br/>
-<!--{rating}-->
-<br/>
-<div class="briefcitRequest">
-<!--{request}-->
-</div>
-=======
 <!-- 2006 WebPAC Pro Version, set from 21 November, 2006 -->
 
 <tr>
@@ -45,7 +25,27 @@ Mark
 <br/>
 <!--{rating}-->
 <br/>
->>>>>>> ncsms
+=======
+<!-- 2006 WebPAC Pro Version, set from 26 March, 2007 -->
+<tr>
+<td class="briefCitRow">
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<td width="5%" align="center" class="briefcitEntry" rowspan="2">
+<div class="briefcitEntryNum">
+<!--{entrynum}-->
+</div>
+<!--{mark}-->
+</td>
+<td width="11%" align="center" rowspan="2">
+<!--{bookjacket}-->
+<br/>
+<!--{rating}-->
+<br/>
+<div class="briefcitRequest">
+<!--{request}-->
+</div>
+>>>>>>> nwredesign
 </td>
 <td width="57%" align="left" class="briefcitDetail">
 <!--{nohitmsg}-->
@@ -53,43 +53,15 @@ Mark
 <!--{linkfieldspec:Vbt245ab}-->
 </span>
 <<<<<<< HEAD
-<br />
-=======
 
->>>>>>> ncsms
+=======
+<br />
+>>>>>>> nwredesign
 <!--{fieldspec:Vba}-->
 <br />
 <!--{fieldspec:Vbp}-->
 <br />
 <<<<<<< HEAD
-<span class="briefcitStatus">
-<!--{holds}-->
-</span>
-<div class="briefcitActions">
-<!--{856link}-->
-<!--{ifmulti856}-->
-&nbsp;
-<!--{more856}-->
-<!--{xif}-->
-<!--{962link}-->
-<!--{ifmulti962}-->
-&nbsp;
-<!--{more962}-->
-<!--{xif}-->
-</div>
-</td>
-<td width="25%" align="center" class="briefcitDetail">
-<!--{year}-->
-<br />
-<!--{media}-->
-<br />
-</td>
-</tr>
-<tr><td colspan="2">
-<div class="briefcitItems">
-<!--{items}-->
-</div>
-=======
 
 <center>
 <!--{linkfieldspec:Vby856:3}-->
@@ -118,7 +90,35 @@ Mark
 </tr>
 
 <tr>
->>>>>>> ncsms
+=======
+<span class="briefcitStatus">
+<!--{holds}-->
+</span>
+<div class="briefcitActions">
+<!--{856link}-->
+<!--{ifmulti856}-->
+&nbsp;
+<!--{more856}-->
+<!--{xif}-->
+<!--{962link}-->
+<!--{ifmulti962}-->
+&nbsp;
+<!--{more962}-->
+<!--{xif}-->
+</div>
+</td>
+<td width="25%" align="center" class="briefcitDetail">
+<!--{year}-->
+<br />
+<!--{media}-->
+<br />
+</td>
+</tr>
+<tr><td colspan="2">
+<div class="briefcitItems">
+<!--{items}-->
+</div>
+>>>>>>> nwredesign
 </td></tr>
 </table>
 </td>

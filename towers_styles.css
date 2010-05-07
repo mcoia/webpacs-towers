@@ -319,6 +319,11 @@ width:21%;
 text-align:center;
 }
 
+.resourceButton {
+  margin:4px;
+  border:0;
+}
+
 #infoTable {
 float:left;
 width:75%;
