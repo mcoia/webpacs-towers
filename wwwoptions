@@ -127,9 +127,7 @@ FRAMEURL=25
 FRAMEURL_PAT=50
 HOLDINGS_POS=atp
 # HYPERTEXT_980=<do not use>
-ILL_HOME=/illb
-
-ILL_HOME1=/illb~S1
+ILL_HOME=/illb
 # INDEX_EXT=p,r,c,e,f,g,i
 RSRV_FORMAT=true
 
