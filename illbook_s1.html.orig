@@ -1,0 +1,61 @@
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<!-- 2006 Web OPAC Version, set from 21 November, 2006 -->
+<!-- This file last changed: 16 December, 2005 -->
+<head>
+<title>Inter-Library Loan Book Request</title>
+<meta http-equiv="Content-Type" content="text/html" />
+<link rel="stylesheet" href="/screens/styles.css" type="text/css" />
+</head>
+
+<body onLoad="document.forms[0].elements[0].focus();">
+<!--{toplogo}-->
+
+<a href="/search~S1"><img src="/screens/b_newsrch.gif" alt="Start Over" border="0" /></a>
+<<<<<<< HEAD
+ <a href=/illb><img src="/screens/b_illano.gif" alt="Another ILL Request" border="0" /></a><p>
+
+=======
+<a href=/illb~S1><img src="/screens/b_illano.gif" alt="Another ILL Request" border="0" /></a>
+
+
+
+<p>
+>>>>>>> ill
+<span class="pageMainAreaHeader">Inter-Library Loan Book Request</span>
+<br />
+<!--{patron}-->
+<br />
+<!--{iferrmsg}-->
+<br />
+<span class="errormessage"> Request was not submitted:
+<!--{iferrmsgisPIN}-->
+<!--{newpinmsg}-->
+<!--{else}-->
+<!--{errmsg}-->
+<!--{xif}-->
+</span>
+<br />
+<br />
+<!--{xif}-->
+<!--{heading}-->
+<!--{illreqform}-->
+<br />
+
+<!--{illscope}-->
+
+<a href=/illb>Interlibrary Loan Book Request</a><br />
+<br />
+<br />
+<a href=/illj>Interlibrary Loan Journal Request</a><br />
+
+<!--End of main page content-->
+</td>
+</tr>
+</table>
+<!--End the main content table-->
+</div>
+</div>
+<!--{botlogo}-->
+<p align="center" class="InnovativeCredit">Powered by <a href="http://www.iii.com" target="_blank">Innovative Interfaces, Inc.</a> 2006</p>
+</body>
+</html>

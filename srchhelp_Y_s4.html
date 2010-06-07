@@ -40,6 +40,68 @@
 <table border="0">
 <tr>
 <td colspan="3">
+<script language="JavaScript">
+
+<!-- hide from older browsers
+
+/*
+replace function from http://tech.irt.org/articles/js037/index.htm#3
+*/
+function replace(string,text,by) {
+// Replaces text with by in string
+    var strLength = string.length, txtLength = text.length;
+    if ((strLength == 0) || (txtLength == 0)) return string;
+
+    var i = string.indexOf(text);
+    if ((!i) && (text != string.substring(0,txtLength))) return string;
+    if (i == -1) return string;
+
+    var newstr = string.substring(0,i) + by;
+
+    if (i+txtLength < strLength)
+        newstr += replace(string.substring(i+txtLength,strLength),text,by);
+
+    return newstr;
+}
+
+function killScope(string) {
+    var out = "searchscope="; // replace this
+    var temp = "" + string; // temporary holder
+    var theBeginning = ""; // beginning of the string
+    var theRest = ""; // end of the string
+
+    var pos = temp.indexOf(out);
+    theBeginning = "" + temp.substring(0, pos) + "";
+    theRest = temp.substring((pos + out.length), temp.length);
+
+    // as long as the character at the beginning of theRest is a number or an ampersand, delete it
+    var firstChar = theRest.charAt(0);
+    while ( (firstChar >= "0" && firstChar <= "9") || ( firstChar == "&" ) ) {
+        theRest = theRest.substring(1);
+        firstChar = theRest.charAt(0);
+    }
+
+    temp = theBeginning + theRest;
+
+    return temp;
+
+}
+   var cURL=location.href;
+   var cOLD="towers.missouri.edu";
+   var cNEW="mobius.missouri.edu";
+   var cSRCH=cURL.indexOf("=");
+   var cIP="207.160.154.44";
+   var FinalURL= replace(cURL,cOLD,cNEW);
+   FinalURL= replace(FinalURL,cIP,cNEW); // so this will work with IPs as well as URLs
+   FinalURL= killScope(FinalURL); // drop the scope because INNReach doesn't like scopes
+   FinalURL= replace(FinalURL,"NOSRCH","SEARCH"); // the modify search screen doesn't make sense without this
+if (cSRCH != -1) {
+   document.write(' repeat search in the MOBIUS Union Catalog <a href="' + FinalURL + '"><img src="/screens/b_srchmobi.gif" border="0" alt=" Search MOBIUS "></a><p>');
+}
+
+// -->
+
+</script>
 <!--{msg}-->
 <!--{spellcheck}-->
 <!-- Note: if you use a character set other than utf-8, change the charset declaration in the enctype attribute below accordingly. -->

@@ -62,6 +62,7 @@ function mainNavLinks(nosearchtips)
 		+ '<div><img src="/screens/greenpaw.gif" alt=""/>&nbsp;<a href="http://www.nwmissouri.edu/library/ill/index.htm">Interlibrary Loan</a></div>'
 		+ '<div><img src="/screens/greenpaw.gif" alt=""/>&nbsp;<a href="http://www.nwmissouri.edu/library/teams/cmrform.htm">Suggest a Purchase</a></div>'
 		// + '<div><img src="/screens/greenpaw.gif" alt=""/>&nbsp;<a href="http://www.amazon.com/gp/registry/wishlist/20TMZY56HZY02">Library Wish List</a></div>'
+		+ '<div><img src="/screens/greenpaw.gif" alt=""/>&nbsp;<a href="http://towers.missouri.edu/search~S4/ftlist">Towers Featured List</a></div>'
 		+ '<div><img src="/screens/greenpaw.gif" alt=""/>&nbsp;<a href="http://www.nwmissouri.edu/library/app/newbooks">New Books List</a></div>'
 		// + '<div><img src="/screens/greenpaw.gif" alt=""/>&nbsp;<a href="/search~S4">Search</a></div>'
 		+ '<div><img src="/screens/greenpaw.gif" alt=""/>&nbsp;<a href="/patroninfo~S4">Your Account</a></div>'
