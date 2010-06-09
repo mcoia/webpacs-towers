@@ -86,7 +86,8 @@
 FEATURED_LIST=01,02,03|Towers New Titles|Campus|# Titles
 
 #SSL
-SSLPORT=80:443:towers.missouri.edu:towers.mobius.umsystem.edu|80:443:towers.lso.umsystem.edu:towers.mobius.umsystem.edu|2082:444:towers.lso.missouri.edu:towers.mobius.umsystem.edu|2082:444:towers.umsystem.edu:towers.mobius.umsystem.edu
+SSLPORT=80:443|2082:444
+
 # SSLPORT=80:443
 
 # AVS/AKS Options
@@ -129,7 +130,7 @@ HOLDINGS_POS=atp
 # HYPERTEXT_980=<do not use>
 ILL_HOME=/illb
 
-ILL_HOME1=/illb~S1
+ILL_HOME1=/screens/illpage_s1.html
 # INDEX_EXT=p,r,c,e,f,g,i
 RSRV_FORMAT=true
 
