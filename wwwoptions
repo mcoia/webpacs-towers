@@ -86,7 +86,10 @@
 FEATURED_LIST=01,02,03|Towers New Titles|Campus|# Titles
 
 #SSL
-SSLPORT=80:443|2082:444
+SSLPORT=80:443:towers.missouri.edu:towers.mobius.umsystem.edu|2082:444:towers.missouri.edu:towers.mobius.umsystem.edu
+
+
+
 
 # SSLPORT=80:443
 
