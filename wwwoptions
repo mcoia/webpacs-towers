@@ -133,7 +133,9 @@ HOLDINGS_POS=atp
 # HYPERTEXT_980=<do not use>
 ILL_HOME=/illb
 
-ILL_HOME1=/screens/illpage_s1.html
+ILL_HOME1=/screens/illpage_s1.html
+
+ILL_HOME2=/screens/illpage_s2.html
 # INDEX_EXT=p,r,c,e,f,g,i
 RSRV_FORMAT=true
 
@@ -326,7 +328,7 @@ LOC_w4c*=http://www.nwmissouri.edu/library/maps/second.html
 LOC_w4o*=http://www.nwmissouri.edu/library/maps/third.html
 LOC_w4j*=http://www.nwmissouri.edu/library/maps/second.html
 LOC_w4m*=http://www.nwmissouri.edu/library/maps/third.html
-XSTARTOVER=/search~S1
+XSTARTOVER=/search
 ICON_BOOKCART_SAVED=<IMG SRC="/screens/unmark_record.gif" ALT="Remove from Book Cart" BORDER=0>
 
 # added for Pro
