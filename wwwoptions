@@ -133,7 +133,9 @@ HOLDINGS_POS=atp
 # HYPERTEXT_980=<do not use>
 ILL_HOME=/illb
 
-ILL_HOME1=/screens/illpage_s1.html
+ILL_HOME1=/screens/illpage_s1.html
+
+ILL_HOME2=/screens/illpage_s2.html
 # INDEX_EXT=p,r,c,e,f,g,i
 RSRV_FORMAT=true
 
