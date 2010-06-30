@@ -2,7 +2,7 @@
 <!-- 2006 Web OPAC Version, set from 21 November, 2006 -->
 <!-- This file last changed: 16 December, 2005 -->
 <head>
-<title>Inter-Library Loan Book Request</title>
+<title>Interlibrary Loan Book Request</title>
 <meta http-equiv="Content-Type" content="text/html" />
 <link rel="stylesheet" href="/screens/styles.css" type="text/css" />
 </head>
@@ -15,7 +15,7 @@
 
 
 <p>
-<span class="pageMainAreaHeader">Inter-Library Loan Book Request</span>
+<span class="pageMainAreaHeader">Interlibrary Loan Book Request</span>
 <br />
 <!--{patron}-->
 <br />
@@ -32,10 +32,48 @@
 <br />
 <!--{xif}-->
 <!--{heading}-->
-<!--{illreqform}-->
-<br />
+This interlibrary loan form allows MWSU patrons to borrow materials from other libraries. Please search <a href="/search~S2">the library catalog</a>, <a href="/search~">Towers</a> and <a href="http://mobius.umsystem.edu/">MOBIUS</a> for this item before submitting your request.  Please fill out form as completely as possible. 
+
+<form method=post>
+<table>
+<!--{illform}-->
+<tr><td colspan="2"><br />
+<!--{illcopyright}-->
+</td></tr>
+
+<!--{ifneedpatronname}-->
+<tr><td></td><td><font size="-1">
+<!--{nameexample}-->
+</font></td></tr>
+<tr><td>
+<!--{nameprompt}-->
+</td>
+<td>
+<!--{name}-->
+</td>
+<!--{xif}-->
+
+<!--{ifneedpatronverify}-->
+<tr><td></td><td><font size="-1">
+<!--{barcodeexample}-->
+</font></td></tr>
+<tr><td>
+<!--{barcodeprompt}-->
+</td>
+<td>
+<!--{barcode}-->
+</td></tr>
+<!--{xif}-->
+
+</table>
+
+<!--{subill}-->
 
 <!--{illscope}-->
+
+</form>
+
+<br />
 
 <a href=/illb~S2>Interlibrary Loan Book Request</a><br />
 <br />

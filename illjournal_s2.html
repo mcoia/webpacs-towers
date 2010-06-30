@@ -2,7 +2,7 @@
 <!-- 2006 Web OPAC Version, set from 21 November, 2006 -->
 <!-- This file last changed: 16 December, 2005 -->
 <head>
-<title>Inter-Library Loan Journal Request</title>
+<title>Interlibrary Loan Journal Request</title>
 <meta http-equiv="Content-Type" content="text/html" />
 <link rel="stylesheet" href="/screens/towers_styles.css" type="text/css" />
 </head>
@@ -16,7 +16,7 @@
 <p>
 
 
-<span class="pageMainAreaHeader">Inter-Library Loan Journal Request</span>
+<span class="pageMainAreaHeader">Interlibrary Loan Journal Request</span>
 <br />
 <!--{patron}-->
 <br />
@@ -32,12 +32,48 @@
 <br />
 <br />
 <!--{xif}-->
-This interlibrary loan form allows the monks, faculty, employees, and students of Conception Abbey and Seminary College to borrow journal articles from other libraries.  Please check our library holdings before requesting through interlibrary loan.
-<!--{illreqform}-->
-<br />
+This interlibrary loan form allows MWSU patrons to request copies of materials (e.g. articles or book chapters) from other libraries.  Please search <a href="/search~S2">the library catalog</a>, <a href="/search~">Towers</a> and <a href="http://mobius.umsystem.edu/">MOBIUS</a> and our <a href="http://hr9zc6ke4w.search.serialssolutions.com/">A-Z Journals</a> for this item before submitting your request.  Please fill out form as completely as possible.
+
+<form method=post>
+<table>
+<!--{illform}-->
+<tr><td colspan="2"><br />
+<!--{illcopyright}-->
+</td></tr>
+
+<!--{ifneedpatronname}-->
+<tr><td></td><td><font size="-1">
+<!--{nameexample}-->
+</font></td></tr>
+<tr><td>
+<!--{nameprompt}-->
+</td>
+<td>
+<!--{name}-->
+</td>
+<!--{xif}-->
+
+<!--{ifneedpatronverify}-->
+<tr><td></td><td><font size="-1">
+<!--{barcodeexample}-->
+</font></td></tr>
+<tr><td>
+<!--{barcodeprompt}-->
+</td>
+<td>
+<!--{barcode}-->
+</td></tr>
+<!--{xif}-->
+
+</table>
+
+<!--{subill}-->
 
 <!--{illscope}-->
 
+</form>
+
+<br />
 <a href=/illb~S2>Interlibrary Loan Book Request</a><br />
 <br />
 <br />
