@@ -48,6 +48,10 @@ hr
 .pageMainAreaHeader 
 { font-family: Verdana, Geneva, Arial, Helvetica, sans-serif; font-size: 16px; font-weight: bold; }
 
+/*Advanced Search styles */
+
+.formEntryArea select {margin:3px;}
+
 /* Brief Citation display styles */
 .briefcitActions { text-align: center; }
 
