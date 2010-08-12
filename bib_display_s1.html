@@ -176,12 +176,20 @@ document.getElementById('smsfeatures').style.visibility='hidden';
 
 <script type="text/javascript">
 
+
         
 
 		var tr = document.getElementsByTagName('TR');
 		var isbnnumber = "";
 		for(i = 0; i < tr.length; i++) {
 			var x=tr[i].getElementsByTagName('td');
+			/*Look for the string "DVD" in the item location*/
+			if (x.length == 3) {
+			      var tdContents = x[0].innerHTML;
+			      var dvd = tdContents.search("DVD");
+			      
+			 /*Look for the ISBN*/
+			}
 			if (x.length == 2 && x[0].innerHTML == "ISBN") {
 			      //Grab the first ISBN
 				isbn_1 = x[1].innerHTML;
@@ -197,43 +205,47 @@ document.getElementById('smsfeatures').style.visibility='hidden';
 
 			}
 		}
-		
-	  if (isbn_1.length == 13) {
-	       var google_isbn = isbn_1;
-	       var barnes_isbn = isbn_1
-	       if (isbn_2.length == 10) {
-		    var amazon_isbn = isbn_2;
-		    var borders_isbn = isbn_2
-	       }
-		    else {
-			 document.getElementById('amazonlink').style.visibility = 'hidden';
-			 document.getElementById('borderslink').style.visibility = 'hidden';
-		    }
+	  
+	  if (dvd == -1) {
+	    
+	       if (isbn_1.length == 13) {
+		    var google_isbn = isbn_1;
+		    var barnes_isbn = isbn_1
+		    if (isbn_2.length == 10) {
+		        var amazon_isbn = isbn_2;
+		        var borders_isbn = isbn_2
+	         }
+		        else {
+			      document.getElementById('amazonlink').style.visibility = 'hidden';
+			      document.getElementById('borderslink').style.visibility = 'hidden';
+			 }
 	       
-	  } else if (isbn_1.length == 10) {
-	       var google_isbn = isbn_1;
-	       var amazon_isbn = isbn_1;
-	       var barnes_isbn = isbn_1;
-	       var borders_isbn = isbn_1;
-	  }
+	       } else if (isbn_1.length == 10) {
+	            var google_isbn = isbn_1;
+	            var amazon_isbn = isbn_1;
+	            var barnes_isbn = isbn_1;
+	            var borders_isbn = isbn_1;
+	       }
 	  
-          if (isbn_1.length > 0) {
+	       if (isbn_1.length > 0) {
 
 
 	  
 
-        var cburl = "http://books.google.com/books";
+	       var cburl = "http://books.google.com/books";
     
-        // Retrieve the info for these bibkeys           
+	       // Retrieve the info for these bibkeys           
 
        
-         var api_url = cburl + "?jscmd=viewapi&bibkeys=" + google_isbn;
-        document.write(unescape("%3Cscript src=" + api_url +
-          " type='text/javascript'%3E%3C/script%3E"));
+	       var api_url = cburl + "?jscmd=viewapi&bibkeys=" + google_isbn;
+	       document.write(unescape("%3Cscript src=" + api_url +
+	       " type='text/javascript'%3E%3C/script%3E"));
                   
-          }else {
+	       }else {
           
-          }
+	       }
+	  
+	  }
       </script>
 
            <script type="text/javascript">
@@ -248,7 +260,7 @@ document.getElementById('smsfeatures').style.visibility='hidden';
           }
         }
 	
-	     document.getElementById("amazonlink").innerHTML = '<a href="http://amazon.com/dp/' + amazon_isbn + '" target="_blank"><img src="https://www.nwmissouri.edu/library/app/AddLinks/amreview_btn.png" class="resourceButton"/></a>';
+	     document.getElementById("amazonlink").innerHTML = '<a href="http://amazon.com/dp/' + amazon_isbn + '" target="_blank"><img src="screens/amazon.png" class="resourceButton"/></a>';
 	     document.getElementById("barneslink").innerHTML = '<a href="http://search.barnesandnoble.com/booksearch/isbninquiry.asp?EAN=' + barnes_isbn + '" target="_blank"><img src="/screens/barnesandnoble.gif" class="resourceButton"/></a>';
 	     document.getElementById("borderslink").innerHTML = '<a href="http://www.borders.com/online/store/TitleDetail?sku=' + borders_isbn + '" target="_blank"><img src="/screens/borders.gif" class="resourceButton"/></a>';
       </script>
