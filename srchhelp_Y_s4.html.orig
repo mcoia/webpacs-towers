@@ -1,4 +1,15 @@
 <<<<<<< HEAD
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<!-- 2006 WebPAC Pro Version, set from 26 March, 2007 -->
+<!-- This file last changed: 9 February, 2007 -->
+<head>
+<title>Millennium Library Catalog</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<script type="text/javascript" src="/screens/search_s4.js"></script>
+</head>
+<!--{advancedsearchbody}-->
+<!--{toplogo}-->
+=======
 
 
 
@@ -440,236 +451,7 @@ function GoBack() {
 <!--{toplogo}-->
 
 
-<br>
-
-<!--{patron}-->
-<!--{logout}-->
-
-<!-- Begin Search Help Text -->
-<center>
-<h3><b>Keyword Search</b></h3>
-
-<script language="JavaScript">
-
-<!-- hide from older browsers
-
-/*
-replace function from http://tech.irt.org/articles/js037/index.htm#3
-*/
-function replace(string,text,by) {
-// Replaces text with by in string
-    var strLength = string.length, txtLength = text.length;
-    if ((strLength == 0) || (txtLength == 0)) return string;
-
-    var i = string.indexOf(text);
-    if ((!i) && (text != string.substring(0,txtLength))) return string;
-    if (i == -1) return string;
-
-    var newstr = string.substring(0,i) + by;
-
-    if (i+txtLength < strLength)
-        newstr += replace(string.substring(i+txtLength,strLength),text,by);
-
-    return newstr;
-}
-
-function killScope(string) {
-    var out = "searchscope="; // replace this
-    var temp = "" + string; // temporary holder
-    var theBeginning = ""; // beginning of the string
-    var theRest = ""; // end of the string
-
-    var pos = temp.indexOf(out);
-    theBeginning = "" + temp.substring(0, pos) + "";
-    theRest = temp.substring((pos + out.length), temp.length);
-
-    // as long as the character at the beginning of theRest is a number or an ampersand, delete it
-    var firstChar = theRest.charAt(0);
-    while ( (firstChar >= "0" && firstChar <= "9") || ( firstChar == "&" ) ) {
-        theRest = theRest.substring(1);
-        firstChar = theRest.charAt(0);
-    }
-
-    temp = theBeginning + theRest;
-
-    return temp;
-
-}
-   var cURL=location.href;
-   var cOLD="towers.missouri.edu";
-   var cNEW="mobius.missouri.edu";
-   var cSRCH=cURL.indexOf("=");
-   var cIP="207.160.154.44";
-   var FinalURL= replace(cURL,cOLD,cNEW);
-   FinalURL= replace(FinalURL,cIP,cNEW); // so this will work with IPs as well as URLs
-   FinalURL= killScope(FinalURL); // drop the scope because INNReach doesn't like scopes
-   FinalURL= replace(FinalURL,"NOSRCH","SEARCH"); // the modify search screen doesn't make sense without this
-if (cSRCH != -1) {
-   document.write(' repeat search in the MOBIUS Union Catalog <a href="' + FinalURL + '"><img src="/screens/b_srchmobi.gif" border="0" alt=" Search MOBIUS "></a><p>');
-}
-
-// -->
-
-</script>
-<!--{spellcheck}-->
-<!-- begin advanced keyword search form -->
-
-<FORM NAME="frmAdvancedKeyword" ACTION="/search/Y" METHOD=GET>
-<TABLE BORDER=0 CELLPADDING=3 CELLSPACING=0 ALIGN="center" width="60%" BGCOLOR="#FFCC99">
-
-<TR>
-    <TD ALIGN=center colspan=2> <B><a name=AVS></a>Type the WORD(S) you want, select OPTIONS <br> and click on SEARCH: </B> <br>
-
-<!--{msg}-->
-<br>
-<input type="text" name="SEARCH" size="48" value="" />
-    </TD>
-</TR>
-
-<TR>
-    <TD align="center" nowrap>
-<!--{lang}-->
-    </TD>
-    <TD align="center">
-Sort by:
-<select name="SORT">
-<option value="D">Date</option>
-<option value="A">Title</option>
-<option value="R">Relevance</option>
-</select>
-
-    </TD>
-</TR>
-
-<TR>
-    <TD ALIGN="center" colspan="2" nowrap>
-<!--{mattype}-->
-    </TD>
-</TR>
-
-<TR>
-    <TD align="center" nowrap>
-Scope: 
-<!--{scope}-->
-    </TD>
-    <TD align="center" nowrap>
-<!--{branch}-->
-    </TD>
-</TR>
-
-<TR>
-    <TD ALIGN="center" colspan="2" nowrap>
-<!--{publish}-->
-    </TD>
-</TR>
-
-<TR>
-    <TD ALIGN="center" colspan="2" nowrap>
-<!--{DOCDATE}-->
-    </TD>
-</TR>
-
-<TR>
-    <TD ALIGN="center" colspan="2" nowrap>
-        <INPUT TYPE=SUBMIT VALUE="SEARCH"><br>
-<!--{availlim}-->
-    </TD>
-</TR>
-
-</TABLE>
-</FORM>
-
-<!-- end advanced keyword search form -->
-
-    <TABLE CELLPADDING=3 CELLSPACING=2 WIDTH="100%">
-        <TR> 
-            <TH WIDTH=10%>&nbsp;</TH>
-            <TH WIDTH=40%>Type in Words to search: </TH>
-            <TH WIDTH=50%>EXAMPLES:</TH>
-        </TR>
-        <TR> 
-            <TD WIDTH=100><b>ADJACENCY</b></TD>
-            <TD BGCOLOR="#FFCC99"> The order of words matters. Multiple words 
-                are searched together as one phrase. For different results, use 
-                <i><b>and</b></i> between each word or phrase.</TD>
-            <TD BGCOLOR="#FFCC99"> water resources<br>
-                colorado<b> and</b> geology<br>
-                electronic serial<b> and</b> physics</TD>
-        <TR> 
-            <TD WIDTH=100><b>TRUNCATION</b></TD>
-            <TD BGCOLOR="#FFCC99"> Words may be internally or right-hand truncated 
-                using an asterisk *. Use double asterisks ** for more than 6 characters. 
-            </TD>
-            <TD BGCOLOR="#FFCC99"> wom*n and librar*<br>
-                math**</TD>
-        <TR> 
-            <TD WIDTH=100><b>OPERATORS</b></TD>
-            <TD BGCOLOR="#FFCC99"> Use <i><b>and</b></i> or <i><b>or</b></i> to 
-                specify multiple words in any field, any order. Use the words <i><b>and 
-                not</b></i> to omit certain keywords. Use parentheses to group words when 
-                using multiple operators. </TD>
-            <TD BGCOLOR="#FFCC99"> cat <b>or</b> feline <br>
-                (alaska <b>or</b> canada)<b> and</b> (South America<b> and not</b> 
-                Brazil) </TD>
-        <TR> 
-            <TD WIDTH=100><b>PROXIMITY</b></TD>
-            <TD BGCOLOR="#FFCC99">Use <i><b>near</b></i> to specify words close 
-                to each other, in any order. Use <i><b>within #</b></i> to specify 
-                words within a set range of each other. Symbol # may stand for 
-                any number. </TD>
-            <TD BGCOLOR="#FFCC99"> California <b>near</b> university<br>
-                colorado<b> within 12 </b>wyoming</TD>
-        <TR> 
-            <TD WIDTH=100><b>FIELDS</b></TD>
-            <TD BGCOLOR="#FFCC99"> Specify fields to search, using field abbreviation. 
-                Fields available for this database are <b>a:</b> (author),<b> 
-                t:</b> (title),<b> s:</b> (subject), and<b> n:</b> (additional 
-                keywords.) Subjects are NOT cross-referenced. </TD>
-            <TD BGCOLOR="#FFCC99"><b> a:</b>twain <b>and t:</b>huck<br>
-                (<b>a:</b>frost <b> or a:</b>whitman) <b>and s:</b>poet* <br>
-                <b>t:</b>medicine <b>and (n:</b>research<b> or s:</b>information)</TD>
-        </TR>
-    </TABLE>
-
-    <p>&nbsp;</p>
-
-</center>
-<p align="center"><A HREF="/search~S4"><IMG SRC="/screens/b_newsrch.gif" BORDER=0 ALT="[START OVER]"></A></p> 
-
-<center>
-<table border="0" cellpadding="6" cellspacing="0">
-    <tr valign="top"> 
-      <td>&nbsp;</td>
-    </tr>
-    <tr valign="top"> 
-            <td align="center"> <font color="#993300" face="Arial, Helvetica, sans-serif" size="-1"><b><font color="#993300">Towers</font></b> <font color="#993300"><b>&middot;</b> 
-                a MOBIUS Library Catalog</font></font></td>
-    </tr>
-    <tr valign="top"> 
-            <td align="center"> <font face="Arial, Helvetica, sans-serif" size="-2">
-				<a href="http://mobius.umsystem.edu/search/">MOBIUS</a> &middot; 
-				<a href="/search~">Towers Catalog</a><br>
-                <a href="/search~S1">Conception Abbey</a> &middot; 
-				<a href="/search~S2">Missouri Western State University</a><br>
-				<a href="/search~S5">National Military Heritage Museum</a> &middot;
-                <a href="/search~S3">North Central Missouri College</a><br>
-				<a href="/search~S4">Northwest Missouri State University</a></font></td>
-    </tr>
-</table>
-</center>
-</BODY>
-</HTML>
-=======
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
-<!-- 2006 WebPAC Pro Version, set from 26 March, 2007 -->
-<!-- This file last changed: 9 February, 2007 -->
-<head>
-<title>Millennium Library Catalog</title>
-<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
-<script type="text/javascript" src="/screens/search_s4.js"></script>
-</head>
-<!--{advancedsearchbody}-->
-<!--{toplogo}-->
+>>>>>>> analytics
 <br>
 <div>
 
@@ -802,6 +584,7 @@ Keyword search results are usually grouped by relevance to bring the most likely
 
 
 
+<<<<<<< HEAD
 </div>
 </div>
 <div style="clear:both"></div>
@@ -811,4 +594,28 @@ Keyword search results are usually grouped by relevance to bring the most likely
 </body>
 </html>
 
->>>>>>> nwredesign
+=======
+<center>
+<table border="0" cellpadding="6" cellspacing="0">
+    <tr valign="top"> 
+      <td>&nbsp;</td>
+    </tr>
+    <tr valign="top"> 
+            <td align="center"> <font color="#993300" face="Arial, Helvetica, sans-serif" size="-1"><b><font color="#993300">Towers</font></b> <font color="#993300"><b>&middot;</b> 
+                a MOBIUS Library Catalog</font></font></td>
+    </tr>
+    <tr valign="top"> 
+            <td align="center"> <font face="Arial, Helvetica, sans-serif" size="-2">
+				<a href="http://mobius.umsystem.edu/search/">MOBIUS</a> &middot; 
+				<a href="/search~">Towers Catalog</a><br>
+                <a href="/search~S1">Conception Abbey</a> &middot; 
+				<a href="/search~S2">Missouri Western State University</a><br>
+				<a href="/search~S5">National Military Heritage Museum</a> &middot;
+                <a href="/search~S3">North Central Missouri College</a><br>
+				<a href="/search~S4">Northwest Missouri State University</a></font></td>
+    </tr>
+</table>
+</center>
+</BODY>
+</HTML>
+>>>>>>> analytics

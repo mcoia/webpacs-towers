@@ -1,6 +1,5 @@
 <<<<<<< HEAD
-<script type="text/javascript">
-
+<script>
   var _gaq = _gaq || [];
   _gaq.push(['_setAccount', 'UA-16154751-1']);
   _gaq.push(['_trackPageview']);
@@ -12,25 +11,22 @@
   })();
 
 </script>
-
-<script
-src="http://plus.syndetics.com/widget.php?id=northmsu" type="text/javascript"></script>
-
-<table width="100%" border="0" cellspacing="0" cellpadding="0">
-        <tr>
-            <td bgcolor="#993300" nowrap width="1%" height="2"><IMG SRC="/screens/shim.gif" HEIGHT="2" WIDTH="1" BORDER="0" ALT=""></td>
-            <td rowspan="4" width="98%">&nbsp;</td>
-            <td rowspan="4" width="1%"><a href="http://towers.missouri.edu/"><IMG SRC="/screens/towers_small.gif" HEIGHT="80" WIDTH="126" ALT=" Towers Library Catalog " BORDER="0" ></a></td>
-        </tr>
-        <tr> 
-            <td bgcolor="#FFCC99" nowrap width="1%"><font face="Arial, Helvetica, sans-serif" color="#333300"><b>
-
-<a href="http://mobius.umsystem.edu/search" style="text-decoration:none">MOBIUS</a> &gt; 
-<a href="http://towers.missouri.edu/search~" style="text-decoration:none">Towers</a> &gt; 
-<a href="http://towers.missouri.edu/search~S4" style="text-decoration:none">Northwest Missouri State University</a></b></font>
 =======
+>>>>>>> barnesandnoble
 <SCRIPT type="text/javascript" src="/screens/bibdisplay_s4.js"></SCRIPT>
 <SCRIPT type="text/javascript" src="/screens/brief_s4.js"></SCRIPT>
+<script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-16154751-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
 <LINK rel="stylesheet" media="all" type="text/css" title="web" href="/screens/styles_s4.css">
 <!--[if lte IE 8]><link rel="stylesheet" media="all" type="text/css" href="/screens/ie_styles_s4.css" /><![endif]-->
 <!--{ifbibdisplay}-->
@@ -48,7 +44,6 @@ src="http://plus.syndetics.com/widget.php?id=northmsu" type="text/javascript"></
 <A href="http://mobius.umsystem.edu/search" style="text-decoration:none">MOBIUS</A> &gt; 
 <A href="http://towers.missouri.edu/search~" style="text-decoration:none">Towers</A> &gt; 
 <A href="http://towers.missouri.edu/search~S4" style="text-decoration:none">Northwest Missouri State University</A></B></FONT>
->>>>>>> nwredesign
  
 <FONT color="#333300" face="Arial, Helvetica, sans-serif" size="-2" class="blurb"> | 
 
