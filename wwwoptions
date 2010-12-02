@@ -137,7 +137,9 @@ ILL_HOME1=/screens/illpage_s1.html
 
 ILL_HOME2=/screens/illpage_s2.html
 # INDEX_EXT=p,r,c,e,f,g,i
-RSRV_FORMAT=true
+RSRV_FORMAT=true
+
+RSRV_ITEMTYPE=t
 
 INNREACH=<img src="/screens/b_srchmobi.gif" border=0 alt="(Search MOBIUS Union Catalog)">@mobius.umsystem.edu(X=X;Y=Y;d=d;m=h;t=t;c=c;e=e;a=a;s=s;g=g)
 alt="(Search MOBIUS Union Catalog)">@mobius.missouri.edu(X=X;Y=Y;d=d;m=h;
