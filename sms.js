@@ -39,6 +39,7 @@ function showsms() {
 	out += "<option value=qwest>Qwest</option>";
 	out += "<option value=sprint>Sprint</option>";
 	out += "<option value=tmobile>T-Mobile</option>";
+	out += "<option value=uscellular>US Cellular</option>";
 	out += "<option value=verizon>Verizon</option>";
 	out += "<option value=virgin>Virgin</option>";
  out += "</select></p>";
