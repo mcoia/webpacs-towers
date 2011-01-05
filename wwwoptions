@@ -141,10 +141,8 @@ RSRV_FORMAT=true
 
 RSRV_ITEMTYPE=t
 
-INNREACH=<img src="/screens/b_srchmobi.gif" border=0 alt="(Search MOBIUS Union Catalog)">@mobius.umsystem.edu(X=X;Y=Y;d=d;m=h;t=t;c=c;e=e;a=a;s=s;g=g;i=i;o=0)
-alt="(Search MOBIUS Union Catalog)">@mobius.missouri.edu(X=X;Y=Y;d=d;m=h;
-t=t;c=c;e=e;a=a;s=s;g=g)
-
+INNREACH=<img src="/screens/b_srchmobi.gif" border=0 alt="Search MOBIUS Union Catalog">@mobius.umsystem.edu(X=X;Y=Y;d=d;m=h;t=t;c=c;e=e;a=a;s=s;g=g;i=i;o=o)
+
 KEYWORD_COLOR=Y|all|#993300 style="background-color: #FFFF33"
 
 EMAILOP=From the library catalog|exporter|
