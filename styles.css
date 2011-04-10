@@ -880,6 +880,10 @@ td.progInfoLabel { color:#767C70; font-weight:bold; padding-right:25px; text-ali
 
 .requestResult font { font-size:1.4em; }
 
+.resourceButton {text-align:center;}
+
+.resourceButton img {margin:.5em;border:none;}
+
 .resourceDisplayContentMain { width:68%; }
 
 .resourceDisplayBibs { margin-bottom:20px; }
@@ -1101,3 +1105,28 @@ tr.highlight { background:#FFFFE4; }
 .wblinkdisplay form { margin-bottom:8px; }
 
 .wbnoresources { display:block; margin: 3px 0; }
+
+/* Texting Feature */
+
+
+#info, #sms {
+       border:1px solid #36647b;
+       position:absolute;
+       top:455;
+       left:455; 
+       z-index:1000;
+       background:#fff;
+       padding:10px;
+       margin:10px;
+       background:#efefcf;
+       width:45em;
+}
+
+#sms .eg {
+       font-style:italic;
+       font-size:80%;
+}
+
+#info {top:500}
+
+#sms {font-size:70%}
