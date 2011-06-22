@@ -340,3 +340,7 @@ width:75%;
 .topDiv {
   text-align:center;
 }
+
+.mobileinfo {
+  display:none;
+}
