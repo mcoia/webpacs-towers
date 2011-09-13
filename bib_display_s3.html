@@ -53,6 +53,11 @@ plan for your phone - carrier charges may apply.<br><a href="#here" onClick="doc
 
 <!-- this is the button set we'll hide it if the BIB has no items -->
 <div id=smsfeatures align="center" style="margin-top:10px">
+     
+<!-- just a placeholder for the sms form -->
+<div id='sms' style="visibility:hidden;display:none">
+</div>
+
 
 <a href="#here" name=smsbutton id=smsbutton onClick="showsms();return false;"><img src="/screens/b_send.png" border=0></a>&nbsp;&nbsp;
 <a href="#here" onClick="findPos(document.getElementById('smsbutton'),document.getElementById('info'),-350,-100);document.getElementById('info').style.visibility='visible';return false;"><img src='/screens/b_help.png' border=0></a><br>
@@ -97,9 +102,6 @@ document.getElementById('smsfeatures').style.visibility='hidden';
 <center>
 <!--{searchhistory}-->
 </center>
-<!-- just a placeholder for the sms form -->
-<div id='sms' style="visibility:hidden;display:none">
-</div>
 
 <!--{botlogo}-->
 
