@@ -96,6 +96,12 @@
 <span class="bibItems">
 <!--{items}-->
 </span>
+<!-- just a placeholder for the sms form -->
+<div id='sms' style="visibility:hidden;display:none"></div>
+<!-- this div starts hidden and is just a note -->
+<div align="center">
+<div style='visibility:hidden' id='info'>You can text the information to your phone<br> or write it down so you can find it.<br><a href="#here" onClick="document.getElementById('info').style.visibility='hidden';return false" style='text-align:center'>close</a></div>
+</div>
 <span class="bibItems">
 <!--{orders}-->
 </span>
@@ -166,14 +172,8 @@
 <div id="syn_fiction_search"></div>
 </div>
 
-<!-- just a placeholder for the sms form -->
-<div id='sms' style="visibility:hidden;display:none"></div>
-<!-- this div starts hidden and is just a note -->
-<div align="center">
-<div style='visibility:hidden' id='info'>You can text the information to your phone<br> or write it down so you can find it.<br><a href="#here" onClick="document.getElementById('info').style.visibility='hidden';return false" style='text-align:center'>close</a></div>
-</div>
 
-<script type="text/javascript" src='/screens/sms.js'> </script>
+
 <!-- a quick script to hide the SMS menu if there are no items. same as the javascript in the SMS form, but it's really just to see if the items exist.  If they don't, we hide the buttons -->
 
 <script>
