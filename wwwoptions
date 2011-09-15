@@ -173,7 +173,7 @@ TIMEOUT=600;URL=http://towers.missouri.edu/search/
 
 # My Millennium Options
 MY_WEBPAC=F,T
-NO_REVERIFY=acq,book,req,media
+NO_REVERIFY=acq,book,req,media,ill
 PREF_SEARCHES_01=20|Y
 PREF_SEARCHES_02=20|Y
 PREF_SEARCHES_03=20|Y
