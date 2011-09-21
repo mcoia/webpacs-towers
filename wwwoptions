@@ -367,7 +367,7 @@ src="/screens/brief.js"></script><!--[if lte IE 7]><link
 rel="stylesheet" media="all" type="text/css"
 href="/screens/ie_styles.css" /><![endif]-->
 <script type="text/javascript" src="/screens/brief.js"></script>
-
+ICON_READING_HISTORY_OPTIN4=<span onClick="window.open('/screens/privacywarning.html', 'PrivacyWarning', 'toolbar=no, directories=no, location=no,status=yes, menubar=no, resizable=yes, scrollbars=1, width=475,height=250');">Opt In</span>
 
 # ICON_BOOKCART=
 <!--[if lte IE 7]><link rel="stylesheet" media="all" type="text/css" href="/screens/ie_styles.css
