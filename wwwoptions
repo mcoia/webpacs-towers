@@ -172,7 +172,7 @@ TABLEPARAM_BIB_ITEMS=id='bib_items' width="100%" border="3" cellspacing="1"
 TIMEOUT=600;URL=http://towers.missouri.edu/search/
 
 # My Millennium Options
-MY_WEBPAC=F,T
+MY_WEBPAC=F,2
 NO_REVERIFY=acq,book,req,media,ill
 PREF_SEARCHES_01=20|Y
 PREF_SEARCHES_02=20|Y
