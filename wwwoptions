@@ -118,7 +118,7 @@ BROWSE_t=245/abpn/h|240/a/h|970/lt/cde
 # CHECKIN_FONTCOLOR=<decide later>
 CLEAR_PRIVATE_INFO=true
 DISPLAY_245=atdm
-DISPLAY_856=z3
+DISPLAY_856=z3|f
 DISPLAY_CHECKIN_856=z
 LINK856TEXT=Link to Web version:
 HOTLINK=i^022,i^024,i^028,g^086
@@ -127,7 +127,7 @@ EXTENDED=T
 EXTENDED_t=AT
 EXTENDED_m=T
 ERESERVE=[0123456789]
-FRAMEURL=25
+FRAMEURL=0
 FRAMEURL_PAT=50
 HOLDINGS_POS=atp
 # HYPERTEXT_980=<do not use>
@@ -137,12 +137,12 @@ ILL_HOME1=/screens/illpage_s1.html
 
 ILL_HOME2=/screens/illpage_s2.html
 # INDEX_EXT=p,r,c,e,f,g,i
-RSRV_FORMAT=true
+RSRV_FORMAT=true
+
+RSRV_ITEMTYPE=t
 
-INNREACH=<img src="/screens/b_srchmobi.gif" border=0 alt="(Search MOBIUS Union Catalog)">@mobius.umsystem.edu(X=X;Y=Y;d=d;m=h;t=t;c=c;e=e;a=a;s=s;g=g)
-alt="(Search MOBIUS Union Catalog)">@mobius.missouri.edu(X=X;Y=Y;d=d;m=h;
-t=t;c=c;e=e;a=a;s=s;g=g)
-
+INNREACH=<img src="/screens/b_srchmobi.gif" border=0 alt="Search MOBIUS Union Catalog">@mobius.umsystem.edu(X=X;Y=Y;d=d;m=h;t=t;c=c;e=e;a=a;s=s;g=g;i=i;o=o)
+
 KEYWORD_COLOR=Y|all|#993300 style="background-color: #FFFF33"
 
 EMAILOP=From the library catalog|exporter|
@@ -172,8 +172,8 @@ TABLEPARAM_BIB_ITEMS=id='bib_items' width="100%" border="3" cellspacing="1"
 TIMEOUT=600;URL=http://towers.missouri.edu/search/
 
 # My Millennium Options
-MY_WEBPAC=F,T
-NO_REVERIFY=acq,book,req,media
+MY_WEBPAC=F,2
+NO_REVERIFY=acq,book,req,media,ill
 PREF_SEARCHES_01=20|Y
 PREF_SEARCHES_02=20|Y
 PREF_SEARCHES_03=20|Y
@@ -304,29 +304,45 @@ LOC_w4pva=http://www.nwmissouri.edu/library/maps/store.htm
 LOC_w4pvb=http://www.nwmissouri.edu/library/maps/store.htm
 LOC_w4gsi=http://www.nwmissouri.edu/library/maps/store.htm
 LOC_w4dsi=http://www.nwmissouri.edu/library/maps/store.htm
-LOC_w4tii=http://www.nwmissouri.edu/library/maps/first.html
+LOC_w4pun=http://www.nwmissouri.edu/library/maps/first.html
+LOC_w4tii=http://www.nwmissouri.edu/library/maps/first.html
+
+LOC_w4nii=http://www.nwmissouri.edu/library/maps/first.html
+
+LOC_w4aei=http://www.nwmissouri.edu/library/maps/first.html
+
+LOC_w4r*=http://www.nwmissouri.edu/library/maps/first.html
+
+LOC_w4x*=http://www.nwmissouri.edu/library/maps/first.html
+
+LOC_w4g*=http://www.nwmissouri.edu/library/maps/first.html
+
+LOC_w4d*=http://www.nwmissouri.edu/library/maps/first.html
+
+LOC_w4b*=http://www.nwmissouri.edu/library/maps/first.html
+
+LOC_w4o*=http://www.nwmissouri.edu/library/maps/first.html
 LOC_w4eii=http://www.nwmissouri.edu/library/maps/second.html
 LOC_w4lii=http://www.nwmissouri.edu/library/maps/second.html
-LOC_w4fii=http://www.nwmissouri.edu/library/maps/second.html
+LOC_w4fii=http://www.nwmissouri.edu/library/maps/second.html
+
+LOC_w4gyi=http://www.nwmissouri.edu/library/maps/second.html
 LOC_w4qii=http://www.nwmissouri.edu/library/maps/second.html
 LOC_w4yii=http://www.nwmissouri.edu/library/maps/second.html
-LOC_w4vii=http://www.nwmissouri.edu/library/maps/second.html
+LOC_w4vii=http://www.nwmissouri.edu/library/maps/second.html
+
+LOC_w4a*=http://www.nwmissouri.edu/library/maps/second.html
+
+LOC_w4p*=http://www.nwmissouri.edu/library/maps/second.html
+
+LOC_w4c*=http://www.nwmissouri.edu/library/maps/second.html
+
+LOC_w4j*=http://www.nwmissouri.edu/library/maps/second.html
 LOC_w4wii=http://www.nwmissouri.edu/library/maps/third.html
 LOC_w4sii=http://www.nwmissouri.edu/library/maps/third.html
 LOC_w4chi=http://www.nwmissouri.edu/library/maps/third.html
 LOC_w4cdi=http://www.nwmissouri.edu/library/maps/third.html
 LOC_w4hii=http://www.nwmissouri.edu/library/maps/third.html
-LOC_w4aei=http://www.nwmissouri.edu/library/maps/first.html
-LOC_w4r*=http://www.nwmissouri.edu/library/maps/first.html
-LOC_w4x*=http://www.nwmissouri.edu/library/maps/first.html
-LOC_w4g*=http://www.nwmissouri.edu/library/maps/first.html
-LOC_w4d*=http://www.nwmissouri.edu/library/maps/first.html
-LOC_w4a*=http://www.nwmissouri.edu/library/maps/second.html
-LOC_w4b*=http://www.nwmissouri.edu/library/maps/first.html
-LOC_w4p*=http://www.nwmissouri.edu/library/maps/second.html
-LOC_w4c*=http://www.nwmissouri.edu/library/maps/second.html
-LOC_w4o*=http://www.nwmissouri.edu/library/maps/third.html
-LOC_w4j*=http://www.nwmissouri.edu/library/maps/second.html
 LOC_w4m*=http://www.nwmissouri.edu/library/maps/third.html
 XSTARTOVER=/search
 ICON_BOOKCART_SAVED=<IMG SRC="/screens/unmark_record.gif" ALT="Remove from Book Cart" BORDER=0>
@@ -351,7 +367,7 @@ src="/screens/brief.js"></script><!--[if lte IE 7]><link
 rel="stylesheet" media="all" type="text/css"
 href="/screens/ie_styles.css" /><![endif]-->
 <script type="text/javascript" src="/screens/brief.js"></script>
-
+ICON_READING_HISTORY_OPTIN4=<span onClick="window.open('/screens/privacywarning.html', 'PrivacyWarning', 'toolbar=no, directories=no, location=no,status=yes, menubar=no, resizable=yes, scrollbars=1, width=475,height=250');">Opt In</span>
 
 # ICON_BOOKCART=
 <!--[if lte IE 7]><link rel="stylesheet" media="all" type="text/css" href="/screens/ie_styles.css
@@ -366,4 +382,6 @@ BIBIMAGE=http://www.syndetics.com/index.aspx?isbn=%s/SC.GIF&client=northmsu|I|ht
 BIBIMAGE_TEXT=Book Jacket
 
 SORT_BROWSE4=t:Title|a:Author|r:Year
+
+INSERTTAG_HTML=<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 

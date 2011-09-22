@@ -1,9 +1,3 @@
-<!-- 2006 WebPAC Pro Version, set from 26 March, 2007 -->
-<!-- This file last changed: 15 October, 2006 -->
-<!-- In order for the tabbed display to work when using the bib_display.html and bibdisplay.js provided in the Pro sample set, the
-     customer needs to have bibdisplay.js and the conditional IE comments added into the INSERTTAG_INHEAD wwwoption.
-	 See release notes for exact wwwoption details -->
-
 <!--{toplogo}-->
 
 <!--{ifbibdisplay}-->
@@ -102,11 +96,17 @@
 <span class="bibItems">
 <!--{items}-->
 </span>
+<!-- just a placeholder for the sms form -->
+<div id='sms' style="visibility:hidden;display:none"></div>
+<!-- this div starts hidden and is just a note -->
+<div align="center">
+<div style='visibility:hidden' id='info'>You can text the information to your phone<br> or write it down so you can find it.<br><a href="#here" onClick="document.getElementById('info').style.visibility='hidden';return false" style='text-align:center'>close</a></div>
+</div>
 <span class="bibItems">
 <!--{orders}-->
 </span>
 
-<!--{recordinfo:crnfvwiolsdmbuqxz}--> 
+<!--{recordinfo:crnfvwiolsdkmbuqxz}--> 
 
 <!--{ifTOC}-->
 <!--{TOC}-->
@@ -172,14 +172,8 @@
 <div id="syn_fiction_search"></div>
 </div>
 
-<!-- just a placeholder for the sms form -->
-<div id='sms' style="visibility:hidden;display:none"></div>
-<!-- this div starts hidden and is just a note -->
-<div align="center">
-<div style='visibility:hidden' id='info'>You can text the information to your phone<br> or write it down so you can find it.<br><a href="#here" onClick="document.getElementById('info').style.visibility='hidden';return false" style='text-align:center'>close</a></div>
-</div>
 
-<script type="text/javascript" src='/screens/sms.js'> </script>
+
 <!-- a quick script to hide the SMS menu if there are no items. same as the javascript in the SMS form, but it's really just to see if the items exist.  If they don't, we hide the buttons -->
 
 <script>
