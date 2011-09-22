@@ -39,6 +39,7 @@ function showsms() {
 	out += "<option value=qwest>Qwest</option>";
 	out += "<option value=sprint>Sprint</option>";
 	out += "<option value=tmobile>T-Mobile</option>";
+	out += "<option value=uscellular>US Cellular</option>";
 	out += "<option value=verizon>Verizon</option>";
 	out += "<option value=virgin>Virgin</option>";
  out += "</select></p>";
@@ -50,9 +51,9 @@ function showsms() {
     var x=tr[i].getElementsByTagName('TD');			// get each cell
     if (x.length == 3) {								// if there's only 3 cells (like our ITEM table)
       var loc = x[0].innerHTML.replace(/(<([^>]+)>|&nbsp;)/ig,"");		// get the location (remove tags)
-	  //var callLinks = x[1].getElementsByTagName("a"); //get the call number without extras
-	  //var call = callLinks[0].innerHTML.replace(/(<([^>]+)>|&nbsp;)/ig,"");
-	  var call = x[1].innerHTML.replace(/(<([^>]+)>|&nbsp;)/ig,"");	// get the call number + copies if any (remove tags)
+	  var callLinks = x[1].getElementsByTagName("a"); //get the call number without extras
+	  var call = callLinks[0].innerHTML.replace(/(<([^>]+)>|&nbsp;)/ig,"");
+	  // var call = x[1].innerHTML.replace(/(<([^>]+)>|&nbsp;)/ig,"");	// get the call number + copies if any (remove tags)
 	  var status = x[2].innerHTML.replace(/(<([^>]+)>|&nbsp;)/ig,"");	// get the status (remove tags)
 	  
 	  var chck = '';
