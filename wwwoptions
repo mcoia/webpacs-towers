@@ -275,11 +275,15 @@ BUT_MARC_DISPLAY=/screens/b_marcdisp.gif
 BUT_MODIFY=/screens/b_limit.gif
 BUT_NEWSRCH=/screens/b_newsrch.gif
 BUT_NEXTPAGE=/screens/b_nextpage.gif
-BUT_NEXTREC=/screens/b_nextrec.gif
+BUT_NEXTREC=/screens/b_nextrec.gif
+
+ICON_BUT_PAT_SUBMIT=<img src="/screens/b_submit.gif" alt="Submit">
 BUT_PLOGOUT=/screens/b_ret2pat.gif
 BUT_PREVPAGE=/screens/b_prevpage.gif
 BUT_PREVREC=/screens/b_prevrec.gif
-BUT_PREVSCRN=/screens/b_prevscrn.gif
+BUT_PREVSCRN=/screens/b_prevscrn.gif
+
+ICON_BUT_PSTARTOVER=<img src="/screens/b_startover.gif" alt="Submit">
 BUT_PUBLIC=/screens/b_public.gif
 BUT_REGULAR_DISPLAY=/screens/b_regdisp.gif
 BUT_REQUEST=/screens/b_request.gif
@@ -291,7 +295,9 @@ BUT_RETHOME=/screens/b_rethome.gif
 BUT_RTRNTB=/screens/b_rtrntb.gif
 BUT_SHOWSIM=/screens/b_showsimilar.gif
 BUT_STAFF=/screens/b_staff.gif
-BUT_STARTOVER=/screens/b_newsrch.gif
+BUT_STARTOVER=/screens/b_newsrch.gif
+
+ICON_BUT_SUBMIT=<img src="/screens/b_submit.gif" alt="Submit">
 BUT_UNLIMAVAIL=/screens/b_unlimavail.gif
 BUT_WORDSRCH=/screens/b_wordsrch.gif
 # BUT_Z39_ANOTHER=/screens/b_z39ano.gif
