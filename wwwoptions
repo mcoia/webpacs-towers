@@ -1,309 +1,309 @@
-#***************************************************************************
-#***************************************************************************
-#  PLEASE DO NOT EDIT THE WWWOPTIONS WITHOUT CHECKING WITH FOLKS WHO WORK 
-#  ON THE WEBPACS, OR YOUR CHANGES MAY BE OVERWRITTEN!!!!!!!!!!!!  040913
-#***************************************************************************
-#***************************************************************************
-
-##############################################################################
-#
-# WWWOptions file for: Towers/MOBNW
-#             Created: 05/10/2002
-#	updated 090422 ahd            LIVE
-#
-##############################################################################
-#
-# WARNING! Please ensure that you are the *only* user modifying this file.
-# If more than one user simultaneously edits this file...
-# YOUR CHANGES MAY NOT BE SAVED!
-#
-##############################################################################
-#
-# These are the rules for modifying this file:
-#
-# 1) BEFORE you begin, please copy the complete text of this WWWOptions file
-#    and include it as part of your ticket.
-#
-# 2) You MUST indicate in this header file what you changed, when you
-#    changed it, why this change was necessary, who you are, and a tracking
-#    number for your change (i.e. a MCO Remedy ticket number).
-#
-# 3) Do not paste large amounts of text into this file. In particular, avoid
-#    pasting long lines of text (i.e. text which will wrap).
-#
-# 4) Use Carriage Returns when editing long lines. Avoid wrapping lines.
-#
-# 5) AFTER you are done modifying this file, please copy the complete text of
-#    this WWWOptions file and include it as part of your ticket, before you
-#    close the ticket.
-#
-##############################################################################
-#
-# Revision Log: please note your revision in this log, even if it seems minor.
-#
-# BEGIN ALL LINES WITH A #, which is the comment character.
-#
-# Date       Your Initials - change description - Remedy Ticket Number
-# 05/10/02   jd - Set up options from worksheet
-# 06/27/02   hjp - design changes for first draft WebPAC
-# 07/08/02   hjp - tinker with new table settings
-# 07/30/02   jd - commented out z39.50 options and buttons
-# 08/09/02   hjp - add mattype gif options
-# 08/02/02   jd - added media display (P) to BREIF and EXTENDED
-# 08/13/02   jd - changed media icons to display in column
-#            jd - turned on patron request
-# 08/29/02   LEE - change AKS option - MCO-005864
-# 09/01/02   jd - added LOC_ links for NWMSU
-# 09/18/02   jd - edited My Millennium options
-# 09/26/02   JNG - Removed author display from title search browse.  Changed
-# line from "BROWSE_t=245/ab/hc|240/a/h|970/lt/cde" to
-# "BROWSE_t=245/ab/h|240/a/h|970/lt/cde"
-# 11/20/02   jd - added LOC_ options for NWMSU
-# 02/14/2003 - GLH Added SSL option
-# 03/12/2003 - JSB changed display of 856/see c006763
-# 12 Mar 2003: VA commented out BROWSE_t to test and reversed change c653606 
-# 03/14/2003 - JSB changed LINK856TXT per request c006763
-# 08/27/2003 CAG - Changed INNREACH per III (MCO-007529)
-# 10/27/2003 JSB DISPLAY_856_CHECKIN line added per call 007820
-# 10/31/2003 JSB Hotlink 022,024,028,086 field per call 007820
-# 12/01/2003 CAG Removed extra "*" from NMSU LOC wildcards. 007702
-# 12/01/2003 LEE Enable My Millennium MCO-007869
-# 02/06/2004 JD  Changed MATTYPE code for ebooks from @ to 2
-# 06/09/2004 JSB Changed Stat Goup from 800 to login per call 008618
-# 09/13/2004 JSB Added TABLEPARAM per call 009082
-# 11/01/2004 LEE Added featured lists to live server MCO-009000
-# 12/15/2004 LEE Changed LINK856TXT back to original text MCO-009375
-# 11/25/2008 AHD Changed LOC links on w4chi and w4cdi to /third.html        
-##############################################################################
-#***************************************************************************
-#***************************************************************************
-#  PLEASE DO NOT EDIT THE WWWOPTIONS WITHOUT CHECKING WITH FOLKS WHO WORK 
-#  ON THE WEBPACS, OR YOUR CHANGES MAY BE OVERWRITTEN!!!!!!!!!!!!  040913
-#***************************************************************************
-#***************************************************************************
-
-# Featured List
-FEATURED_LIST=01,02,03|Towers New Titles|Campus|# Titles
-
-#SSL
+#***************************************************************************
+#***************************************************************************
+#  PLEASE DO NOT EDIT THE WWWOPTIONS WITHOUT CHECKING WITH FOLKS WHO WORK 
+#  ON THE WEBPACS, OR YOUR CHANGES MAY BE OVERWRITTEN!!!!!!!!!!!!  040913
+#***************************************************************************
+#***************************************************************************
+
+##############################################################################
+#
+# WWWOptions file for: Towers/MOBNW
+#             Created: 05/10/2002
+#	updated 090422 ahd            LIVE
+#
+##############################################################################
+#
+# WARNING! Please ensure that you are the *only* user modifying this file.
+# If more than one user simultaneously edits this file...
+# YOUR CHANGES MAY NOT BE SAVED!
+#
+##############################################################################
+#
+# These are the rules for modifying this file:
+#
+# 1) BEFORE you begin, please copy the complete text of this WWWOptions file
+#    and include it as part of your ticket.
+#
+# 2) You MUST indicate in this header file what you changed, when you
+#    changed it, why this change was necessary, who you are, and a tracking
+#    number for your change (i.e. a MCO Remedy ticket number).
+#
+# 3) Do not paste large amounts of text into this file. In particular, avoid
+#    pasting long lines of text (i.e. text which will wrap).
+#
+# 4) Use Carriage Returns when editing long lines. Avoid wrapping lines.
+#
+# 5) AFTER you are done modifying this file, please copy the complete text of
+#    this WWWOptions file and include it as part of your ticket, before you
+#    close the ticket.
+#
+##############################################################################
+#
+# Revision Log: please note your revision in this log, even if it seems minor.
+#
+# BEGIN ALL LINES WITH A #, which is the comment character.
+#
+# Date       Your Initials - change description - Remedy Ticket Number
+# 05/10/02   jd - Set up options from worksheet
+# 06/27/02   hjp - design changes for first draft WebPAC
+# 07/08/02   hjp - tinker with new table settings
+# 07/30/02   jd - commented out z39.50 options and buttons
+# 08/09/02   hjp - add mattype gif options
+# 08/02/02   jd - added media display (P) to BREIF and EXTENDED
+# 08/13/02   jd - changed media icons to display in column
+#            jd - turned on patron request
+# 08/29/02   LEE - change AKS option - MCO-005864
+# 09/01/02   jd - added LOC_ links for NWMSU
+# 09/18/02   jd - edited My Millennium options
+# 09/26/02   JNG - Removed author display from title search browse.  Changed
+# line from "BROWSE_t=245/ab/hc|240/a/h|970/lt/cde" to
+# "BROWSE_t=245/ab/h|240/a/h|970/lt/cde"
+# 11/20/02   jd - added LOC_ options for NWMSU
+# 02/14/2003 - GLH Added SSL option
+# 03/12/2003 - JSB changed display of 856/see c006763
+# 12 Mar 2003: VA commented out BROWSE_t to test and reversed change c653606 
+# 03/14/2003 - JSB changed LINK856TXT per request c006763
+# 08/27/2003 CAG - Changed INNREACH per III (MCO-007529)
+# 10/27/2003 JSB DISPLAY_856_CHECKIN line added per call 007820
+# 10/31/2003 JSB Hotlink 022,024,028,086 field per call 007820
+# 12/01/2003 CAG Removed extra "*" from NMSU LOC wildcards. 007702
+# 12/01/2003 LEE Enable My Millennium MCO-007869
+# 02/06/2004 JD  Changed MATTYPE code for ebooks from @ to 2
+# 06/09/2004 JSB Changed Stat Goup from 800 to login per call 008618
+# 09/13/2004 JSB Added TABLEPARAM per call 009082
+# 11/01/2004 LEE Added featured lists to live server MCO-009000
+# 12/15/2004 LEE Changed LINK856TXT back to original text MCO-009375
+# 11/25/2008 AHD Changed LOC links on w4chi and w4cdi to /third.html        
+##############################################################################
+#***************************************************************************
+#***************************************************************************
+#  PLEASE DO NOT EDIT THE WWWOPTIONS WITHOUT CHECKING WITH FOLKS WHO WORK 
+#  ON THE WEBPACS, OR YOUR CHANGES MAY BE OVERWRITTEN!!!!!!!!!!!!  040913
+#***************************************************************************
+#***************************************************************************
+
+# Featured List
+FEATURED_LIST=01,02,03|Towers New Titles|Campus|# Titles
+
+#SSL
 SSLPORT=80:443:towers.missouri.edu:towers.mobius.umsystem.edu|2082:444:towers.missouri.edu:towers.mobius.umsystem.edu
 
 
 
-
-# SSLPORT=80:443
-
-# AVS/AKS Options
-ASSEARCH=1
-AVS_TAG=XYZ
-
-# General Display and Behavior Options
-# AUTHOR_TITLE_TAG=
-# AVAILLIM=<EM>Limit to available items</EM>|<EM>Search results are limited to available items</EM><do not use>
-# BIBLOC=<do not use>
-BIBREQUEST=f
-BODYPARAM=BGCOLOR=#FFFAF0 LINK=#000066 VLINK=#000066 ALINK=#000066
-TOPLOGO=@screens/toplogo.html
-TOPLOGO1=@screens/toplogo_s1.html
-TOPLOGO2=@screens/toplogo_s2.html
-TOPLOGO3=@screens/toplogo_s3.html
-TOPLOGO4=@screens/toplogo_s4.html
-TOPLOGO5=@screens/toplogo_s5.html
+
+# SSLPORT=80:443
+
+# AVS/AKS Options
+ASSEARCH=1
+AVS_TAG=XYZ
+
+# General Display and Behavior Options
+# AUTHOR_TITLE_TAG=
+# AVAILLIM=<EM>Limit to available items</EM>|<EM>Search results are limited to available items</EM><do not use>
+# BIBLOC=<do not use>
+BIBREQUEST=f
+BODYPARAM=BGCOLOR=#FFFAF0 LINK=#000066 VLINK=#000066 ALINK=#000066
+TOPLOGO=@screens/toplogo.html
+TOPLOGO1=@screens/toplogo_s1.html
+TOPLOGO2=@screens/toplogo_s2.html
+TOPLOGO3=@screens/toplogo_s3.html
+TOPLOGO4=@screens/toplogo_s4.html
+TOPLOGO5=@screens/toplogo_s5.html
 BOTLOGO=@screens/botlogo.html
 
-BOTLOGO4=@screens/botlogo_s4.html
-# BRIEF=P
-BROWSE_t=245/abpn/h|240/a/h|970/lt/cde
-# CHECKIN_BGCOLOR=<decide later>
-# CHECKIN_FONTCOLOR=<decide later>
-CLEAR_PRIVATE_INFO=true
-DISPLAY_245=atdm
-DISPLAY_856=z3|f
-DISPLAY_CHECKIN_856=z
-LINK856TEXT=Link to Web version:
-HOTLINK=i^022,i^024,i^028,g^086
-DROP_DOWN=Ytasdm
-EXTENDED=T
-EXTENDED_t=AT
-EXTENDED_m=T
-ERESERVE=[0123456789]
-FRAMEURL=0
-FRAMEURL_PAT=50
-HOLDINGS_POS=atp
-# HYPERTEXT_980=<do not use>
+BOTLOGO4=@screens/botlogo_s4.html
+# BRIEF=P
+BROWSE_t=245/abpn/h|240/a/h|970/lt/cde
+# CHECKIN_BGCOLOR=<decide later>
+# CHECKIN_FONTCOLOR=<decide later>
+CLEAR_PRIVATE_INFO=true
+DISPLAY_245=atdm
+DISPLAY_856=z3|f
+DISPLAY_CHECKIN_856=z
+LINK856TEXT=Link to Web version:
+HOTLINK=i^022,i^024,i^028,g^086
+DROP_DOWN=Ytasdm
+EXTENDED=T
+EXTENDED_t=AT
+EXTENDED_m=T
+ERESERVE=[0123456789]
+FRAMEURL=0
+FRAMEURL_PAT=50
+HOLDINGS_POS=atp
+# HYPERTEXT_980=<do not use>
 ILL_HOME=/illb
 
 ILL_HOME1=/screens/illpage_s1.html
 
-ILL_HOME2=/screens/illpage_s2.html
-# INDEX_EXT=p,r,c,e,f,g,i
+ILL_HOME2=/screens/illpage_s2.html
+# INDEX_EXT=p,r,c,e,f,g,i
 RSRV_FORMAT=true
 
-RSRV_ITEMTYPE=t
-
-INNREACH=<img src="/screens/b_srchmobi.gif" border=0 alt="Search MOBIUS Union Catalog">@mobius.umsystem.edu(X=X;Y=Y;d=d;m=h;t=t;c=c;e=e;a=a;s=s;g=g;i=i;o=o)
+RSRV_ITEMTYPE=t
 
-KEYWORD_COLOR=Y|all|#993300 style="background-color: #FFFF33"
-
-EMAILOP=From the library catalog|exporter|
-
-EXPORT_SELECT_TABLE=Sendto:browser,email,local|Format:full,brief,marc,endnote,procite
-# Format:full,brief,marc,procite,endnote=
-
-
-INDEX_EXT=coi
-MARC=yes
-MEDIA=2
-OFFER_HISTORY=true
-# RECORDFRAME=25;50;25
-# REQUEST_ARTICLE_IFCHKIN=yes
-SHOWOREC=no_cdate
-# SIMILAR_ITEMS=<do not use>
-SORT_ITEMS=true
-STARTOVER=/search
-STATGROUP=login
-STYLESHEET=/screens/towers_styles.css
-TABLEPARAM_BROWSE=BORDER=0 Width="100%" cellspacing=0
+INNREACH=<img src="/screens/b_srchmobi.gif" border=0 alt="Search MOBIUS Union Catalog">@mobius.umsystem.edu(X=X;Y=Y;d=d;m=h;t=t;c=c;e=e;a=a;s=s;g=g;i=i;o=o)
+
+KEYWORD_COLOR=Y|all|#993300 style="background-color: #FFFF33"
+
+EMAILOP=From the library catalog|exporter|
+
+EXPORT_SELECT_TABLE=Sendto:browser,email,local|Format:full,brief,marc,endnote,procite
+# Format:full,brief,marc,procite,endnote=
+
+
+INDEX_EXT=coi
+MARC=yes
+MEDIA=2
+OFFER_HISTORY=true
+# RECORDFRAME=25;50;25
+# REQUEST_ARTICLE_IFCHKIN=yes
+SHOWOREC=no_cdate
+# SIMILAR_ITEMS=<do not use>
+SORT_ITEMS=true
+STARTOVER=/search
+STATGROUP=login
+STYLESHEET=/screens/towers_styles.css
+TABLEPARAM_BROWSE=BORDER=0 Width="100%" cellspacing=0
 TABLEPARAM_BIB=BORDER=0 WIDTH=100%|BORDER=0
 
 TABLEPARAM_BIB_DETAIL=id='bib_detail' width="100%" border="0" cellspacing="1"
 
-TABLEPARAM_BIB_ITEMS=id='bib_items' width="100%" border="3" cellspacing="1"
-TIMEOUT=600;URL=http://towers.missouri.edu/search/
-
-# My Millennium Options
-MY_WEBPAC=F,T
-NO_REVERIFY=acq,book,req,media,ill
-PREF_SEARCHES_01=20|Y
-PREF_SEARCHES_02=20|Y
-PREF_SEARCHES_03=20|Y
-PREF_SEARCHES_04=20|Y
-PREF_SEARCHES_05=20|Y
-PREF_SEARCHES_06=20|Y
-PREF_SEARCHES_21=20|Y
-PREF_SEARCHES_22=20|Y
-PREF_SEARCHES_23=20|Y
-PREF_SEARCHES_24=20|Y
-PREF_SEARCHES_25=20|Y
-PREF_SEARCHES_26=20|Y
-PREF_SEARCHES_27=20|Y
-PREF_SEARCHES_28=20|Y
-PREF_SEARCHES_62=20|Y
-PREF_SEARCHES_63=20|Y
-PREF_SEARCHES_64=20|Y
-PREF_SEARCHES_65=20|Y
-PREF_SEARCHES_91=20|Y
-PREFTEXT=Save search?
-STAFF=91
-# PATRON_NOTICES=az
-
-# Z39.50 Options
-# Z39PORT=80:211|2080:2211
-# Z39RESTRICT=CONGRESS/Voyager;
-# Z39IPOK=207.160.138.*
-# Z39SEARCH=CONGRESS/Voyager;MELVYL/CAT
-# Z39BROADCAST=Z39.50 Broadcast Search:Please select the Z39.50 servers to which you want to send your search
-# Z39MULTI=500:100
-
-# Patron record options
-NOSEARCH=nubz
-PATRON_FIELDS=n/a|a/a|t/t
-PATRON_MSG=m|Message from the library
-PSTARTOVER=/search
-
-# Request WWWOptions
-# BIBREQUEST=true
-REQUEST=Hold this item|denyiflocalavail|ask|Y
-
-# Serials checkin WWWOptions
-# CHECKIN_BGCOLOR=ARRIVED=#FFFFFF|EXPECTED=#FFFFFF|
-# TO BIND/BOUND=#FFFFFF|LATE=#FFFFFF|OTHER=#FFFFFF
-# CHECKIN_FONTCOLOR=ARRIVED=GREEN|EXPECTED=BLACK|
-# TO BIND/BOUND=RED|LATE=BLACK|OTHER=BLACK
-# SUPPRESS_CARD=UI
-
-# Materials bookings WWWOptions
-# BOOK_CAL_AVAIL=black
-# BOOK_CAL_BKGRD=white
-# BOOK_CAL_CLOSE=red
-# BOOK_CAL_UNAVAIL=blue
-# CANCEL_BOOKINGS=true
-
-# MATTYPE IMAGES
-IMAGE_MATTYPE-=/screens/i_book.gif
-IMAGE_MATTYPEa=/screens/i_book.gif
-IMAGE_MATTYPEb=/screens/i_archival.gif
-IMAGE_MATTYPEc=/screens/i_musicscore.gif
-IMAGE_MATTYPEd=/screens/i_musicscore.gif
-IMAGE_MATTYPEe=/screens/i_globe.gif
-IMAGE_MATTYPEf=/screens/i_movie.gif
-IMAGE_MATTYPEg=/screens/i_movie.gif
-IMAGE_MATTYPEi=/screens/i_spokenaudio.gif
-IMAGE_MATTYPEj=/screens/i_musicaudio.gif
-IMAGE_MATTYPEk=/screens/i_art.gif
-IMAGE_MATTYPEm=/screens/i_electronicres.gif
-IMAGE_MATTYPEo=/screens/i_kit.gif
-IMAGE_MATTYPEp=/screens/i_mixed.gif
-IMAGE_MATTYPEr=/screens/i_3d.gif
-IMAGE_MATTYPEt=/screens/i_manuscript.gif
-IMAGE_MATTYPEx=/screens/i_equipment.gif
-IMAGE_MATTYPE2=/screens/i_ebook.gif
-IMAGE_MATTYPE3=/screens/i_digaudio.gif
-IMAGE_MATTYPE4=/screens/i_software.gif
-
-# OPTION BUTTONS
-BUT_ANOTHER=/screens/b_another.gif
-BUT_BIBEXPORT=/screens/b_bibexport.gif
-# BUT_BOOKING=/screens/b_bookitem.gif
-BUT_BRIEF=/screens/b_brief.gif
-BUT_CARDFORM_BOX=/screens/b_boxdisp.gif
-BUT_CARDFORM_LIN=/screens/b_linedisp.gif
-BUT_CLEAR_MARKED=/screens/b_clrsaves.gif
-BUT_CLOSEWN=/screens/b_ret2cat.gif
-BUT_EMAIL=/screens/b_email.gif
-BUT_ENCYCPD=/screens/b_encycpd.gif
-BUT_EXPORT_VIEW_SAVES=/screens/b_exportlist.gif
-BUT_EXTENDED=/screens/b_extended.gif
-BUT_FULL_TEXT=/screens/b_fulltxt.gif
-BUT_ILL_CANCEL=/screens/b_illcan.gif
-BUT_ILL_FORM=/screens/b_illform.gif
-BUT_ILL_HOME=/screens/b_illano.gif
-BUT_LIMAVAIL=/screens/b_limavail.gif
-BUT_LIMIT=/screens/b_limit.gif
-BUT_LOGOUT=/screens/b_logout.gif
-BUT_MARC_DISPLAY=/screens/b_marcdisp.gif
-BUT_MODIFY=/screens/b_limit.gif
-BUT_NEWSRCH=/screens/b_newsrch.gif
-BUT_NEXTPAGE=/screens/b_nextpage.gif
-BUT_NEXTREC=/screens/b_nextrec.gif
-BUT_PLOGOUT=/screens/b_ret2pat.gif
-BUT_PREVPAGE=/screens/b_prevpage.gif
-BUT_PREVREC=/screens/b_prevrec.gif
-BUT_PREVSCRN=/screens/b_prevscrn.gif
-BUT_PUBLIC=/screens/b_public.gif
-BUT_REGULAR_DISPLAY=/screens/b_regdisp.gif
-BUT_REQUEST=/screens/b_request.gif
-BUT_RET2CAT=/screens/b_ret2cat.gif
-BUT_RET2CRS=/screens/b_ret2crs.gif
-BUT_RET2FEAT=/screens/b_ret2feat.gif
-BUT_RET2PREC=/screens/b_ret2pat.gif
-BUT_RETHOME=/screens/b_rethome.gif
-BUT_RTRNTB=/screens/b_rtrntb.gif
-BUT_SHOWSIM=/screens/b_showsimilar.gif
-BUT_STAFF=/screens/b_staff.gif
-BUT_STARTOVER=/screens/b_newsrch.gif
-BUT_UNLIMAVAIL=/screens/b_unlimavail.gif
-BUT_WORDSRCH=/screens/b_wordsrch.gif
-# BUT_Z39_ANOTHER=/screens/b_z39ano.gif
-# BUT_Z39_REQUEST=/screens/b_request.gif
-# BUT_Z39SEARCH=/screens/b_z39srch.gif
-
-# LINK856TEXT=Link to Web version:
-LOC_w4rsi=http://www.nwmissouri.edu/library/maps/store.htm
-LOC_w4pva=http://www.nwmissouri.edu/library/maps/store.htm
-LOC_w4pvb=http://www.nwmissouri.edu/library/maps/store.htm
-LOC_w4gsi=http://www.nwmissouri.edu/library/maps/store.htm
-LOC_w4dsi=http://www.nwmissouri.edu/library/maps/store.htm
+TABLEPARAM_BIB_ITEMS=id='bib_items' width="100%" border="3" cellspacing="1"
+TIMEOUT=600;URL=http://towers.missouri.edu/search/
+
+# My Millennium Options
+MY_WEBPAC=F,T
+NO_REVERIFY=acq,book,req,media,ill
+PREF_SEARCHES_01=20|Y
+PREF_SEARCHES_02=20|Y
+PREF_SEARCHES_03=20|Y
+PREF_SEARCHES_04=20|Y
+PREF_SEARCHES_05=20|Y
+PREF_SEARCHES_06=20|Y
+PREF_SEARCHES_21=20|Y
+PREF_SEARCHES_22=20|Y
+PREF_SEARCHES_23=20|Y
+PREF_SEARCHES_24=20|Y
+PREF_SEARCHES_25=20|Y
+PREF_SEARCHES_26=20|Y
+PREF_SEARCHES_27=20|Y
+PREF_SEARCHES_28=20|Y
+PREF_SEARCHES_62=20|Y
+PREF_SEARCHES_63=20|Y
+PREF_SEARCHES_64=20|Y
+PREF_SEARCHES_65=20|Y
+PREF_SEARCHES_91=20|Y
+PREFTEXT=Save search?
+STAFF=91
+# PATRON_NOTICES=az
+
+# Z39.50 Options
+# Z39PORT=80:211|2080:2211
+# Z39RESTRICT=CONGRESS/Voyager;
+# Z39IPOK=207.160.138.*
+# Z39SEARCH=CONGRESS/Voyager;MELVYL/CAT
+# Z39BROADCAST=Z39.50 Broadcast Search:Please select the Z39.50 servers to which you want to send your search
+# Z39MULTI=500:100
+
+# Patron record options
+NOSEARCH=nubz
+PATRON_FIELDS=n/a|a/a|t/t
+PATRON_MSG=m|Message from the library
+PSTARTOVER=/search
+
+# Request WWWOptions
+# BIBREQUEST=true
+REQUEST=Hold this item|denyiflocalavail|ask|Y
+
+# Serials checkin WWWOptions
+# CHECKIN_BGCOLOR=ARRIVED=#FFFFFF|EXPECTED=#FFFFFF|
+# TO BIND/BOUND=#FFFFFF|LATE=#FFFFFF|OTHER=#FFFFFF
+# CHECKIN_FONTCOLOR=ARRIVED=GREEN|EXPECTED=BLACK|
+# TO BIND/BOUND=RED|LATE=BLACK|OTHER=BLACK
+# SUPPRESS_CARD=UI
+
+# Materials bookings WWWOptions
+# BOOK_CAL_AVAIL=black
+# BOOK_CAL_BKGRD=white
+# BOOK_CAL_CLOSE=red
+# BOOK_CAL_UNAVAIL=blue
+# CANCEL_BOOKINGS=true
+
+# MATTYPE IMAGES
+IMAGE_MATTYPE-=/screens/i_book.gif
+IMAGE_MATTYPEa=/screens/i_book.gif
+IMAGE_MATTYPEb=/screens/i_archival.gif
+IMAGE_MATTYPEc=/screens/i_musicscore.gif
+IMAGE_MATTYPEd=/screens/i_musicscore.gif
+IMAGE_MATTYPEe=/screens/i_globe.gif
+IMAGE_MATTYPEf=/screens/i_movie.gif
+IMAGE_MATTYPEg=/screens/i_movie.gif
+IMAGE_MATTYPEi=/screens/i_spokenaudio.gif
+IMAGE_MATTYPEj=/screens/i_musicaudio.gif
+IMAGE_MATTYPEk=/screens/i_art.gif
+IMAGE_MATTYPEm=/screens/i_electronicres.gif
+IMAGE_MATTYPEo=/screens/i_kit.gif
+IMAGE_MATTYPEp=/screens/i_mixed.gif
+IMAGE_MATTYPEr=/screens/i_3d.gif
+IMAGE_MATTYPEt=/screens/i_manuscript.gif
+IMAGE_MATTYPEx=/screens/i_equipment.gif
+IMAGE_MATTYPE2=/screens/i_ebook.gif
+IMAGE_MATTYPE3=/screens/i_digaudio.gif
+IMAGE_MATTYPE4=/screens/i_software.gif
+
+# OPTION BUTTONS
+BUT_ANOTHER=/screens/b_another.gif
+BUT_BIBEXPORT=/screens/b_bibexport.gif
+# BUT_BOOKING=/screens/b_bookitem.gif
+BUT_BRIEF=/screens/b_brief.gif
+BUT_CARDFORM_BOX=/screens/b_boxdisp.gif
+BUT_CARDFORM_LIN=/screens/b_linedisp.gif
+BUT_CLEAR_MARKED=/screens/b_clrsaves.gif
+BUT_CLOSEWN=/screens/b_ret2cat.gif
+BUT_EMAIL=/screens/b_email.gif
+BUT_ENCYCPD=/screens/b_encycpd.gif
+BUT_EXPORT_VIEW_SAVES=/screens/b_exportlist.gif
+BUT_EXTENDED=/screens/b_extended.gif
+BUT_FULL_TEXT=/screens/b_fulltxt.gif
+BUT_ILL_CANCEL=/screens/b_illcan.gif
+BUT_ILL_FORM=/screens/b_illform.gif
+BUT_ILL_HOME=/screens/b_illano.gif
+BUT_LIMAVAIL=/screens/b_limavail.gif
+BUT_LIMIT=/screens/b_limit.gif
+BUT_LOGOUT=/screens/b_logout.gif
+BUT_MARC_DISPLAY=/screens/b_marcdisp.gif
+BUT_MODIFY=/screens/b_limit.gif
+BUT_NEWSRCH=/screens/b_newsrch.gif
+BUT_NEXTPAGE=/screens/b_nextpage.gif
+BUT_NEXTREC=/screens/b_nextrec.gif
+BUT_PLOGOUT=/screens/b_ret2pat.gif
+BUT_PREVPAGE=/screens/b_prevpage.gif
+BUT_PREVREC=/screens/b_prevrec.gif
+BUT_PREVSCRN=/screens/b_prevscrn.gif
+BUT_PUBLIC=/screens/b_public.gif
+BUT_REGULAR_DISPLAY=/screens/b_regdisp.gif
+BUT_REQUEST=/screens/b_request.gif
+BUT_RET2CAT=/screens/b_ret2cat.gif
+BUT_RET2CRS=/screens/b_ret2crs.gif
+BUT_RET2FEAT=/screens/b_ret2feat.gif
+BUT_RET2PREC=/screens/b_ret2pat.gif
+BUT_RETHOME=/screens/b_rethome.gif
+BUT_RTRNTB=/screens/b_rtrntb.gif
+BUT_SHOWSIM=/screens/b_showsimilar.gif
+BUT_STAFF=/screens/b_staff.gif
+BUT_STARTOVER=/screens/b_newsrch.gif
+BUT_UNLIMAVAIL=/screens/b_unlimavail.gif
+BUT_WORDSRCH=/screens/b_wordsrch.gif
+# BUT_Z39_ANOTHER=/screens/b_z39ano.gif
+# BUT_Z39_REQUEST=/screens/b_request.gif
+# BUT_Z39SEARCH=/screens/b_z39srch.gif
+
+# LINK856TEXT=Link to Web version:
+LOC_w4rsi=http://www.nwmissouri.edu/library/maps/store.htm
+LOC_w4pva=http://www.nwmissouri.edu/library/maps/store.htm
+LOC_w4pvb=http://www.nwmissouri.edu/library/maps/store.htm
+LOC_w4gsi=http://www.nwmissouri.edu/library/maps/store.htm
+LOC_w4dsi=http://www.nwmissouri.edu/library/maps/store.htm
 LOC_w4pun=http://www.nwmissouri.edu/library/maps/first.html
 LOC_w4tii=http://www.nwmissouri.edu/library/maps/first.html
 
@@ -321,14 +321,14 @@ LOC_w4d*=http://www.nwmissouri.edu/library/maps/first.html
 
 LOC_w4b*=http://www.nwmissouri.edu/library/maps/first.html
 
-LOC_w4o*=http://www.nwmissouri.edu/library/maps/first.html
-LOC_w4eii=http://www.nwmissouri.edu/library/maps/second.html
-LOC_w4lii=http://www.nwmissouri.edu/library/maps/second.html
+LOC_w4o*=http://www.nwmissouri.edu/library/maps/first.html
+LOC_w4eii=http://www.nwmissouri.edu/library/maps/second.html
+LOC_w4lii=http://www.nwmissouri.edu/library/maps/second.html
 LOC_w4fii=http://www.nwmissouri.edu/library/maps/second.html
 
-LOC_w4gyi=http://www.nwmissouri.edu/library/maps/second.html
-LOC_w4qii=http://www.nwmissouri.edu/library/maps/second.html
-LOC_w4yii=http://www.nwmissouri.edu/library/maps/second.html
+LOC_w4gyi=http://www.nwmissouri.edu/library/maps/second.html
+LOC_w4qii=http://www.nwmissouri.edu/library/maps/second.html
+LOC_w4yii=http://www.nwmissouri.edu/library/maps/second.html
 LOC_w4vii=http://www.nwmissouri.edu/library/maps/second.html
 
 LOC_w4a*=http://www.nwmissouri.edu/library/maps/second.html
@@ -337,50 +337,50 @@ LOC_w4p*=http://www.nwmissouri.edu/library/maps/second.html
 
 LOC_w4c*=http://www.nwmissouri.edu/library/maps/second.html
 
-LOC_w4j*=http://www.nwmissouri.edu/library/maps/second.html
-LOC_w4wii=http://www.nwmissouri.edu/library/maps/third.html
-LOC_w4sii=http://www.nwmissouri.edu/library/maps/third.html
-LOC_w4chi=http://www.nwmissouri.edu/library/maps/third.html
-LOC_w4cdi=http://www.nwmissouri.edu/library/maps/third.html
-LOC_w4hii=http://www.nwmissouri.edu/library/maps/third.html
-LOC_w4m*=http://www.nwmissouri.edu/library/maps/third.html
-XSTARTOVER=/search
-ICON_BOOKCART_SAVED=<IMG SRC="/screens/unmark_record.gif" ALT="Remove from Book Cart" BORDER=0>
-
-# added for Pro
-BROWSE50=true
-WEBPUBDEF=true
-TABLEPARAM_BRIEFCIT=true|border="0" cellpadding="3" width="100%"
-ICON_REL_GROUP_1=<img src="/screens/relevance5.gif" alt="">&nbsp;Most relevant titles&nbsp;
-ICON_REL_GROUP_2=<img src="/screens/relevance4.gif" alt="">&nbsp;Highly relevant titles&nbsp;
-ICON_REL_GROUP_3=<img src="/screens/relevance3.gif" alt="">&nbsp;Very relevant titles&nbsp;
-ICON_REL_GROUP_4=<img src="/screens/relevance2.gif" alt="">&nbsp;Relevant titles&nbsp;
-ICON_REL_GROUP_5=<img src="/screens/relevance1.gif" alt="">&nbsp;Other relevant titles&nbsp;
-
-href="/screens/ie_styles.css" /><![endif]-->
-src="/screens/bibdisplay.js"></script><script type="text/javascript"
-src="/screens/brief.js"></script><!--[if lte IE 7]><link
-rel="stylesheet" media="all" type="text/css"
-href="/screens/ie_styles.css" /><![endif]-->
-src="/screens/bibdisplay.js"></script><script type="text/javascript"
-src="/screens/brief.js"></script><!--[if lte IE 7]><link
-rel="stylesheet" media="all" type="text/css"
-href="/screens/ie_styles.css" /><![endif]-->
-<script type="text/javascript" src="/screens/brief.js"></script>
-ICON_READING_HISTORY_OPTIN4=<span onClick="window.open('/screens/privacywarning.html', 'PrivacyWarning', 'toolbar=no, directories=no, location=no,status=yes, menubar=no, resizable=yes, scrollbars=1, width=475,height=250');">Opt In</span>
-
-# ICON_BOOKCART=
-<!--[if lte IE 7]><link rel="stylesheet" media="all" type="text/css" href="/screens/ie_styles.css
-# <![endif]-->=
-ICON_SPELLCHECK_MORE=<span class="spellcheckToolMore">more {827}</span>
-ICON_SPELLCHECK_SEARCH=Search
-SPELLCHECK=<span class="spellcheckTool">Did you mean %a?</span> %s
+LOC_w4j*=http://www.nwmissouri.edu/library/maps/second.html
+LOC_w4wii=http://www.nwmissouri.edu/library/maps/third.html
+LOC_w4sii=http://www.nwmissouri.edu/library/maps/third.html
+LOC_w4chi=http://www.nwmissouri.edu/library/maps/third.html
+LOC_w4cdi=http://www.nwmissouri.edu/library/maps/third.html
+LOC_w4hii=http://www.nwmissouri.edu/library/maps/third.html
+LOC_w4m*=http://www.nwmissouri.edu/library/maps/third.html
+XSTARTOVER=/search
+ICON_BOOKCART_SAVED=<IMG SRC="/screens/unmark_record.gif" ALT="Remove from Book Cart" BORDER=0>
+
+# added for Pro
+BROWSE50=true
+WEBPUBDEF=true
+TABLEPARAM_BRIEFCIT=true|border="0" cellpadding="3" width="100%"
+ICON_REL_GROUP_1=<img src="/screens/relevance5.gif" alt="">&nbsp;Most relevant titles&nbsp;
+ICON_REL_GROUP_2=<img src="/screens/relevance4.gif" alt="">&nbsp;Highly relevant titles&nbsp;
+ICON_REL_GROUP_3=<img src="/screens/relevance3.gif" alt="">&nbsp;Very relevant titles&nbsp;
+ICON_REL_GROUP_4=<img src="/screens/relevance2.gif" alt="">&nbsp;Relevant titles&nbsp;
+ICON_REL_GROUP_5=<img src="/screens/relevance1.gif" alt="">&nbsp;Other relevant titles&nbsp;
+
+href="/screens/ie_styles.css" /><![endif]-->
+src="/screens/bibdisplay.js"></script><script type="text/javascript"
+src="/screens/brief.js"></script><!--[if lte IE 7]><link
+rel="stylesheet" media="all" type="text/css"
+href="/screens/ie_styles.css" /><![endif]-->
+src="/screens/bibdisplay.js"></script><script type="text/javascript"
+src="/screens/brief.js"></script><!--[if lte IE 7]><link
+rel="stylesheet" media="all" type="text/css"
+href="/screens/ie_styles.css" /><![endif]-->
+<script type="text/javascript" src="/screens/brief.js"></script>
+ICON_READING_HISTORY_OPTIN4=Opt In
+
+# ICON_BOOKCART=
+<!--[if lte IE 7]><link rel="stylesheet" media="all" type="text/css" href="/screens/ie_styles.css
+# <![endif]-->=
+ICON_SPELLCHECK_MORE=<span class="spellcheckToolMore">more {827}</span>
+ICON_SPELLCHECK_SEARCH=Search
+SPELLCHECK=<span class="spellcheckTool">Did you mean %a?</span> %s
 # BIBIMAGE=http://www.syndetics.com/index.aspx?isbn=%s/SC.GIF&client=northmsu&showCaptionBelow=t|i|http://www.syndetics.com/index.aspx?isbn=%s/index.html&client=northmsu&type=rw12&popup=yes
 
 BIBIMAGE=http://www.syndetics.com/index.aspx?isbn=%s/SC.GIF&client=northmsu|I|http://syndetics.com/hw7.pl?isbn=%s/LC.gif&client=northmsu
-
-BIBIMAGE_TEXT=Book Jacket
-
+
+BIBIMAGE_TEXT=Book Jacket
+
 SORT_BROWSE4=t:Title|a:Author|r:Year
 
 INSERTTAG_HTML=<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
