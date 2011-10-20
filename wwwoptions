@@ -303,7 +303,8 @@ LOC_w4rsi=http://www.nwmissouri.edu/library/maps/store.htm
 LOC_w4pva=http://www.nwmissouri.edu/library/maps/store.htm
 LOC_w4pvb=http://www.nwmissouri.edu/library/maps/store.htm
 LOC_w4gsi=http://www.nwmissouri.edu/library/maps/store.htm
-LOC_w4dsi=http://www.nwmissouri.edu/library/maps/store.htmLOC_w4pun=http://www.nwmissouri.edu/library/maps/first.html
+LOC_w4dsi=http://www.nwmissouri.edu/library/maps/store.htm
+LOC_w4pun=http://www.nwmissouri.edu/library/maps/first.html
 LOC_w4tii=http://www.nwmissouri.edu/library/maps/first.html
 
 LOC_w4nii=http://www.nwmissouri.edu/library/maps/first.html
@@ -366,7 +367,7 @@ src="/screens/brief.js"></script><!--[if lte IE 7]><link
 rel="stylesheet" media="all" type="text/css"
 href="/screens/ie_styles.css" /><![endif]-->
 <script type="text/javascript" src="/screens/brief.js"></script>
-ICON_READING_HISTORY_OPTIN4=<span onClick="window.open('/screens/privacywarning.html', 'PrivacyWarning', 'toolbar=no, directories=no, location=no,status=yes, menubar=no, resizable=yes, scrollbars=1, width=475,height=250');">Opt In</span>
+ICON_READING_HISTORY_OPTIN4=Opt In
 
 # ICON_BOOKCART=
 <!--[if lte IE 7]><link rel="stylesheet" media="all" type="text/css" href="/screens/ie_styles.css
