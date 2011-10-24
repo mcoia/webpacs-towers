@@ -1,6 +1,6 @@
 <!--
 
-body { margin: 1%; }
+body { margin: 1%; background-color:#FFFAF0; }
 
 div, span, p, form, .qs, h1, h2, h3, ul, ol, li, a, td ,th, select, input, textarea
 { font-family: Arial, Helvetica, sans-serif; }
@@ -341,6 +341,15 @@ width:75%;
   text-align:center;
 }
 
-.mobileinfo {
-  display:none;
+div.formButtonArea {
+  margin: .5em;
+}
+
+div.formButtomArea span script a {
+ padding:.3em;
+ background-color:#eee; 
+ border: 2px outset; 
+ text-decoration:none; 
+ color: black; 
+ font-size:13px;
 }

@@ -172,7 +172,7 @@ TABLEPARAM_BIB_ITEMS=id='bib_items' width="100%" border="3" cellspacing="1"
 TIMEOUT=600;URL=http://towers.missouri.edu/search/
 
 # My Millennium Options
-MY_WEBPAC=F,T
+MY_WEBPAC=F,2
 NO_REVERIFY=acq,book,req,media,ill
 PREF_SEARCHES_01=20|Y
 PREF_SEARCHES_02=20|Y
@@ -276,10 +276,14 @@ BUT_MODIFY=/screens/b_limit.gif
 BUT_NEWSRCH=/screens/b_newsrch.gif
 BUT_NEXTPAGE=/screens/b_nextpage.gif
 BUT_NEXTREC=/screens/b_nextrec.gif
+
+ICON_BUT_PAT_SUBMIT=<img src="/screens/b_submit.gif" alt="Submit">
 BUT_PLOGOUT=/screens/b_ret2pat.gif
 BUT_PREVPAGE=/screens/b_prevpage.gif
 BUT_PREVREC=/screens/b_prevrec.gif
 BUT_PREVSCRN=/screens/b_prevscrn.gif
+
+ICON_BUT_PSTARTOVER=<img src="/screens/b_startover.gif" alt="Submit">
 BUT_PUBLIC=/screens/b_public.gif
 BUT_REGULAR_DISPLAY=/screens/b_regdisp.gif
 BUT_REQUEST=/screens/b_request.gif
@@ -292,6 +296,8 @@ BUT_RTRNTB=/screens/b_rtrntb.gif
 BUT_SHOWSIM=/screens/b_showsimilar.gif
 BUT_STAFF=/screens/b_staff.gif
 BUT_STARTOVER=/screens/b_newsrch.gif
+
+ICON_BUT_SUBMIT=<img src="/screens/b_submit.gif" alt="Submit">
 BUT_UNLIMAVAIL=/screens/b_unlimavail.gif
 BUT_WORDSRCH=/screens/b_wordsrch.gif
 # BUT_Z39_ANOTHER=/screens/b_z39ano.gif
@@ -384,4 +390,6 @@ BIBIMAGE_TEXT=Book Jacket
 SORT_BROWSE4=t:Title|a:Author|r:Year
 
 INSERTTAG_HTML=<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+CUSTOM_MESSAGES=T
 
