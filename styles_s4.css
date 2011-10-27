@@ -835,3 +835,7 @@ tr.highlight {background:#EEEEDD;}
 /*Change the default font-size*/
 body, div, p, form, ul, ol, li, th, td, select, input, textarea
 { font-size: 13px; color: #000000; }
+
+.mobileinfo {
+  display:none;
+}
