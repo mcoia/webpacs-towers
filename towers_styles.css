@@ -341,6 +341,10 @@ width:75%;
   text-align:center;
 }
 
+.mobileinfo {
+  display:none;
+}
+
 div.formButtonArea {
   margin: .5em;
 }
