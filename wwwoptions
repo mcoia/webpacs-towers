@@ -141,7 +141,7 @@ RSRV_FORMAT=true
 
 RSRV_ITEMTYPE=t
 
-INNREACH=<img src="/screens/b_srchmobi.gif" border=0 alt="Search MOBIUS Union Catalog">@mobius.umsystem.edu(X=X;Y=Y;d=d;m=h;t=t;c=c;e=e;a=a;s=s;g=g;i=i;o=o)
+INNREACH=<img src="/screens/b_srchmobi.gif" border=0 alt="Search MOBIUS Union Catalog">@searchmobius.org(X=X;Y=Y;d=d;m=h;t=t;c=c;e=e;a=a;s=s;g=g;i=i;o=o)
 
 KEYWORD_COLOR=Y|all|#993300 style="background-color: #FFFF33"
 
@@ -169,7 +169,7 @@ TABLEPARAM_BIB=BORDER=0 WIDTH=100%|BORDER=0
 TABLEPARAM_BIB_DETAIL=id='bib_detail' width="100%" border="0" cellspacing="1"
 
 TABLEPARAM_BIB_ITEMS=id='bib_items' width="100%" border="3" cellspacing="1"
-TIMEOUT=600;URL=http://towers.missouri.edu/search/
+TIMEOUT=600;URL=/search/
 
 # My Millennium Options
 MY_WEBPAC=F,T
