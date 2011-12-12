@@ -325,6 +325,10 @@ TD.browseEntryData { background-color: transparent; border:0; border-top:1px sol
 
 .button { vertical-align: middle; }
 
+#cite_link {
+    text-align:center;
+}
+
 /* This is used in the Materials Booking calendar */
 .closed { font-weight: bold; color: red; }
 
