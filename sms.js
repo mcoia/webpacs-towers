@@ -73,7 +73,7 @@ out += "<p><b>Select your provider:</b><select name=provider>";	// pull-down for
    sms.style.visibility = 'visible';
    sms.style.display = 'block';
 	// some fancy positioning
-    findPos(document.getElementById('smsbutton'),sms,300,300);
+    findPos(document.getElementById('smsbutton'),sms,25,-329);
 } catch (e) {
 	// doesn't work?  hide the SMS buttons
 document.getElementById('smsfeatures').style.visibility='hidden';
