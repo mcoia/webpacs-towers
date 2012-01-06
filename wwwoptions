@@ -136,7 +136,9 @@ ERESERVE=[0123456789]
 FRAMEURL=0
 FRAMEURL_PAT=50
 HOLDINGS_POS=atp
-# HYPERTEXT_980=<do not use>
+# HYPERTEXT_980=<do not use>
+
+ICON_RECORDLINK2=<div id="recordlink"><a id="recordnum" href="%s">Persistent link: %s</a></div>
 ILL_HOME=/illb
 
 ILL_HOME1=/screens/illpage_s1.html
