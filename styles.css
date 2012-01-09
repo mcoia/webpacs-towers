@@ -1136,3 +1136,6 @@ tr.highlight { background:#FFFFE4; }
 #info {top:500}
 
 #sms {font-size:70%}
+
+body > div#bibDisplayBody a#smsbutton { display:none; }
+
