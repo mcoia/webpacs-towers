@@ -32,7 +32,7 @@ $item 			= "\nLoc: ".$location."\nCall: ".$callNumber;
 
 //Change this url to your own catalog
 // $url = "http://towers.searchmobius.org/record=".$bib;
-$url = "http://towers.searchmobius.org/search~S6?/." .$bib. "/." .$bib. "/1,1,1,B/holdings";  
+$url = "http://towers.searchmobius.org/search~S0?/." .$bib. "/." .$bib. "/1,1,1,B/holdings";  
 
 //Use the bib number to get the title information for the item from the catalog
 $catalogItemPage = get_url_contents($url);
