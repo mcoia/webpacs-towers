@@ -10,6 +10,12 @@
   })();
 
 </script>
+<script type="text/javascript">
+  function recordOutboundLink(link, category, action) {
+    _gat._getTrackerByName()._trackEvent(category, action);
+    setTimeout('document.location = "' + link.href + '"', 100);
+  }
+</script>
 <SCRIPT type="text/javascript" src="/screens/bibdisplay_s4.js"></SCRIPT>
 <SCRIPT type="text/javascript" src="/screens/brief_s4.js"></SCRIPT>
 <script type="text/javascript" src='/screens/sms.js'> </script>
