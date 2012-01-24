@@ -94,6 +94,7 @@ function sendSMS(location) {
 	var url = smsurl;						// start creating the URL
 		url += "&number="+encodeURIComponent(frm.phone.value);	// html escape #
 		url += "&provider="+encodeURIComponent(frm.provider.options[frm.provider.selectedIndex].value);	// html escpae provider
+		url += "&title="+encodeURIComponent(frm.title.value);
 		for (i=0;i<frm.loc.length;i++) {		// for each item, get the checked one 
 //		alert(i+" "+frm.loc[i].checked);
 			if (frm.loc[i].checked == true) {	// if checked, add it to the URL
