@@ -86,7 +86,7 @@
 FEATURED_LIST=01,02,03|Towers New Titles|Campus|# Titles
 
 #SSL
-SSLPORT=80:443:towers.missouri.edu:towers.mobius.umsystem.edu|2082:444:towers.missouri.edu:towers.mobius.umsystem.edu
+SSLPORT=80:443:towers.searchmobius.org:towers.searchmobius.org|2082:444:towers.searchmobius.org:towers.searchmobius.org
 
 
 
@@ -111,7 +111,13 @@ TOPLOGO4=@screens/toplogo_s4.html
 TOPLOGO5=@screens/toplogo_s5.html
 BOTLOGO=@screens/botlogo.html
 
+BOTLOGO1=@screens/botlogo_s1.html
+
+BOTLOGO2=@screens/botlogo_s2.html
+
 BOTLOGO4=@screens/botlogo_s4.html
+
+BOTLOGO5=@screens/botlogo_s5.html
 # BRIEF=P
 BROWSE_t=245/abpn/h|240/a/h|970/lt/cde
 # CHECKIN_BGCOLOR=<decide later>
@@ -131,6 +137,8 @@ FRAMEURL=0
 FRAMEURL_PAT=50
 HOLDINGS_POS=atp
 # HYPERTEXT_980=<do not use>
+
+ICON_RECORDLINK=<div id="recordlink"><a id="recordnum" href="%s">Persistent link: %s</a></div>
 ILL_HOME=/illb
 
 ILL_HOME1=/screens/illpage_s1.html
@@ -141,7 +149,7 @@ RSRV_FORMAT=true
 
 RSRV_ITEMTYPE=t
 
-INNREACH=<img src="/screens/b_srchmobi.gif" border=0 alt="Search MOBIUS Union Catalog">@mobius.umsystem.edu(X=X;Y=Y;d=d;m=h;t=t;c=c;e=e;a=a;s=s;g=g;i=i;o=o)
+INNREACH=<img src="/screens/b_srchmobi.gif" border=0 alt="Search MOBIUS Union Catalog">@searchmobius.org(X=X;Y=Y;d=d;m=h;t=t;c=c;e=e;a=a;s=s;g=g;i=i;o=o)
 
 KEYWORD_COLOR=Y|all|#993300 style="background-color: #FFFF33"
 
@@ -169,7 +177,7 @@ TABLEPARAM_BIB=BORDER=0 WIDTH=100%|BORDER=0
 TABLEPARAM_BIB_DETAIL=id='bib_detail' width="100%" border="0" cellspacing="1"
 
 TABLEPARAM_BIB_ITEMS=id='bib_items' width="100%" border="3" cellspacing="1"
-TIMEOUT=600;URL=http://towers.missouri.edu/search/
+TIMEOUT=600;URL=/search/
 
 # My Millennium Options
 MY_WEBPAC=F,2

@@ -111,7 +111,7 @@ A.pageNavAreaText:ACTIVE, A.pageNavAreaText:HOVER {  color: #F7F7E4; text-decora
 
 .bibInfoLabel { width: 15%; font-size:90%; text-align: right; padding-right: 1em; background-color: #e8e8e8; font-weight: bold; font-style: italic; }
 
-.bibItems { border:0px; padding:0 3px 3px 3px; margin:0px;}
+.bibItems { border:0px; margin:0px 3px;}
 
 .bibItemsEntry { color: #000; text-align: left;font-size:90%; }
 
@@ -324,6 +324,10 @@ TD.browseEntryData { background-color: transparent; border:0; border-top:1px sol
 .browseSuperEntry td { background: #e8e8e8; padding:0 0 0 3px;  }
 
 .button { vertical-align: middle; }
+
+#cite_link {
+    text-align:center;
+}
 
 /* This is used in the Materials Booking calendar */
 .closed { font-weight: bold; color: red; }
@@ -828,10 +832,14 @@ tr.highlight {background:#EEEEDD;}
 #printView a {color:#004730;}
 #webView {display:none}
 
-#smsfeatures {display:block;}
+#smsfeatures {display:block; margin-top:12px;}
 
 .syn_div {margin:2em 1em;}
 
 /*Change the default font-size*/
 body, div, p, form, ul, ol, li, th, td, select, input, textarea
 { font-size: 13px; color: #000000; }
+
+.mobileinfo {
+  display:none;
+}

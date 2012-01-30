@@ -88,6 +88,8 @@ TR.browseEntry {  background-color: #FFCC99; color: #000000}
 
 TD.browseEntryData { background-color: #FFCC99; color: #000000; font-weight: bold}
 
+#recordlink {margin-bottom:1em;}
+
 -->
 
 /* Syndetics Styles */
@@ -339,6 +341,10 @@ width:75%;
 
 .topDiv {
   text-align:center;
+}
+
+.mobileinfo {
+  display:none;
 }
 
 div.formButtonArea {
