@@ -32,6 +32,7 @@
 <!--{pager}-->
 </div>
 <!--{recordinfo:!}-->
+<!-- this is the button set we'll hide it if the BIB has no items -->
 <!--{linkeddocs}-->
 <!--{URLS}-->
 <!--{holdingslink}-->
@@ -105,7 +106,10 @@
 <span class="bibItems">
 <!--{orders}-->
 </span>
-
+<div id="smsfeatures">
+<a href="#here" name=smsbutton id=smsbutton onClick="showsms();return false;"><img src="/screens/smsbutton_s4.gif" border=0></a>&nbsp;&nbsp;
+<a href="#here" onClick="findPos(document.getElementById('smsbutton'),document.getElementById('info'),18,-68);document.getElementById('info').style.visibility='visible';return false;"><img src='/screens/smsq_s4.gif' border=0></a><br>
+</div>
 <!--{recordinfo:crnfvwiolsdkmbuqxz}--> 
 
 <!--{ifTOC}-->
@@ -115,17 +119,12 @@
 </div>
 <b class="conbottom"><b class="conb4"></b><b class="conb3"></b><b class="conb2"></b><b class="conb1"></b></b>
 </div>
-
-<!-- this is the button set we'll hide it if the BIB has no items -->
-<div id="smsdisplay" align="center">
 <br>
+
+<div id="cite_link">
 <!--{recordlink}-->
-<div id="cite_link"></div>
-<div id="smsfeatures" style="margin-top:10px">
-<a href="#here" name=smsbutton id=smsbutton onClick="showsms();return false;"><img src="/screens/smsbutton.gif" border=0></a>&nbsp;&nbsp;
-<a href="#here" onClick="findPos(document.getElementById('smsbutton'),document.getElementById('info'),18,-68);document.getElementById('info').style.visibility='visible';return false;"><img src='/screens/smsq.gif' border=0></a><br>
 </div>
-</div>
+
 
 </div>
 </div>
@@ -193,8 +192,6 @@ try {
 document.getElementById('smsfeatures').style.visibility='hidden';
 }
 </script>
-<!-- move from toplogo to speed up the page... -->
-<script src="http://plus.syndetics.com/widget.php?id=northmsu" type="text/javascript"></script>
 
 <div class="clear2"></div>
 <!--{botlogo}-->
