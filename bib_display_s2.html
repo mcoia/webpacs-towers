@@ -26,6 +26,16 @@
 	<tr>
 		<td width="75%" align="left"
 <!--{recordinfo:!}-->
+<table id="citationTable" width="100%" cellspacing="1" border="0">
+<tr class="bibInfoEntry">
+<td class="bibInfoLabel" width="20%" valign="top">
+Citation
+</td>
+<td class="bibInfoData">
+<span id="citeoclc">
+</td>
+</tr>
+</table>
 		</td>
 		<td width="25%" align="center">
 <!--{bibimage}-->
@@ -153,3 +163,13 @@ document.getElementById('smsfeatures').style.visibility='hidden';
 
 <!--{botlogo}-->
 <script src="http://plus.syndetics.com/widget.php?id=mwsumob" type="text/javascript"></script>
+<script type="text/javascript">
+var OCLC = $(".bibInfoLabel:contains('OCLC')").siblings(".bibInfoData").text().replace(/[^0123456789]/g,"")
+var ISBN = $(".bibInfoLabel:contains('ISBN')").siblings(".bibInfoData").text().replace(/[^0123456789]/g,"")
+if (OCLC > 0) {
+     document.getElementById("citeoclc").innerHTML = "<a href='http://worldcat.org/wcpa/oclc/" + OCLC + "?page=citation'>Cite this item (from WorldCat)</a>";}
+else if (ISBN > 0) {
+     document.getElementById("citeoclc").innerHTML = "<a href='http://worldcat.org/wcpa/search?q=isbn%3A" + ISBN + "&qt=advanced'>Check for citation</a> (click on \"Cite\" in WorldCat)";}
+else {
+     document.getElementById("citeoclc").innerHTML = "No citation available.";}
+</script>
