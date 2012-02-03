@@ -359,3 +359,7 @@ div.formButtomArea span script a {
  color: black; 
  font-size:13px;
 }
+
+#citationTable {
+  margin-left:3px;
+}
