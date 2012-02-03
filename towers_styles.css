@@ -346,3 +346,7 @@ width:75%;
 .mobileinfo {
   display:none;
 }
+
+#citationTable {
+  margin-left:3px;
+}
