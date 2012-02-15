@@ -360,6 +360,10 @@ div.formButtomArea span script a {
  font-size:13px;
 }
 
+#citationTable {
+  margin-left:3px;
+}
+
 #redirectMessage {
     margin:1em;
 
@@ -374,6 +378,4 @@ div.formButtomArea span script a {
     font-size:16px;
 }
 
-#citationTable {
-  margin-left:3px;
 }
