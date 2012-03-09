@@ -306,6 +306,7 @@ BUT_STAFF=/screens/b_staff.gif
 BUT_STARTOVER=/screens/b_newsrch.gif
 
 ICON_BUT_SUBMIT=<img src="/screens/b_submit.gif" alt="Submit">
+ICON_SUBMIT=<img src="/screens/b_submit.gif" alt="Submit">
 BUT_UNLIMAVAIL=/screens/b_unlimavail.gif
 BUT_WORDSRCH=/screens/b_wordsrch.gif
 # BUT_Z39_ANOTHER=/screens/b_z39ano.gif
