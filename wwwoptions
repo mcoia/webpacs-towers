@@ -149,7 +149,7 @@ RSRV_FORMAT=true
 
 RSRV_ITEMTYPE=t
 
-INNREACH=<img src="/screens/b_srchmobi.gif" border=0 alt="Search MOBIUS Union Catalog">@searchmobius.org(X=X;Y=Y;a=a;c=c;d=d;e=e;g=g;i=i;m=h;o=o;s=s;t=t;)
+INNREACH=<img src="/screens/b_srchmobi.gif" border=0 alt="Search MOBIUS Union Catalog">@searchmobius.org(X=X;Y=Y;a=a;c=c;d=d;e=e;g=g;i=i;m=h;o=o;s=s;t=t)
 
 KEYWORD_COLOR=Y|all|#993300 style="background-color: #FFFF33"
 
