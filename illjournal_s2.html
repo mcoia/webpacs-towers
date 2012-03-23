@@ -85,6 +85,104 @@ This interlibrary loan form allows MWSU patrons to request copies of materials (
 </table>
 <!--End the main content table-->
 </div></div>
+
+<script>
+function getUrlVars()
+{
+    var vars = [], hash;
+    var href = window.location.href.replace(/\+/g," ");
+    var hashes = href.slice(window.location.href.indexOf('?') + 1).split('&');
+    for(var i = 0; i < hashes.length; i++)
+    {
+        hash = hashes[i].split('=');
+        vars.push(hash[0]);
+        vars[hash[0]] = hash[1];
+    }
+    return vars;
+}
+
+var abbrevTitle = getUrlVars()["stitle"]
+var articleNumber = getUrlVars()["artnum"]
+var articleTitle = getUrlVars()["atitle"]
+var author = getUrlVars()["au"]
+var authorFirstInitial = getUrlVars()["auinit1"]
+var authorFirstName = getUrlVars()["aufirst"]
+var authorInitials = getUrlVars()["auinit"]
+var authorLastName = getUrlVars()["aulast"]
+var authorMiddleInitial = getUrlVars()["auinitm"]
+var bookOrArticle = getUrlVars()["genre"]
+var coden = getUrlVars()["coden"]
+var corporateAuthor = getUrlVars()["aucorp"]
+var date = getUrlVars()["date"]
+var eissn = getUrlVars()["eissn"]
+var eissnHyphen = getUrlVars()["eissnh"]
+var inventor = getUrlVars()["inventor"]
+var inventorFirstName = getUrlVars()["invfirst"]
+var inventorLastName = getUrlVars()["invlast"]
+var isbn = getUrlVars()["isbn"]
+var issn = getUrlVars()["issn"]
+var issnHyphen = getUrlVars()["issnh"]
+var issue = getUrlVars()["issue"]
+var pages = getUrlVars()["pages"]
+var pageStart = getUrlVars()["spage"]
+var pageEnd = getUrlVars()["epage"]
+var part = getUrlVars()["part"]
+var patentNumber = getUrlVars()["number"]
+var place = getUrlVars()["place"]
+var publicationTitle = getUrlVars()["title"]
+var publisher = getUrlVars()["pub"]
+var pubMed = getUrlVars()["pmid"]
+var quarter = getUrlVars()["quarter"]
+var season = getUrlVars()["ssn"]
+var sici = getUrlVars()["sici"]
+var sid = getUrlVars()["sid"]
+var volume = getUrlVars()["volume"]
+
+if (authorFirstName) {$('#main0').val($('#main0').val() + authorFirstName + " ")};
+if (authorInitials) {$('#main0').val($('#main0').val()+ authorInitials + " ")};
+if (authorFirstInitial) {$('#main0').val($('#main0').val()+ authorFirstInitial + " ")};
+if (authorMiddleInitial) {$('#main0').val($('#main0').val() + authorMiddleInitial + " ")};
+if (authorLastName) {$('#main0').val($('#main0').val()+ authorLastName + " ")};
+if (corporateAuthor) {$('#main0').val(corporateAuthor)};
+if (author) {$('#main0').val(author)}; 
+
+if (abbrevTitle) {$('#main1').val(abbrevTitle)};
+if (articleTitle) {$('#main1').val(articleTitle)};
+
+if (publicationTitle) {$('#pub10').val(publicationTitle)};
+
+if (date) {$('#pub11').val(date)};
+
+if (volume) {$('#pub12').val(volume)};
+
+if (quarter) {$('#pub13').val(quarter)};
+if (season) {$('#pub13').val(season)};
+if (issue) {$('#pub13').val(issue)};
+
+if (pageStart) {$('#pub14').val($('#pub14').val()+ pageStart + "-")};
+if (pageEnd) {$('#pub14').val($('#pub14').val()+ pageEnd)};
+if (pages) {$('#pub14').val(pages)};
+
+if (isbn) {$('#info0').val("ISBN: " + isbn)};
+if (issn) {$('#info0').val("ISSN: " + issn)};
+if (issnHyphen) {$('#info0').val("ISSN: " + issnHyphen)};
+if (eissn) {$('#info0').val("eISSN: " + eissn)};
+if (eissnHyphen) {$('#info0').val("eISSN: " + eissnHyphen)};
+
+
+if (articleNumber) {$('#info2').val($('#info2').val()+ articleNumber + ", ")};
+if (bookOrArticle) {$('#info2').val($('#info2').val()+ bookOrArticle + ", ")};
+if (coden) {$('#info2').val($('#info2').val()+ coden + ", ")};
+if (part) {$('#info2').val($('#info2').val()+ part + ", ")};
+if (patentNumber) {$('#info2').val($('#info2').val()+ patentNumber + ", ")};
+if (place) {$('#info2').val($('#info2').val()+ place + ", ")};
+if (publisher) {$('#info2').val($('#info2').val()+ publisher + ", ")};
+if (pubMed) {$('#info2').val($('#info2').val()+ pubMed + ", ")};
+if (sici) {$('#info2').val($('#info2').val()+ sici + ", ")};
+if (sid) {$('#info2').val($('#info2').val()+ sid + ", ")};
+
+
+</script>
 <!--{botlogo}-->
 <p align="center" class="InnovativeCredit">Powered by <a href="http://www.iii.com" target="_blank">Innovative Interfaces, Inc.</a> 2006</p>
 </body>
