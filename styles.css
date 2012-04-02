@@ -469,9 +469,13 @@ span.buttonText:hover {text-decoration:underline;}
 
 .buttonSpriteSpan2 { background:transparent url('/screens/buttonsprite.gif') no-repeat; display:table-cell; display:inline-block; line-height:14px; outline:none; padding:5px 0 5px 16px; text-decoration:none;  }
 
-.pressedState .buttonSpriteSpan1 { background-position:bottom right; color:#000000; outline:none; }
+.buttonSpriteSpanSmall1 { background: transparent url('/screens/buttonspritecap_small.gif') no-repeat scroll top right; color:#444444; display:table-cell; display:inline-block; font:normal 11px arial, sans-serif; height:18px; margin-right:6px; margin-bottom:4px; outline:none; padding-right:10px; text-decoration:none; width:auto; }
 
-.pressedState .buttonSpriteSpan1 .buttonSpriteSpan2  { background-position:bottom left; outline:none; }
+.buttonSpriteSpanSmall2 { background:transparent url('/screens/buttonsprite_small.gif') no-repeat; display:table-cell; display:inline-block; line-height:14px; outline:none; padding:2px 0 2px 12px; text-decoration:none;  }
+
+.pressedState .buttonSpriteSpan1, .pressedState .buttonSpriteSpanSmall1  { background-position:bottom right; color:#000000; outline:none; }
+
+.pressedState .buttonSpriteSpan1 .buttonSpriteSpan2 , .pressedState .buttonSpriteSpanSmall1 .buttonSpriteSpanSmall2 { background-position:bottom left; outline:none; }
 
 #booking_form input { margin-left:10px; }
 
