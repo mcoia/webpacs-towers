@@ -694,6 +694,8 @@ div .bibResourceSidebar { display:none; }
 
 .linkBanner .linkBannerLeft ul li, .linkBanner .linkBannerRight ul li {margin-left: 0; margin-right:2em;}
 
+.linkBanner .linkBannerRight ul li:last-child { margin-right:0;}
+
 .linkBanner ul {list-style-type:none; margin: 0; padding: 0 1.2em;}
 
 .linkBanner ul li {display: inline; margin-left:2em;}
@@ -970,7 +972,7 @@ div.rssChannelEntries { border:none; background:#FFFFFF; }
 /*Relative position allows this bg color to show in older IE.*/
 .searchNav { background:#3B77B6; margin:0; position:relative; }
 
-/*#searchNavMenu { margin:0; text-align:right; } */
+#searchNavMenu { margin:0; text-align:right; }
 
 .searchNavBut { vertical-align:bottom; margin:3px 10px 3px 5px; }
 
@@ -997,6 +999,8 @@ div.rssChannelEntries { border:none; background:#FFFFFF; }
 .resourceScreen .bibSearchtool { text-align:center; }
 
 .pageContent > div .bibSearchtool { margin-bottom:10px; border-color:#D3D3D3; border-style:solid; border-width:0 0 1px; }
+
+#specializedSearch { vertical-align:bottom; margin-bottom:3px; }
 
 /* end staff */
 
