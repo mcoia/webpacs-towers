@@ -1,0 +1,13 @@
+.linkBanner {
+    background-color:#000000;
+    padding:0;
+}
+
+.linkBannerLeft ul, .linkBannerRight ul{
+    height:25px;
+    margin:6px 0 3px;
+}
+
+.searchNavBut {
+    margin: 0 10px 0 5px;
+}
