@@ -1,3 +1,5 @@
+.browseSuperEntry td {font-weight: bold;}
+
 .linkBanner {
     background-color:#000000;
     padding:0;
@@ -6,6 +8,10 @@
 .linkBannerLeft ul, .linkBannerRight ul{
     height:25px;
     margin:6px 0 3px;
+}
+
+.rrUserQuery {
+    color: #457029;
 }
 
 .searchNavBut {
