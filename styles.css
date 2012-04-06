@@ -359,6 +359,8 @@ div.bookingsVerify { padding:0; margin-top:18px; }
 
 .briefcitStatus { font-weight:bold; }
 
+.briefcitRatings { display:none; }
+
 .briefcitRatings h2 { position:absolute; top:-1000px; left:1000px; font-size:.1em; }
 
 .briefcitResource { width:400px;}

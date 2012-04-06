@@ -40,6 +40,7 @@
 AVAILLIM=<span class="availLimMessage">Limit search to available items</span>|<span class="availLimMessage">Search results limited to available items</span>
 AVAILLIM_STATS=-,o
 BOTLOGO=@screens/botlogo.html
+BOTLOGO2=@screens/botlogo_s2.html
 ICON_BUT_CANCEL=<div onmousedown="this.className='pressedState';" onmouseout="this.className='';" onmouseup="this.className='';"><div class="buttonSpriteDiv"><span class="buttonSpriteSpan1"><span class="buttonSpriteSpan2">Cancel</span></span></div></div>
 ICON_BUT_CLOSEWINDOW=<span class="button"><img src="/screens/ico_x.png" alt=""><span class="buttonText">Close Window</span></span>
 ICON_BUT_RET2CAT=<span class="button"><img src="/screens/ico_back.png" alt=""><span class="buttonText">Return to Catalog</span></span>
@@ -103,6 +104,11 @@ ICON_REL_GROUP_2=<img src="/screens/relevance4.gif" alt="Highly relevant">&nbsp;
 ICON_REL_GROUP_3=<img src="/screens/relevance3.gif" alt="Very relevant">&nbsp;<h1 class="browseSuperEntryTitle">Very relevant titles</h1>&nbsp;
 ICON_REL_GROUP_4=<img src="/screens/relevance2.gif" alt="Relevant">&nbsp;<h1 class="browseSuperEntryTitle">Relevant titles</h1>&nbsp;
 ICON_REL_GROUP_5=<img src="/screens/relevance1.gif" alt="Other relevant">&nbsp;<h1 class="browseSuperEntryTitle">Other relevant titles</h1>&nbsp;
+ICON_REL_GROUP_12=<img src="/screens/relevance5.gif" alt="Most relevant">&nbsp;<span id="rrTerm1">Match</span> found in main title of&nbsp;
+ICON_REL_GROUP_22=<img src="/screens/relevance4.gif" alt="Highly relevant">&nbsp;<span id="rrTerm2">Match</span> found in subtitle or author of&nbsp;
+ICON_REL_GROUP_32=<img src="/screens/relevance3.gif" alt="Very relevant">&nbsp;<span id="rrTerm3">Match</span> found in chapter title, subject heading, or note of&nbsp;
+ICON_REL_GROUP_42=<img src="/screens/relevance2.gif" alt="Relevant">&nbsp;&nbsp;<span id="rrTerm4">All search terms</span> found in title fields of&nbsp;
+ICON_REL_GROUP_52=<img src="/screens/relevance1.gif" alt="Other relevant">&nbsp;<span id="rrTerm5">All search terms</span> found in catalog record of&nbsp;
 IMAGE_AVS1=/screens/relevance1.gif
 IMAGE_AVS2=/screens/relevance2.gif
 IMAGE_AVS3=/screens/relevance3.gif
@@ -178,6 +184,7 @@ HOLDINGS_POS=atp
 HOTLINK=i^022,i^024,i^028,g^086
 ICON_BIB_HOLDINGS_ITEMS=View Copies
 #ICON_NEARBY=<img src="/screens/bullet.gif" alt="Nearby on shelf" border="0">
+ICON_NEARBY2=<img src="/screens/nearby.png" alt="Browse nearby" border="0">
 ICON_BIB_PAGING_CAPTION= 
 ICON_BIB_PAGING_NEXT=<span class="button"><span class="buttonText" id="buttonNextRecord">Next Record</span><img src="/screens/ico_next.gif" alt=""></span>
 ICON_BIB_PAGING_PREV=<span class="button"><img src="/screens/ico_previous.gif" alt=""><span class="buttonText">Previous Record</span></span>
