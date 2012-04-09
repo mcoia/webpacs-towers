@@ -1152,6 +1152,8 @@ tr.highlight { background:#FFFFE4; }
 
 .wbnoresources { display:block; margin: 3px 0; }
 
+#worldcat { display:none; }
+
 /* Syndetics Plus */
 
 .syn_title {
