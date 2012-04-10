@@ -1,7 +1,7 @@
 // JavaScript Document
 
 // set this to be the URL for the SMS script
-var smsurl = "http://mobiusconsortium.org/sms/sms-training.php?";
+var smsurl = "http://mobiusconsortium.org/sms/sms-towers.php?";
 
    function showsms() {
 
@@ -47,9 +47,9 @@ out += "<p><b>Select your provider:</b><select name=provider>";	// pull-down for
     var x=tr[i].getElementsByTagName('TD');			// get each cell
     if (x.length == 3) {								// if there's only 3 cells (like our ITEM table)
       var loc = x[0].innerHTML.replace(/(<([^>]+)>|&nbsp;)/ig,"");		// get the location (remove tags)
-	  var callLinks = x[1].getElementsByTagName("a"); //get the call number without extras
-	  var call = callLinks[0].innerHTML.replace(/(<([^>]+)>|&nbsp;)/ig,"");
-	  //var call = x[1].innerHTML.replace(/(<([^>]+)>|&nbsp;)/ig,"");	// get the call number + copies if any (remove tags)
+	  //var callLinks = x[1].getElementsByTagName("a"); //get the call number without extras
+	  //var call = callLinks[0].innerHTML.replace(/(<([^>]+)>|&nbsp;)/ig,"");
+	  var call = x[1].innerHTML.replace(/(<([^>]+)>|&nbsp;)/ig,"");	// get the call number + copies if any (remove tags)
 	  var status = x[2].innerHTML.replace(/(<([^>]+)>|&nbsp;)/ig,"");	// get the status (remove tags)
 	  
 	  var chck = '';
