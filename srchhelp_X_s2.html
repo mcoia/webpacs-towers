@@ -56,7 +56,7 @@ startTimeout(600000, "/");
 <fieldset>
 <legend>Add Limits (Optional)</legend>
 
-<div class="formEntryArea">
+<div class="formEntryArea" id="searchscopeDiv">
 <table border="0">
 <tr>
 <td>
@@ -71,7 +71,7 @@ Library
 </table>
 </div>
 
-<div class="formEntryArea">
+<div class="formEntryArea" id="librarylocationDiv">
 <!--{branch}-->
 </div>
 <div class="formEntryArea">
@@ -93,41 +93,54 @@ Library
 <input type="hidden" name="endLimit" >
 </div> <!-- formLeft -->
 
-<div class="formRight">
-<table class="tipsTable">
+<div class="formLeft">
+<table class="tipsTable" border="1">
 <caption>Search Tips</caption>
-<!-- <tr valign="top"><th align="left">Adjacency</th>
-<td>Multiple words are searched together as one phrase.<br>
-<span style="text-decoration:underline">Example</span> : world health organization</td>
-</tr> -->
-<tr><th>Wildcards</th>
-<td>
-Words may be right-hand truncated using an asterisk ('*') in place of other characters. <!-- Use '**' for open-ended truncation of over five characters.--> The '*' wildcard may also be embedded in a search string. You may use '?' to replace a single character anywhere within a word.<br>
-<span style="text-decoration:underline">Examples</span> : environment* polic*, wom?n</td>
-</tr>
-<tr><th>Boolean Operators</th>
-<td>
-Use "and" or "or" to specify multiple words in any field, any order. Use "and not" to exclude words.<br>
-<span style="text-decoration:underline">Example</span> : stocks and bonds<br>
-<span style="text-decoration:underline">Example</span> : (alaska or canada) and (adventure and not vacation)</td>
-</tr>
-<tr><th>Field limits</th>
-<td>
-A field limit causes the system to search only the specified field for the specified word(s).</td>
-</tr>
-<tr>
-<th>Grouping</th>
-<td>
-Keyword search results are usually grouped by relevance to bring the most likely titles to the top of the list. Each group represents a similar level of relevance and results are sorted within the group by date or title. To get an ungrouped result set, use boolean operators to form a complex query.
-</td>
-</tr>
-<!-- <tr valign="top"><th align="left">Proximity Operators</th>
-<td>
-Use "near" to specify words close to each other, in any order.<br>
-<span style="text-decoration:underline">Example</span> : california near university</td>
-</tr> -->
+        <tr> 
+            <th colspan=2 bgcolor=#cccccc> Search Tips </th>
+            <th bgcolor=#cccccc> Examples</th>
+        </tr>
+        <tr> 
+            <td width=100><b>PHRASE</b></td>
+            <td> Use &#8220;quotes&#8221;  to search a phrase.</td>
+            
+            <td> "college students"<br>
+				"united states supreme court" </td>
+        <tr> 
+            <td width=100><b>TRUNCATION</b></td>
+            <td> Use * to substitute for 1-5 characters.  <br>
+            	Use ** to substitute for any number of characters. <br>
+            	Use ? to substitute for a single character.  </td>
+            <td> photograph* <br>
+                math** <br>
+                wom?n </td>
+        <tr> 
+            <td width=100><b>CONNECTORS </b></td>
+            <td> Use <i><b>and</b></i> to search all words. <br>
+            	Use <i><b> or </b></i> to search  ANY word. <br>
+            	Use <i><b> and not </b></i> to exclude words. <br>
+            	Use parentheses to group terms for complex searches. </td>
+            <td> environment and health <br>
+            	treatment or therapy <br>
+            	dolphins and not football <br>
+                (doctor* or physician*) and stress </td>
+        <tr> 
+            <td width=100><b>PROXIMITY</b></td>
+            <td>Use <i><b>within</b></i> and a number to specify
+            	proximity of words, one to another, in any order.  </td>
+            <td> missouri within 2 university</td>
+        <tr> 
+            <td width=100><b>FIELDS</b></td>
+            <td> Use labels to search specific fields: <br>
+             	<b>a:</b> author <br>
+				<b>t:</b> title <br>
+				<b>s:</b> subject </td>
+            <td> a:shakespeare and t:lear <br>
+            	s:hopi and s:religion </td>
+        </tr>
+
 </table>
-</div> <!-- formRight -->
+</div> <!-- formLeft -->
 <div class="clear"></div>
 </div> <!-- form3PartBelow -->
 
