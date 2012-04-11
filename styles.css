@@ -118,7 +118,7 @@ a:hover  { color: #7C14B8; }
 #accessibleForm form legend { font-weight:bold; }
 #accessibleForm h2 { margin-left:15px; margin-bottom:0; margin-top:12px }
 #accessibleForm span.formLabel { display:block; padding-top:3px; }
-#accessibleForm span.formLabelExample { font-style:italic; }
+#accessibleForm div.formLabelExample { font-style:italic; }
 #accessibleForm .formEntryArea, #accessibleForm .ecommerceFormEntryArea { margin:3px 0 0 15px; }
 #accessibleForm .formButtonArea .formButtonArea {margin-left:12px; display:inline;}
 #accessibleForm font { font-size:1em; padding:10px; }
@@ -597,6 +597,8 @@ div .bibResourceSidebar { display:none; }
 
 .form3PartBelow { background:#FFFFFF url('tile_vgradient.jpg') repeat-x scroll left top; clear:both; margin-top:1em; }
 
+.formLogin { width:50% !important; }
+
 .formLogin label { display:block; padding-top:3px; }
 
 .formLeft { float:left; padding:10px 10px 10px; }
@@ -703,6 +705,32 @@ div .bibResourceSidebar { display:none; }
 .linkBanner ul {list-style-type:none; margin: 0; padding: 0 1.2em;}
 
 .linkBanner ul li {display: inline; margin-left:2em;}
+
+#locationHelp {
+    float:left;
+    width:33%;
+    margin-left:8%;
+}
+
+#locationHelp .campusCode {
+    color:#BA0000;
+}
+
+#locationHelp h2 {
+    margin-bottom:0;
+}
+
+#locationHelp p {
+    margin-top:0;
+}
+
+#locationHelp td:first-child {
+    width:38%;
+}
+
+#locationHelp td {
+    padding-bottom:4px;
+}
 
 .loggedInMessage { color:#999999; font-size:.8em; font-style:normal; float:right; margin:1px 5px 0 0; }
 
