@@ -28,6 +28,10 @@
 <!--{xif}-->
 
 <div class="bibResourceTableHeader">Resources</div>
+
+<div class="bibResourceContent">
+<div id="citeoclc"></div>
+</div>
 </div>
 
 
@@ -195,5 +199,16 @@ s.setAttribute("src", "http://books.google.com/books?jscmd=viewapi&bibkeys=ISBN:
 document.documentElement.firstChild.appendChild(s);
 //alert (api_url);
 
+</script>
+
+<script type="text/javascript">
+var OCLC = $(".bibInfoLabel:contains('OCLC')").siblings(".bibInfoData").text().replace(/[^0123456789]/g,"")
+var ISBN = $(".bibInfoLabel:contains('ISBN')").siblings(".bibInfoData").text().replace(/[^0123456789]/g,"")
+if (OCLC > 0) {
+     document.getElementById("citeoclc").innerHTML = "<a href='http://worldcat.org/wcpa/search?q=isbn%3A" + ISBN + "&qt=advanced'><span class='button'><img src='/screens/ico_browse_brief.png' alt=''><span class='buttonText'>Cite This</span></span></a>";}
+else if (ISBN > 0) {
+     document.getElementById("citeoclc").innerHTML = "<a href='http://worldcat.org/wcpa/search?q=isbn%3A" + ISBN + "&qt=advanced'><span class='button'><img src='/screens/ico_browse_brief.png' alt=''><span class='buttonText'>Cite This</span></span></a>";}
+else {
+     document.getElementById("citeoclc").innerHTML = "No citation available. Visit our <a href='http://libguides.missouriwestern.edu/content.php?pid=170814'>citation help page</a>.";}
 </script>
 <!--{botlogo}-->
