@@ -170,6 +170,7 @@ IMAGE_MATTYPE2=/screens/media_ebook.gif
 IMAGE_MATTYPE3=/screens/media_digitalaudio.gif
 IMAGE_MATTYPE4=/screens/media_software.gif
 INDEX_EXT=coi
+ITEMS_MSG_BRIEF=Click here for additional copies/volumes of this item
 MEDIA=2
 NO_COPIES=Currently no copies available
 SORT_BROWSE=t:Title|a:Author|c:Year|r:Reverse Year|n:Call Number|m:Material Type
