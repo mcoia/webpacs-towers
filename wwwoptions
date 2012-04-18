@@ -140,6 +140,7 @@ ICON_856LINK=<img src="/screens/bullet.gif" alt="" border="0" style="margin-righ
 ICON_962LINK=<img src="/screens/bullet.gif" alt="" border="0" style="margin-right:5px">Digital Image
 #ICON_BOOKCART=<span class="button"><img src="/screens/ico_bag_add.png" alt=""><span class="buttonText">Add to Bag</span></span>
 ICON_BOOKCART_SAVED=<span class="button"><img src="/screens/ico_bag_minus.png" alt=""><span class="buttonText">Remove From Bag</span></span>
+ICON_BOOKCART_SAVED2=<span class="button"><img src="/screens/ico_bag_minus.png" alt=""><span class="buttonText">Saved for Print/Email</span></span>
 ICON_FULLRECORD=See Full Record
 ICON_LOCATEINRESULTS=<div onmousedown="this.className='pressedState';" onmouseout="this.className='';" onmouseup="this.className='';"><div class="buttonSpriteDiv"><span class="buttonSpriteSpan1"><span class="buttonSpriteSpan2">Locate in results</span></span></div></div>
 ICON_PAGING_CAPTION=Result Page&nbsp;
@@ -148,7 +149,9 @@ ICON_PAGING_PREV=Prev
 ICON_PROGRAM=<img src="/screens/media_program.gif" border="0" alt="Library Event">
 ICON_RESOURCE=<img src="/screens/media_resource.gif" alt="Internet Resource">
 ICON_SAVEALLPAGE=<span class="button"><img src="/screens/ico_bag_add.png" alt=""><span class="buttonText">Add All On Page</span></span>
+ICON_SAVEALLPAGE2=<span class="button"><img src="/screens/ico_multirequest.png" alt=""><span class="buttonText">Save All On Page</span></span>
 ICON_SAVEMARKED=<span class="button"><img src="/screens/ico_bag_add.png" alt=""><span class="buttonText">Add Marked to Bag</span></span>
+ICON_SAVEMARKED2=<span class="button"><img src="/screens/ico_checkmark_16px.png" alt=""><span class="buttonText">Save Marked for Print/Email</span></span>
 IMAGE_MATTYPE-=/screens/media_book.gif
 IMAGE_MATTYPEa=/screens/media_book.gif
 IMAGE_MATTYPEb=/screens/media_archive.gif
@@ -258,10 +261,14 @@ ICON_MYLISTS_RECORD=<span class="button"><img src="/screens/ico_list_add.png" al
 # Saving and Exporting
 #BRIEF_EXPORT=c|a|t|p
 ICON_BUT_BIBEXPORT=<span class="button"><img src="/screens/ico_bag_add.png" alt=""><span class="buttonText">Add to Bag</span></span>
+ICON_BUT_BIBEXPORT2=<span class="button"><img src="/screens/ico_bag_add.png" alt=""><span class="buttonText">Save Record</span></span>
 ICON_BUT_CLEAR_MARKED=<span class="button"><img src="/screens/ico_bag_clear.png" alt=""><span class="buttonText">Empty Bag</span></span>
+ICON_BUT_CLEAR_MARKED2=<span class="button"><img src="/screens/ico_bag_clear.png" alt=""><span class="buttonText">Clear Saved Records</span></span>
 ICON_BUT_EXPORT_MULTI=<span class="button"><img src="/screens/ico_disc.png" alt=""><span class="buttonText">Export Saved</span></span>
 ICON_BUT_EXPORT_VIEW_SAVES=<span class="button"><img src="/screens/ico_bag.png" alt=""><span class="buttonText">View Bag</span></span>
+ICON_BUT_EXPORT_VIEW_SAVES2=<span class="button"><img src="/screens/ico_bag.png" alt=""><span class="buttonText">View Saved Records</span></span>
 ICON_BUT_VIEW_SAVES=<span class="button"><img src="/screens/ico_bag.png" alt=""><span class="buttonText">View Bag</span></span>
+ICON_BUT_VIEW_SAVES2=<span class="button"><img src="/screens/ico_bag.png" alt=""><span class="buttonText">View Saved Records</span></span>
 EMAILOP=From the library catalog|exporter|
 EXPORT_SELECT_TABLE=Sendto:browser,email,local|Format:full,brief,marc,procite,endnote
 XRECTYPE=boi
