@@ -17,8 +17,7 @@ $(document).ready(function () {
 	//});
 	//Changes the search examples
 	var selectAny = $('#b option[value=""]')
-	$('#b option[value=""]').detach()
-	$('#b option:not([value^="m"])').remove(); //Hides the out-of-scope locations
+	$('#b option:not([value^="m"])').detach(); //Hides the out-of-scope locations
 	selectAny.prependTo("#b")
 
 });
