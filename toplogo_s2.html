@@ -16,9 +16,11 @@ $(document).ready(function () {
     	//$("#exampleText").load("screens/" + this.value + ".inc");
 	//});
 	//Changes the search examples
-	
-	$('#b option:not([value^="m"])').hide(); //Hides the out-of-scope locations
-	$('#b option[value=""]').show(); //Shows the any location for the scopes
+	var selectAny = $('#b option[value=""]')
+	$('#b option[value=""]').detach()
+	$('#b option:not([value^="m"])').remove(); //Hides the out-of-scope locations
+	selectAny.prependTo("#b")
+
 });
 </script>
 
