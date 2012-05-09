@@ -42,7 +42,7 @@ if (scope == undefined || scope == 0){
 
 if (href.indexOf("&redirected") != -1 ) {
     
-    var redirectMessage = "<p>You've been redirected from towers.mobius.umsystem.edu or towers.missouri.edu. Starting in June of 2012, those addresses will no longer work.</p><p>Please update your bookmarks to <a href='" + newURL + "'>" + newURL + "</a>.</p>"
+    var redirectMessage = "<p>You've been redirected from towers.mobius.umsystem.edu or towers.missouri.edu. Starting on May 30, 2012, those addresses will no longer work.</p><p>Please update your bookmarks to <a href='" + newURL + "'>" + newURL + "</a>.</p>"
 
     $(document).ready(function () {
         $('#redirectMessage').html(redirectMessage);
