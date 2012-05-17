@@ -317,7 +317,7 @@ div.bookingsVerify { padding:0; margin-top:18px; }
 
 .briefcitBookcartMark {  }
 
-.briefcitCell { background:#FFFFFF; border-bottom:1px solid #ECECEC; font-size:.9187em; }
+.briefcitCell { background:#FFFFFF; border-bottom:1px solid #ECECEC; font-size:.9187em; padding:.5em 0;}
 
 .briefcitClear { clear:both; }
 
