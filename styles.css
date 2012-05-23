@@ -764,7 +764,11 @@ div .bibResourceSidebar { display:none; }
 
 .miscButtons { margin-bottom: 1em;}
 
-.mobiusLogo, .clusterLogo { position:absolute; right:10px; top:16px;}
+.mobiusLogo, .clusterLogo { position:absolute; right:10px; }
+
+.mobiusLogo { top:42px; }
+
+.clusterLogo { top:16px; }
 
 .msg td { padding-top:3px; }
 
@@ -775,6 +779,17 @@ div .bibResourceSidebar { display:none; }
 .mylistsSavePage form { padding:10px; color:#000000; float:none; }
 
 .mylistsSavePage .pageMainAreaHeader { font-size:1.3333em; font-weight:bold; }
+
+.navHeader {
+border-bottom:1px dashed #5E5D5D;
+color:#5E5D5D;
+font-size:small;
+font-weight:bold;
+letter-spacing:1px;
+margin-bottom:0;
+margin-top:5px;
+padding:2px;
+}
 
 .navigationRow a:link,.navigationRow a:visited, .miscButtons a:link, .miscButtons a:visited { color: #014184; font-family:Arial,"Arial Unicode MS",Helvetica,Verdana,sans-serif; font-weight:bold; padding:6px 5px 3px 0px; text-decoration:none; width:auto; }
 
@@ -803,6 +818,22 @@ div .bibResourceSidebar { display:none; }
 .pageContentInner h2 { font-size:1.1667em; margin-top:10px; }
 
 .pageContentInnerBarePage { padding:12px 20px;}
+
+.pageContentColumn {
+float:right;
+margin-left:1%;
+padding:1%;
+width:71%;
+}
+
+.pageNavColumn {
+background-color:#F3F3F3;
+border:1px solid #D3D3D3;
+float:right;
+margin:2% 1.75%;
+padding:0.5%;
+width:19%;
+}
 
 .pat br { display:inline; line-height:1px; }
 
@@ -984,6 +1015,25 @@ table.reserveBibs { margin:25px 0 20px 15%; width:65%; }
 .reviewLinks { font-size:1em; margin:0 0 4px 8px; }
 
 #bibDisplayBody .reviewLinks a:link, #bibDisplayBody .reviewLinks a:active, #bibDisplayBody .reviewLinks a:visited  { color:#369699; }
+
+#rightCol {
+font-size:15px;
+margin:0 20px;
+padding:0;
+}
+
+#rightCol li {
+list-style-type:none;
+padding:4px 0;
+text-indent:-14px;
+}
+
+#rightCol li a {
+color:#444444;
+margin:0 0 0 3px;
+padding:0;
+text-decoration:none;
+}
 
 .rssArea div, .rssArea span { padding:0; }
 
