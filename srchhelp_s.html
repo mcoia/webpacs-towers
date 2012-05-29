@@ -39,7 +39,19 @@ startTimeout(600000, "/");
 <span class="formLabel">
 <label for="sortdropdown">Sort by:</label>
 </span>
-<!--{indexsort}-->
+<noscript><br /><br /><br /><span class="errorMessage">
+You must have javascript enabled on your browser in order to use functions on this page. Please enable javascript on your browser and reload this page or contact a librarian for further assistance.
+</span><br /><br /><br /></noscript>
+
+<script  type="text/JavaScript">
+<!-- Hide the JS
+document.write('<label for="sortdropdown" style="display:none;">Sort Drop Down</label><select name="sortdropdown" id="sortdropdown" >');
+document.write('<option value="t"> Title</option> ');
+document.write('<option value="n"> Call Number</option> ');
+document.write('<option value="m"> Material Type</option> ');
+document.write('</select> ');
+// Unhide the JS -->
+</script>
 </div>
 <div class="formEntryArea formScopeSearch">
 <span class="formLabel">
