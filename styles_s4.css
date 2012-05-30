@@ -12,6 +12,10 @@ lh {
     background-color:#004631;
 }
 
+form #otherSearches {
+    margin-right:0;
+}
+
 #otherSearches {
     width:18em;
     float:right;
@@ -73,6 +77,10 @@ lh {
 
 #tabs a {
         color: #285407;
+}
+
+#tabs .formRight {
+    width:100%;
 }
 
 #tabs .browseSearchtool {
