@@ -42,6 +42,12 @@ $("#tabList li").click(function () {
 	$(this).css("background-color", "#DFE6D4");
 	$("#exampleText").load("/screens/" + tabId + ".inc");
     });
+$("#otherSearches li").click(function () {
+	var tabId = $(this).attr('id');
+	$("#searchtype").val(tabId);
+	$("#tabList li").css("background-color", "#F1F4EB");
+	$("#exampleText").load("/screens/" + tabId + ".inc");
+    });
 });
 </script> 
 
@@ -127,19 +133,19 @@ class="buttonSpriteSpan2">Submit</span></span></div></div></a>
 <div id="otherSearches">
 <ul>
 <lh>Other Searches:</lh>
-<li>Journal Title</li>
+<li><a href="http://rl6vs2mp4m.search.serialssolutions.com/">Journal Title</a></li>
 <li>Course Reserves</li>
 <li>Author and Title</li>
-<li>Children's Subjects</li>
+<li id="m">Children's Subjects</li>
 </ul>
 <ul>
 <lh>Number Searches:</lh>
-<li>Dewey Decimal</li>
-<li>Library of Congress</li>
-<li>Local</li>
-<li>Government Documents</li>
-<li>ISBN or ISSN</li>
-<li>OCLC</li>
+<li id="e">Dewey Decimal</li>
+<li id="c">Library of Congress</li>
+<li id="f">Local</li>
+<li id="g">Government Documents</li>
+<li id="i">ISBN or ISSN</li>
+<li id="o">OCLC</li>
 </ul>
 </div>
 
