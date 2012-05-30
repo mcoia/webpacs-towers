@@ -1,8 +1,150 @@
+lh {
+    font-weight:bold;
+}
+
+#exampleText {
+    width:20em;
+    float:left;
+    margin-right:1.5em;
+}
+
+.linkBanner {
+    background-color:#004631;
+}
+
+#otherSearches {
+    width:18em;
+    float:right;
+    text-align:left;
+    margin-right:5%;
+    background-color:#F1F4EB;
+    border:1px solid #dce0d5;
+}
+
+#otherSearches li, #otherSearches lh {
+    list-style:none;
+    margin-top:.25em;
+}
+
+#otherSearches ul {
+    margin-bottom:1.5em;
+}
+
+#otherSearches, #exampleText {
+    margin-top:1.25em;
+}
+
+.pageNavColumn {
+    background-color:#F1F4EB;
+    border:1px solid #dce0d5;
+    text-align:center;
+}
+
+.pageNavColumn img {
+    margin:5px auto;
+}
+
+.pageNavColumn ul {
+    text-align:left;
+}
+
 .topLogoImage {
     padding: 40px 10px 15px;
 }
 
 .topLogoImage img {
     display:inline;
+}
+
+/* Tab styles */
+
+.innerTab {
+    width:47em;
+    text-align:left;
+    margin-left:auto;
+    margin-right:auto;
+}
+
+#tabs {
+	margin: 30px 0;
+        margin-left:auto;
+        margin-right:auto;
+}
+
+#tabs a {
+        color: #285407;
+}
+
+#tabs .browseSearchtool {
+    background:none;
+    border:none;
+}
+
+#tabs .formButtonArea {
+    margin-left:3px;
+}
+
+
+#tabList {
+	float: left;
+	background: #fff;
+	width: 500px;
+	padding: 0;
+        margin: 0;
+}
+#tabList li {
+	margin-left: 8px;
+	list-style: none;
+}
+#tabList li:hover {
+    cursor:pointer;
+}
+#tabList li:first-child {
+	margin-left: 0;
+	background-color: #DFE6D4
+}
+* html #tabList li {
+	display: inline;
+}
+#tabList li, #tabList li a {
+	float: left;
+}
+#tabList li.active {
+	background: #DFE6D2;
+}
+#tabList li {
+	background: #F1F4EB;
+}
+#tabList li.active a {
+	color: #333333;
+}
+#tabs .tabContent {
+	background-color:#DFE6D4;
+	clear: both;
+	padding: 15px 0;
+	min-height: 100px;
+        float:left;
+        width:100%;
+}
+#tabs div h3 {
+	margin-bottom: 12px;
+}
+#tabs div p {
+	line-height: 150%;
+}
+#tabList li a {
+	text-decoration: none;
+	padding: 8px;
+	color: #000;
+	font-weight: bold;
+}
+.textBox {
+    margin: 0 60px;
+}
+.thumbs {
+	float:left;
+	border:#000 solid 1px;
+	margin-bottom:20px;
+	margin-right:20px;
 }
 

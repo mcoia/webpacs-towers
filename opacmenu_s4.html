@@ -32,23 +32,38 @@ obj.submit();
 </head>
 <body>
 <!--{toplogo}-->
+<script type="text/javascript">
+
+$(document).ready(function(){
+$("#tabList li").click(function () {
+	var tabId = $(this).attr('id');
+	$("#searchtype").val(tabId);
+	$("#tabList li").css("background-color", "#F1F4EB");
+	$(this).css("background-color", "#DFE6D4");
+	$("#exampleText").load("/screens/" + tabId + ".inc");
+    });
+});
+</script> 
 
 <div class="pageContentInner mainSearch">
 
-<h1 class="accessibleAddInfo">Search</h1>
+  <div id="tabs">
+    <ul id="tabList">
+      <li id="Y"><a>Keyword</a></li>
+      <li id="t"><a>Title</a></li>
+      <li id="a"><a>Author</a></li>
+      <li id="d"><a>Subject</a></li>
+      <li id="X"><a>Advanced</a></li>
+    </ul>
 
-<div id="accessibleForm" class="form1Part">
-<div class="browseSearchtool">
-<form action="/search/" method="get" name="search" id="search" onSubmit="return iiiSearchValidate();">
+    <div id="tab-1" class="tabContent">
+ 
 
-
+<div class="innerTab">
+<form action="/search/" method="get" name="search" id="search" 
+onSubmit="return iiiSearchValidate();">
 <input type="hidden" id="iiiFormHandle_1">
 
-<!-- Optional legend:
-<fieldset>
-<legend>Type the search term you want to find.</legend>-->
-<div class="formEntryArea">
-<div class="inlineBlock">
 <label for="searchtype" class="accessibleAddInfo">Search type</label>
 <select name="searchtype" id="searchtype">
 <option value="Y" selected="selected">Keyword
@@ -69,28 +84,68 @@ obj.submit();
 <option value="o">OCLC Number
 </select>
 <!--{nosort}-->
-<label for="searcharg" class="accessibleAddInfo">Search term</label>
-<input maxlength="75" name="searcharg" size="20" >
-</div>
-<div class="inlineBlock">
-<label for="scope" class="accessibleAddInfo">Location</label>
-<!--{scope}-->
-<span class="formButtonArea">
-
-  <!--{submit}-->
+<input maxlength="75" name="searcharg" size="28" >
+<select name="m">
+<option value="">All Collections</option>
+<option value="2">E-Books</option>
+<option value="i">Spoken Audio</option>
+<option value="g">Video/Film</option>
+</select>
+<input type="hidden" name="searchscope" value="4">
+<span class="nowrap formButtonArea">
 
 <input type="hidden" id="iiiFormHandle_1"/>
-<a href="#" onclick="iiiDoSubmit_1();"><div onmousedown="this.className='pressedState';" onmouseout="this.className='';" onmouseup="this.className='';"><div class="buttonSpriteDiv"><span class="buttonSpriteSpan1"><span class="buttonSpriteSpan2">Submit</span></span></div></div></a>
+<a href="#" onclick="iiiDoSubmit_1();"><div 
+onmousedown="this.className='pressedState';" onmouseout="this.className='';" 
+onmouseup="this.className='';"><div class="buttonSpriteDiv"><span 
+class="buttonSpriteSpan1"><span 
+class="buttonSpriteSpan2">Submit</span></span></div></div></a>
 
 <input type="submit" class="submitHidden">
 
 </span>
-</div>
-</div><!-- formEntryArea -->
-<!--</fieldset> optional-->
+
 </form>
-</div><!-- browseSearchtool -->
-</div><!-- form1Part -->
+
+<div id="exampleText">
+
+<p>Search for a word or words. For example:</p>
+
+<ul>
+<li>nanotechnology</li>
+<li>"public relations" and "team-based approach"</li>
+<li>(university or college) and students</li>
+<li>classroom and discipline</li>
+<li>biotechnology and "pest management"</li>
+</ul>
+
+</div>
+
+
+</div>
+
+<div id="otherSearches">
+<ul>
+<lh>Other Searches:</lh>
+<li>Journal Title</li>
+<li>Course Reserves</li>
+<li>Author and Title</li>
+<li>Children's Subjects</li>
+</ul>
+<ul>
+<lh>Number Searches:</lh>
+<li>Dewey Decimal</li>
+<li>Library of Congress</li>
+<li>Local</li>
+<li>Government Documents</li>
+<li>ISBN or ISSN</li>
+<li>OCLC</li>
+</ul>
+</div>
+
+</div>
+
+</div>
 
 </div><!--pageContentInner -->
 
