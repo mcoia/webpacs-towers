@@ -25,6 +25,11 @@ form #otherSearches {
     border:1px solid #dce0d5;
 }
 
+#tabs #otherSearches a {
+    text-decoration:none;
+    color: #444444;
+}
+
 #otherSearches li, #otherSearches lh {
     list-style:none;
     margin-top:.25em;
@@ -75,10 +80,6 @@ form #otherSearches {
         margin-right:auto;
 }
 
-#tabs a {
-        color: #285407;
-}
-
 #tabs .formRight {
     width:100%;
 }
@@ -90,6 +91,10 @@ form #otherSearches {
 
 #tabs .formButtonArea {
     margin-left:3px;
+}
+
+#tabs #accessibleForm .formButtonArea {
+    margin:10px 0 0 15px;
 }
 
 
@@ -104,12 +109,11 @@ form #otherSearches {
 	margin-left: 8px;
 	list-style: none;
 }
-#tabList li:hover {
+#tabList li:hover, #otherSearches li:hover {
     cursor:pointer;
 }
 #tabList li:first-child {
 	margin-left: 0;
-	background-color: #DFE6D4
 }
 * html #tabList li {
 	display: inline;
