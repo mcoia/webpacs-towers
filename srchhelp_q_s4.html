@@ -68,7 +68,7 @@ $("#otherSearches li").click(function () {
       <li id="t"><a href="/search&searchindex=t">Title</a></li>
       <li id="a"><a href="/search&searchindex=a">Author</a></li>
       <li id="d"><a href="/search&searchindex=d">Subject</a></li>
-      <li id="X" style="background-color:#DFE6D4;"><a href="/search&searchindex=X">Advanced</a></li>
+      <li id="X"><a href="/search&searchindex=X">Advanced</a></li>
     </ul>
 
     <div id="tab-1" class="tabContent">
@@ -76,69 +76,47 @@ $("#otherSearches li").click(function () {
 
 <div class="innerTab">
 
-<!--{advancedsearchformbegin}-->
-<fieldset>
-<legend>Enter Search Terms</legend>
+<div id="accessibleForm">
+<form method="get">
+<!-- Optional legend:
+<legend>Type the author and title you want to find, then press the Enter key or click Submit.</legend>
+-->
 <div class="formEntryArea">
-<!--{advancedsearch}-->
+<span class="formLabel">
+<label for="author">Author:</label>
+</span>
+<input name="author" size="48">
 </div>
-<input type="hidden" name="startLimit" >
 <div class="formEntryArea">
-<!--{availlim}-->
+<span class="formLabel">
+<label for="title">Title:</label>
+</span>
+<input name="title" size="48">
 </div>
+
 <div class="formButtonArea">
-<span>
-<!--{advancedsubmit}-->
-</span>
-<span>
-<!--{clearform}-->
-</span>
+<!--{submit}-->
 </div>
-</fieldset>
+</form>
+</div><!--accessibleForm-->
 
-<div class="formLeft advancedSearch">
-<fieldset>
-<legend>Add Limits (Optional)</legend>
+<div id="exampleText">
 
-<div class="formEntryArea">
-<table border="0">
-<tr>
-<td>
-<label for="searchscope">
-Library
-</label>
-</td>
-<td>
-<!--{scope}-->
-</td>
-</tr>
-</table>
+<p>Type the author's or artist's last name first. For example:</p>
+<ul>
+<li>shakespeare</li>
+<li>shakespeare, william</li>
+<li>angelou, m</li>
+</ul>
+<p>Type as many or as few of the words in the title as you want. For example:</p>
+<ul>
+<li>merchant of venice</li>
+<li>venice</li>
+</ul>
+
 </div>
 
-<div class="formEntryArea">
-<!--{branch}-->
 </div>
-<div class="formEntryArea">
-<!--{mattype}-->
-</div>
-<div class="formEntryArea">
-<!--{lang}-->
-</div>
-<div class="formEntryArea">
-<!--{DOCDATE}-->
-</div>
-<div class="formEntryArea">
-<!--{publish}-->
-</div>
-<div class="formEntryArea" id="form3PartAdvLimitSort">
-<!--{sort}-->
-</div>
-</fieldset>
-<input type="hidden" name="endLimit" >
-</div> <!-- formLeft -->
-
-
-
 
 <div id="otherSearches">
 <ul>
@@ -157,49 +135,6 @@ Library
 <li id="i"><a href="/search&searchindex=i">ISBN or ISSN</a></li>
 <li id="o"><a href="/search&searchindex=o">OCLC</a></li>
 </ul>
-</div>
-
-<div class="formRight">
-<table class="tipsTable">
-<caption>Search Tips</caption>
-<!-- <tr valign="top"><th align="left">Adjacency</th>
-<td>Multiple words are searched together as one phrase.<br>
-<span style="text-decoration:underline">Example</span> : world health organization</td>
-</tr> -->
-<tr><th>Wildcards</th>
-<td>
-Words may be right-hand truncated using an asterisk ('*') in place of other characters. <!-- Use '**' for open-ended truncation of over five characters.--> The '*' wildcard may also be embedded in a search string. You may use '?' to replace a single character anywhere within a word.<br>
-<span style="text-decoration:underline">Examples</span> : environment* polic*, wom?n</td>
-</tr>
-<tr><th>Boolean Operators</th>
-<td>
-Use "and" or "or" to specify multiple words in any field, any order. Use "and not" to exclude words.<br>
-<span style="text-decoration:underline">Example</span> : stocks and bonds<br>
-<span style="text-decoration:underline">Example</span> : (alaska or canada) and (adventure and not vacation)</td>
-</tr>
-<tr><th>Field limits</th>
-<td>
-A field limit causes the system to search only the specified field for the specified word(s).</td>
-</tr>
-<tr>
-<th>Grouping</th>
-<td>
-Keyword search results are usually grouped by relevance to bring the most likely titles to the top of the list. Each group represents a similar level of relevance and results are sorted within the group by date or title. To get an ungrouped result set, use boolean operators to form a complex query.
-</td>
-</tr>
-<!-- <tr valign="top"><th align="left">Proximity Operators</th>
-<td>
-Use "near" to specify words close to each other, in any order.<br>
-<span style="text-decoration:underline">Example</span> : california near university</td>
-</tr> -->
-</table>
-</div> <!-- formRight -->
-</div> <!-- form3PartBelow -->
-
-<!--{advancedsearchformend}-->
-
-</div>
-
 </div>
 
 </div><!--pageContentInner -->
