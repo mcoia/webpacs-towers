@@ -1,0 +1,142 @@
+<!--{toplogo}-->
+<div class="pageNavColumn"><!-- nav menu column-->
+<h1 class="navHeader">Additional Info</h1>     
+</div>
+<div class="pageContentColumn"><!-- content container -->
+<!--{ifbibdisplay}-->
+<!--{xif}-->
+<!--{catedit}-->
+
+<div id="bibDisplayBody">
+<div class="navigationRowRecord">
+<!--{navrow}-->
+<!--{innreach}-->
+</div>
+<div id="bibDisplayContent">
+<div class="bibSearch">
+<!--{searchtool}-->
+<div class="bibSearchHistory">
+<!--{searchhistory}-->
+</div>
+</div><!-- bibSearch -->
+
+<div class="bibPager">
+<!--{pager}-->
+</div>
+
+<div class="bibClear"></div>
+
+<div class="bibDisplayJacket">
+<div class="bibDisplayJacketImage">
+<!--{bibimage}-->
+</div>
+<div class="bibMedia">
+<!--{media}-->
+</div>
+</div>
+
+<div class="bibDisplayContentMain">
+
+<!-- just a placeholder for the sms form -->
+<div id='sms' style="visibility:hidden;display:none">
+</div>  
+
+<!--{recordinfo:a}-->
+
+<h1 class="bibDisplayTitle">
+<!--{recordinfo:t}-->
+</h1>
+
+<!--{recordinfo:pRe}-->
+
+<!--{ifhaspatrate}-->
+<div class="bibDisplayRatings">
+<!--{ratings}-->
+</div>
+<!--{xif}-->
+
+<!--{booking}-->
+<!--{holdingslink}-->
+<div class="testlinkeddocs">
+<!--{linkeddocs}-->
+</div>
+<div class="bibDisplayUrls">
+<!--{URLS}-->
+</div>
+
+<!--{bloblinks}-->
+<!--{imagelinks}-->
+<!--{artthumb}-->
+<!--{xmlframe}-->
+<!--{ifTOC}-->
+<!--{TOC}-->
+<!--{xif}-->
+<!--{holds}-->
+<!--{holdings}-->
+
+<div class="bibDisplayItems">
+<div class="bibDisplayItemsHeader"><h2>Copies</h2></div>
+<div class="bibDisplayItemsMain">
+<!--{items}-->
+<a href="#here" name=smsbutton id=smsbutton onClick="showsms();return false;">
+<div id="smsfeatures" class="resourceButton">
+    <span class="button">
+    <img src="/screens/ico_phone.gif" border=0 style="margin:0">
+       <span class="buttonText">Text item location</span>
+    </span>
+    </div>
+   
+</a>
+</div>
+</div>
+
+<!--{orders}-->
+
+<div class="bibDisplayContentMore">
+<!--{recordinfo:#}-->
+</div>
+
+<!--{IFELCONTENT:365}-->
+<!-- Replace the number for your enhanced content in Pathfinder Pro -->
+<div class="bibDisplayContentMore">
+<ul id="elContent">
+<!--{ELCONTENT:365}-->
+</ul>
+</div>
+<!--{xif}-->
+
+<div class="bibDisplayContentMore bibDisplayReviews">
+<div class="bibDisplayPermLink actionButtonArea">
+<!--{recordlink}-->
+</div>
+<!--{patronreviewsfull}-->
+
+</div>
+
+</div>
+
+
+</div><!-- close bibDisplayContent -->
+<div class="clear"></div>
+</div><!-- close bibDisplayBody -->
+
+    <!-- a quick script to hide the SMS menu if there are no items. same as the javascript in the SMS form, but it's really just to see if the items exist.  If they don't, we hide the buttons -->
+       <script>
+       var f = document.getElementById('bib_detail');
+       try { 
+        var itms = document.getElementById('bib_items');
+        var tr = itms.getElementsByTagName('TR');
+        for(i = 1; i < tr.length; i++) {
+         var x=tr[i].getElementsByTagName('TD');
+         if (x.length == 3) {
+          var loc = x[0].innerHTML.replace(/(<([^>]+)>|&nbsp;)/ig,"");
+          var call = x[1].innerHTML.replace(/(<([^>]+)>|&nbsp;)/ig,"");
+          var status = x[2].innerHTML.replace(/(<([^>]+)>|&nbsp;)/ig,"");
+         }
+        }
+       } catch (e) {
+         document.getElementById('smsfeatures').style.visibility='hidden';
+       }
+
+    </script>
+<!--{botlogo}-->
