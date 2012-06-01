@@ -246,7 +246,7 @@ SORT_ITEMS=true
 SUPPRESS_CARD=UI
 
 # My Lists
-MY_LISTS=true
+MY_LISTS=false
 ICON_MYLISTS=<span class="button"><img src="/screens/ico_list.png" alt=""><span class="buttonText">My Lists</span></span>
 ICON_MYLISTS_EXPORT=<div onmousedown="this.className='pressedState';" onmouseout="this.className='';" onmouseup="this.className='';"><div class="buttonSpriteDiv"><span class="buttonSpriteSpan1"><span class="buttonSpriteSpan2">Export List</span></span></div></div>
 ICON_MYLISTS_MOVE=<div onmousedown="this.className='pressedState';" onmouseout="this.className='';" onmouseup="this.className='';"><div class="buttonSpriteDiv"><span class="buttonSpriteSpan1"><span class="buttonSpriteSpan2">Move Marked</span></span></div></div>
