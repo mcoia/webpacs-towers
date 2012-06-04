@@ -493,6 +493,8 @@ span.buttonText:hover {text-decoration:underline;}
 
 .confirmationprompt { margin:5px 20px 0; }
 
+#chat_icon { float:left; margin-left:10%; display:none; }
+
 .checkinCardTable td { border:1px solid #CCCCCC; padding:3px 3px 0; }
 
 .checkinInfo { margin:1em 1em 0.5em; }
@@ -635,7 +637,7 @@ div .bibResourceSidebar { display:none; }
 
 .helpExample { margin:5px 33px; padding:5px; }
 
-.helpTopics { padding:5px; width:30em; }
+.helpTopics { padding:5px; width:30em; float:left; }
 
 .helpTopics li { list-style-type:none; }
 
