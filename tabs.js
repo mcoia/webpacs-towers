@@ -38,7 +38,6 @@ function front_tabs(){
       });
   $('#searchtype').change(function(){
 	  var tabId = $(this).val()
-	  alert(tabId)
 	  change_tab(tabId);
       }); 
 
