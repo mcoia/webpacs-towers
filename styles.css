@@ -975,7 +975,7 @@ td.progInfoLabel { color:#767C70; font-weight:bold; padding-right:25px; text-ali
 
 #bibDisplayBody .rateLabel a:link, #bibDisplayBody .rateLabel a:visited { color:#767C70; padding-right:.7em; text-align:right; vertical-align:top; font-weight:bold; font-style:normal; text-decoration:underline; }
 
-.rateLabel { position:absolute; text-align:right; width:8.5%; font-size:85%; }
+.rateLabel { position:absolute; text-align:right; width:6%; font-size:85%; }
 
 .rateData { margin-left:15%; }
 

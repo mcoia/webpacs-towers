@@ -20,6 +20,8 @@
     margin:6px 0 3px;
 }
 
+.rateLabel { width:8.5%; }
+
 .rrUserQuery {
     color: #457029;
 }
