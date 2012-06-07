@@ -284,7 +284,7 @@ ICON_MYLISTS_RECORD4=<span class="button"><img src="/screens/ico_list_add.png" a
 # Saving and Exporting
 #BRIEF_EXPORT=c|a|t|p
 ICON_BUT_BIBEXPORT=<span class="navButtonOneLine">Add to Bag</span>
-ICON_BUT_BIBEXPORT2=<span class="navButton">Save Record</span>
+ICON_BUT_BIBEXPORT2=<span class="navButtonOneLine">Save Record</span>
 ICON_BUT_BIBEXPORT4=<span class="button"><img src="/screens/ico_bag_add.png" alt=""><span class="buttonText">Add to Bag</span></span>
 ICON_BUT_CLEAR_MARKED=<span class="navButton">Empty Bag</span>
 ICON_BUT_CLEAR_MARKED2=<span class="navButton">Clear Saved Records</span>
