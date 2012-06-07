@@ -451,6 +451,8 @@ table.browseResourceTable { border:0; }
 
 h1.browseSuperEntryTitle { font-size:1.1em; display:inline; }
 
+.button a:link, .button a:visited, a:link .button, a:visited .button { color: #014184; }
+
 .button { white-space:nowrap;  }
 
 .button img { border:0; margin:7px 3px 0; vertical-align:text-bottom; }

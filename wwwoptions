@@ -489,7 +489,7 @@ BIBIMAGE=http://www.syndetics.com/index.aspx?isbn=%s/SC.GIF&client=northmsu|I|ht
 BIBIMAGE_TEXT=Book Jacket
 BUT_ENCYCPD=/screens/encycpd.gif
 BUT_FULL_TEXT=/screens/full_text.gif
-WEBADDRESS=http://missouriwestern.worldcat.org/search?q=%s|I|http://missouriwestern.worldcat.org/search?q=bn:%s|<span class="navButton">Search WorldCat</span>|<span class="navButton">Search WorldCat</span>|-1
+#WEBADDRESS=http://missouriwestern.worldcat.org/search?q=%s|I|http://missouriwestern.worldcat.org/search?q=bn:%s|<span class="button" id="worldcat"><img src="/screens/ico_worldcat.png" alt=""><span class="buttonText">Search WorldCat</span></span>|<span class="button" id="worldcat"><img src="/screens/ico_worldcat.png" alt=""><span class="buttonText">Search WorldCat</span></span>|-1
 
 # WebBridge/Pathfinder Pro
 ICON_BUT_CLOSEFRAME=<span class="button"><img src="/screens/ico_x.png" alt=""><span class="buttonText">Close Frame</span></span>
