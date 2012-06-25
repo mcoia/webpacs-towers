@@ -44,5 +44,7 @@ function front_tabs(){
 }
 
 $(document).ready(function () {
+    var tabId = $('#searchtype').val();
+    $("#tabList #" + tabId).css("background-color", "#DFE6D4");
     front_tabs();
 });
