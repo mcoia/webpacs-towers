@@ -16,10 +16,11 @@ $(document).ready(function () {
     	//$("#exampleText").load("screens/" + this.value + ".inc");
 	//});
 	//Changes the search examples
+	
 	var selectAny = $('#b option[value=""]')
-	$('#b option:not([value^="m"])').detach(); //Hides the out-of-scope locations
+	$('#b option:not([value^="m"])').detach(); 
 	selectAny.prependTo("#b")
-
+	//Hides the out-of-scope locations
 });
 </script>
 
