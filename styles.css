@@ -172,7 +172,7 @@ a:hover  { color: #7C14B8; }
 
 .bibDisplayContent { padding:10px 0 10px 10px; }
 
-.bibDisplayContentMain, .resourceDisplayContentMain  { float:left; width:59%; margin-left:1.5em; display:inline; }
+.bibDisplayContentMain, .resourceDisplayContentMain  { float:left; width:81%; margin-left:1.5em; display:inline; }
 
 .bibDisplayContentMain table, .bibDisplayUrls table, table.reserveBibs, .resourceDisplayContentMain table, .bibDisplayReviews  { border:0; font-size:.8824em; }
 
@@ -194,7 +194,7 @@ a:hover  { color: #7C14B8; }
 
 .bibDisplayItemsHeader h2, .resourceDisplayLicenseHeader h2 { color:#F7960C; font-size:1.2em; margin:0; }
 
-.bibDisplayItemsMain, .resourceLicenseArea { float:right; width:80%; }
+.bibDisplayItemsMain, .resourceLicenseArea { width:100%; }
 
 .bibDisplayJacket  { float:left; margin:0 0 1em 4%; display:inline; width:6em; text-align:center;}
 
