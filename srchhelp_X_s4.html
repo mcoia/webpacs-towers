@@ -18,6 +18,21 @@ startTimeout(600000, "/");
 </head>
 <!--{advancedsearchbody}-->
 <!--{toplogo}-->
+<script>
+$(document).ready(function () {
+    var i = $("#advancedSearchBoxes input").length;
+    var j = i + 1;
+    var moreSearchBoolean = '<select name="boolean' + i + '"><option value="%20and%20" selected="selected">And</option><option value="%20and%20not%20">And not</option><option value="%20or%20">Or</option><option value="%20near%20">Near</option><option value="%20before%20">Before</option><option value="%20after%20">After</option></select><br />'
+    var moreSearchField = '<select name="fieldLimit' + j + '"><option value="" selected="selected">Any Field:</option><option value="a:">Author:</option><option value="t:">Title:</option><option value="d:">Subject (LC):</option><option value="N:">Note:</option></select>'
+    var moreSearchInput = '<input style="margin: 0 4px;" maxlength="75" size="35" name="searchText' + j + ' " />'
+
+    $("#addMore").click(function() {
+        $("#advancedSearchBoxes").append(moreSearchBoolean);
+        $("#advancedSearchBoxes").append(moreSearchField);
+        $("#advancedSearchBoxes").append(moreSearchInput);
+    });
+});
+</script>
 <div class="pageNavColumn"><!-- nav menu column-->
 <img src="/screens/owens.png">
 <ul id="rightCol">
@@ -53,8 +68,11 @@ startTimeout(600000, "/");
 <!--{advancedsearchformbegin}-->
 <fieldset>
 <legend>Enter Search Terms</legend>
-<div class="formEntryArea">
+<div class="formEntryArea"  id="advancedSearchBoxes">
 <!--{advancedsearch}-->
+</div>
+<div class="formEntryArea">
+<a href="#" id="addMore">+ Add more search terms</a>
 </div>
 <input type="hidden" name="startLimit" >
 <div class="formEntryArea">

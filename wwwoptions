@@ -106,8 +106,8 @@ AVS_MODIFY_TAG=X
 AVS_TAG=XYZ
 ICON_BUT_MODIFY=<span class="navButton">Modify Search</span>
 ICON_BUT_MODIFY4=<span class="button"><img src="/screens/ico_magnifyingglass_modify.png" alt=""><span class="buttonText">Modify Search</span></span>
-ICON_BUT_SHOWSIM=<span class="navButton">More Like This</span>
-ICON_BUT_SHOWSIM4=<span class="button"><img src="/screens/ico_more.png" alt=""><span class="buttonText">More Like This</span></span>
+ICON_BUT_SHOWSIM=<span class="navButton">Show Similar Items</span>
+ICON_BUT_SHOWSIM4=<span class="button"><img src="/screens/ico_more.png" alt=""><span class="buttonText">Show Similar Items</span></span>
 ICON_REL_GROUP_1=<img src="/screens/relevance5.gif" alt="Most relevant">&nbsp;<h1 class="browseSuperEntryTitle">Most relevant titles</h1>&nbsp;
 ICON_REL_GROUP_2=<img src="/screens/relevance4.gif" alt="Highly relevant">&nbsp;<h1 class="browseSuperEntryTitle">Highly relevant titles</h1>&nbsp;
 ICON_REL_GROUP_3=<img src="/screens/relevance3.gif" alt="Very relevant">&nbsp;<h1 class="browseSuperEntryTitle">Very relevant titles</h1>&nbsp;
