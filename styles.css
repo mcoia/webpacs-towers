@@ -136,6 +136,10 @@ a:hover  { color: #7C14B8; }
 
 .additionalCopies { margin: 20px 6px; }
 
+a#addMore { text-decoration:none; }
+
+a:visited#addMore { color:#014184 }
+
 .advancedSearch td { padding-right:5px; text-align:right; vertical-align:top; width:5em; }
 
 .advancedSearch label { text-align:right; }
