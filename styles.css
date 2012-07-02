@@ -200,7 +200,7 @@ a:visited#addMore { color:#014184 }
 
 .bibDisplayItemsMain, .resourceLicenseArea { width:100%; }
 
-.bibDisplayJacket  { float:left; margin:0 0 1em 4%; display:inline; width:6em; text-align:center;}
+.bibDisplayJacket  { float:left; display:inline; width:100px; text-align:center;}
 
 .bibLinks th { text-align:center; }
 
@@ -357,7 +357,7 @@ div.bookingsVerify { padding:0; margin-top:18px; }
 
 .briefcitMark { float:right; }
 
-.briefcitMedia, .bibMedia, .briefcitResourceMedia, .briefcitProgramMedia, td.browseEntryMedia, td.browseSubEntryMedia { color:#878787; font-size:.7em; line-height:.95em; margin-top:6em; overflow:hidden; width:41px; text-align:center; }
+.briefcitMedia, .briefcitResourceMedia, .briefcitProgramMedia, td.browseEntryMedia, td.browseSubEntryMedia { color:#878787; font-size:.7em; line-height:.95em; margin-top:6em; overflow:hidden; width:41px; text-align:center; }
 
 .briefcitResourceMedia, .briefcitProgramMedia { margin-top:3em; }
 
