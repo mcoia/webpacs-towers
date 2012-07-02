@@ -1,3 +1,9 @@
+.bibDisplayItems .button {display: none; }
+
+.bibDisplayItems .centerButton { display:block; text-align:center; }
+
+.navigationRowRecord .centerButton { display:none; }
+
 lh {
     font-weight:bold;
 }
