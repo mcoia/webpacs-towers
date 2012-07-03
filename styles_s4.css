@@ -87,7 +87,9 @@ form #otherSearches {
 }
 
 #tabs .formRight {
-    width:100%;
+    width:20em;
+    float:right;
+    padding:0;
 }
 
 #tabs .browseSearchtool {
