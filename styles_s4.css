@@ -53,6 +53,7 @@ form #otherSearches {
     background-color:#F1F4EB;
     border:1px solid #dce0d5;
     text-align:center;
+    min-height:4em;
 }
 
 .pageNavColumn img {
