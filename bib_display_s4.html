@@ -2,6 +2,7 @@
 <div class="pageNavColumn"><!-- nav menu column-->
 <h1 class="navHeader">Additional Info</h1>
 <div id="googlebooks" class="button" name="googlebooks"></div>
+<div id="amazon" class="button" name="amazon"></div>
 </div>
 <div class="pageContentColumn"><!-- content container -->
 <!--{ifbibdisplay}-->
@@ -173,7 +174,12 @@
 </script>
 <script type='text/javascript'>
        
-var ISBN = $(".bibInfoLabel:contains('ISBN')").siblings(".bibInfoData").text().replace(/[^0123456789]/g,"")
+var ISBNcell = $(".bibInfoLabel:contains('ISBN')").siblings(".bibInfoData");
+var ISBN = ISBNcell.text().replace(/[^0123456789]/g,"");
+var ISBNrow = ISBNcell.closest("tr");
+var ISBN2 = ISBNrow.next().text().replace(/[^0123456789]/g,"");
+var itemLocation = $(".bibItemsEntry td:first-child").text()
+var dvd = itemLocation.search("DVD");
 
 var cburl = "http://books.google.com/books";
 // Retrieve the info for these bibkeys
@@ -185,5 +191,30 @@ s.setAttribute("src", "http://books.google.com/books?jscmd=viewapi&bibkeys=ISBN:
 document.documentElement.firstChild.appendChild(s);
 //alert (api_url);
 
+</script>
+<script>
+
+	  if (dvd == -1) {
+            
+        
+	    
+	       if (ISBN.length == 13) {
+		    if (ISBN2.length == 10) {
+		        var amazon_isbn = ISBN2;
+	         }
+		        else {
+			      document.getElementById('amazon').style.display = 'none';
+			 }
+	       
+	       } else if (ISBN.length == 10) {
+	            var amazon_isbn = ISBN;;
+	       }
+	  
+	       else {
+                    document.getElementById('amazon').style.display = 'none';
+               }
+            document.getElementById("amazon").innerHTML = '<a href="http://amazon.com/dp/' + amazon_isbn + '" target="_blank"><img src="screens/amazon.png"></a>';
+               
+          }
 </script>
 <!--{botlogo}-->
