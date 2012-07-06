@@ -30,6 +30,8 @@
 <!--{media}-->
 </div>
 <div id="googlebooks" class="button" name="googlebooks"></div>
+<div id="amazon" class="button" name="amazon"></div>
+<div id="barnesandnoble" class="button" name="barnesandnoble"></div>
 </div>
 
 <div class="bibDisplayContentMain">
@@ -194,8 +196,13 @@
 }
 </script>
 <script type='text/javascript'>
-       
-var ISBN = $(".bibInfoLabel:contains('ISBN')").siblings(".bibInfoData").text().replace(/[^0123456789]/g,"")
+
+var ISBNcell = $(".bibInfoLabel:contains('ISBN')").siblings(".bibInfoData");
+var ISBN = ISBNcell.text().replace(/[^0123456789]/g,"");
+var ISBNrow = ISBNcell.closest("tr");
+var ISBN2 = ISBNrow.next().text().replace(/[^0123456789]/g,"");
+var itemLocation = $(".bibItemsEntry td:first-child").text()
+var dvd = itemLocation.search("DVD");
 
 var cburl = "http://books.google.com/books";
 // Retrieve the info for these bibkeys
@@ -208,4 +215,34 @@ document.documentElement.firstChild.appendChild(s);
 //alert (api_url);
 
 </script>
-<!--{botlogo}-->
+
+<script>
+
+	  if (dvd == -1) {
+            
+        
+	    
+	       if (ISBN.length == 13) {
+		    var barnes_isbn = ISBN
+		    if (ISBN2.length == 10) {
+		        var amazon_isbn = ISBN2;
+	         }
+		        else {
+			      document.getElementById('amazon').style.display = 'none';
+			 }
+	       
+	       } else if (ISBN.length == 10) {
+	            var amazon_isbn = ISBN;
+	            var barnes_isbn = ISBN;
+	       }
+	  
+	       else {
+                    document.getElementById('amazon').style.display = 'none';
+                    document.getElementById('barnesandnoble').style.display = 'none';
+               }
+            document.getElementById("amazon").innerHTML = '<a href="http://amazon.com/dp/' + amazon_isbn + '" target="_blank"><img src="screens/amazon.png"></a>';
+	    document.getElementById("barnesandnoble").innerHTML = '<a href="http://search.barnesandnoble.com/booksearch/isbninquiry.asp?EAN=' + barnes_isbn + '" target="_blank"><img src="/screens/barnesandnoble.gif"></a>';
+               
+          }
+</script>
+
