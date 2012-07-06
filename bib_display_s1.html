@@ -201,8 +201,9 @@ var ISBNcell = $(".bibInfoLabel:contains('ISBN')").siblings(".bibInfoData");
 var ISBN = ISBNcell.text().replace(/[^0123456789]/g,"");
 var ISBNrow = ISBNcell.closest("tr");
 var ISBN2 = ISBNrow.next().text().replace(/[^0123456789]/g,"");
-var itemLocation = $(".bibItemsEntry td:first-child").text()
-var dvd = itemLocation.search("DVD");
+var mattype = $(".bibMedia").html()
+var film = mattype.search("film");
+
 
 var cburl = "http://books.google.com/books";
 // Retrieve the info for these bibkeys
@@ -218,7 +219,7 @@ document.documentElement.firstChild.appendChild(s);
 
 <script>
 
-	  if (dvd == -1) {
+	  if (film == -1) {
             
         
 	    
