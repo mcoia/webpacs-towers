@@ -129,7 +129,7 @@ a:hover  { color: #7C14B8; }
 .formButtonArea { margin:12px 0 0 15px; }
 .formButtonArea a, .requestMultiPatform center a, .mylistsSavePage a { text-decoration:none; }
 .formButtonArea input { margin:5px 0; }
-.formEntryArea { }
+.formEntryArea { margin-bottom:.5em !important}
 .formRequired { color:#990000;font-weight:bold;font-size:1.3em;position:relative;top:5px; }
 .formsTogether { width:780px; }
 .formsTogether .form1Part { width:96%; }
