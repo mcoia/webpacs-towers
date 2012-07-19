@@ -200,6 +200,12 @@ a:visited#addMore { color:#014184 }
 
 .bibDisplayItemsMain, .resourceLicenseArea { width:100%; }
 
+.bibDisplayItems .navButton, .bibDisplayItems .navButtonOneLine {display: none; }
+
+.bibDisplayItems .centerButton { display:block; text-align:center; width:100%; background-position: center top; }
+
+.navigationRowRecord .centerButton { display:none; }
+
 .bibDisplayJacket  { float:left; display:inline; width:100px; text-align:center;}
 
 .bibLinks th { text-align:center; }
