@@ -2,6 +2,12 @@
     width:750px;
 }
 
+.bibDisplayContentMain, .resourceDisplayContentMain { width: 65%; }
+
+.bibDisplayJacket {
+    margin-left:10px;
+}
+
 .briefcitCell {
     border-bottom-color: #858484;
 }
