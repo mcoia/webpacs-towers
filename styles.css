@@ -669,7 +669,7 @@ div .bibResourceSidebar { display:none; }
 
 .illform .formLeft { width:460px; }
 
-.illform td { padding:.5em 6px 0 0; text-align:left; }
+.illform td { padding:.5em 6px 0 0; text-align:right; }
 
 .illform label { float:right; }
 
