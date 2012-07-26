@@ -1,101 +1,76 @@
-
-
-
-
-<HTML>
-<HEAD>
-	<TITLE>Towers/ Towers Catalog</TITLE>
-<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
-
-
-
-<LINK REL="STYLESHEET" TYPE="TEXT/CSS" HREF="/screens/towers_styles.css">
-
-
-<meta http-equiv="Refresh" CONTENT="300;URL=/search----->">
-
-
-
-
-</HEAD>
-
-<BODY bgcolor="#FFFAF0" link="#000066" alink="#000066" vlink="#000066" 
-	onLoad="document.forms[0].SEARCH.focus(); document.forms[0].SEARCH.select();">
-
-
-
-
-
-
-
-
-
-
-<!--{toplogo}-->
-
-
-<br>
-
-<!--{patron}-->
-<!--{logout}-->
-
-<!-- Begin Search Help Text -->
-<center><table border="0" width="570"><tr><td>
-<h3 align="center"><b>Title Search</b></h3>
-<form METHOD="GET" ACTION="/search/t">
-  <p ALIGN="CENTER">
-    <input TYPE="TEXT" name="SEARCH" maxlength="64" size="48">
-    <input TYPE="SUBMIT" value="Search" name="SUBMIT"><br>
-<!--{availlim}-->
-  </p>
-</form>
-<p>Search here for items by the exact title.</p>
-<table border="0"><tr><td nowrap valign="top">
-<i>for example:</i> </td><td>
-<pre>    tale of two cities
-    tale of two
-    science| <i>(finds one word title: science)</i>
-    science <i>(finds titles beginning with science)</i>
-</pre>
-</td></tr>
-
-<tr><td colspan="2"><p>Do not include an article when it is the first word in the title.</p></td></tr>
-
-<tr><td nowrap valign="top">
-<i>for example:</i> </td><td>
-<pre>   tale of two cities   <i>NOT</i>   <u>A</u> tale of two cities
-   rouge et le noir     <i>NOT</i>   <u>Le</u> rouge et le noir
-</pre>
-</td></tr>
-
-
-
-
-</table>
-<p>If your search is unsuccessful, try a <a href="/search/Y">KEYWORD</a> search. </p>
-</td></tr></table></center>
-<!-- End Search Help Text -->
-<p align="center"><A HREF="/search~S0"><IMG SRC="/screens/b_newsrch.gif" BORDER=0 ALT="[START OVER]"></A></p> 
-<center>
-<table border="0" cellpadding="6" cellspacing="0">
-    <tr valign="top"> 
-      <td>&nbsp;</td>
-    </tr>
-    <tr valign="top"> 
-            <td align="center"> <font color="#993300" face="Arial, Helvetica, sans-serif" size="-1"><b><font color="#993300">Towers</font></b> <font color="#993300"><b>&middot;</b> 
-                a MOBIUS Library Catalog</font></font></td>
-    </tr>
-    <tr valign="top"> 
-            <td align="center"> <font face="Arial, Helvetica, sans-serif" size="-2">
-				<a href="http://searchmobius.org/search/">MOBIUS</a> &middot; 
-				<a href="/search~">Towers Catalog</a><br>
-                <a href="/search~S1">Conception Abbey</a> &middot; 
-				<a href="/search~S2">Missouri Western State University</a><br>
-				<a href="/search~S5">National Military Heritage Museum</a> &middot;
-                <a href="/search~S3">North Central Missouri College</a><br>
-				<a href="/search~S4">Northwest Missouri State University</a></font></td>
-    </tr>
-</table>
-</center>
-</BODY>
-</HTML>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html lang="en">
+<!-- Rel 2009B Example Set -->
+<!-- This File Last Changed: 23 Mar 2010 -->
+<head>
+<title>Towers Catalog - Title Search</title>
+<script language="JavaScript">
+<!-- Hide the JS
+startTimeout(600000, "/");
+// -->
+
+</script>
+<noscript>
+<meta http-equiv="Refresh" content="600;URL=/" />
+</noscript>
+<meta http-equiv="X-UA-Compatible" content="IE=8;FF=3;OtherUA=4">
+<link rel="stylesheet" type="text/css" href="/screens/styles_print.css" media="print">
+</head>
+<body>
+<!--{toplogo}-->
+<div class="pageContentInner">
+
+<h1 class="pageHeader">Title Search</h1>
+
+<div id="accessibleForm" class="form2Part">
+<div class="formLeft">
+<form method="get">
+<fieldset>
+<!-- Optional legend:
+<legend>Type the title you want to find, then press the Enter key or click Submit.</legend>
+-->
+<div class="formEntryArea">
+<span class="formLabel">
+<label for="SEARCH">Search for:</label>
+</span>
+<!--{search}-->
+</div>
+<div class="formEntryArea">
+<span class="formLabel">
+<label for="sortdropdown">Sort by:</label>
+</span>
+<!--{indexsort}-->
+</div>
+<div class="formEntryArea formScopeSearch">
+<span class="formLabel">
+<label for="searchscope">Search in the:</label>
+</span>
+<!--{scope}-->
+</div>
+
+<div class="formButtonArea">
+<!--{submit}-->
+</div>
+</fieldset>
+</form>
+</div><!--formLeft -->
+
+<div class="formRight">
+<p>Type as much or as little of the title as you want. For example:</p>
+<ul>
+<li>merchant of venice</li>
+<li>merchant</li>
+<li>merchant</li>
+</ul>
+</div><!--formRight -->
+
+</div><!--form2Part -->
+</div><!-- pageContentInner -->
+
+<!--{botlogo}-->
+<script type="text/javascript"><!--//--><![CDATA[//><!--
+try { document.forms[0].SEARCH.focus(); }
+catch(err) {}
+//--><!]]></script>
+</body>
+</html>
