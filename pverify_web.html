@@ -1,116 +1,152 @@
 <!--{toplogo}-->
-<!--{patron}-->
-<!--{logout}-->
-
-<H2>View Your Library Account</H2>
-
+<div class="pageContentInner">
+<h1 class="pageHeader">Login</h1>
+<div class="form1Part formLogin" id="accessibleForm">
 <!--{formbegin}-->
-<p>
 <!--{iferrmsg}-->
-<FONT COLOR=RED SIZE=+2><EM>
+<span class="errormessage">
 <!--{iferrmsgisPIN}-->
 <!--{newpinmsg}-->
 <!--{else}-->
 <!--{errmsg}-->
 <!--{xif}-->
-</EM></FONT><BR><BR><BR>
+</span>
 <!--{xif}-->
-<!--{enterinfo}--></p>
-<table width="100%" border="0" cellspacing="0" cellpadding="2">
-<tr>
-<td valign="top" width="1%">
 
-<TABLE>
+<fieldset>
+<legend>
+<!--{enterinfo}-->
+</legend>
+
+<!--{ifextpat}-->
+<h2>Students, Staff, and Faculty</h2>
+<div class="formEntryArea">
+<label for="extpatid"><span class="formLabel">
+Username:
+</span></label>
+<!--{extpatid}-->
+<label for="extpatpw"><span class="formLabel">
+Password:
+</span></label>
+<!--{extpatpw}-->
+</div>
+<h2>Visitors</h2>
+<!--{xif}-->
+
 <!--{ifneedpatronname}-->
-<TR><TD WIDTH=1%></TD><TD class="blurb">
-<!--{nameexample}-->
-</TD></TR><TR><TD class="blurb" width="1%" nowrap>
+<div class="formEntryArea">
 <!--{nameprompt}-->
-</TD><TD>
 <!--{name}-->
-</TD></TR>
-<tr><td colspan="3">&nbsp;</td></tr>
+<div class="formLabelExample">
+<!--{nameexample}-->
+</div>
+</div>
 <!--{xif}-->
+
 <!--{ifneedpatronverify}-->
-<TR><TD width="1%"></TD><TD class="blurb">
-<!--{barcodeexample}-->
-</TD></TR>
-<TR><TD class="blurb" width="1%" nowrap>
+<div class="formEntryArea">
 <!--{barcodeprompt}-->
-</TD><TD>
 <!--{barcode}-->
-</TD></TR>
+<div class="formLabelExample">
+<!--{barcodeexample}-->
+</div>
+</div>
+
 <!--{ifneedspin}-->
+
 <!--{iferrmsgisPIN}-->
-<TR><TD COLSPAN=2>
+<p>
 <!--{newpinmsg}-->
-</TD></TR><TR><TD class="blurb" width="1%" nowrap>
+</p>
+<div class="formEntryArea">
+<!-- <label for="pin1"> -->
+<span class="formLabel">
 <!--{pin1prompt}-->
-</TD><TD>
+</span>
 <!--{pin1}-->
-</TD></TR><TR><TD class="blurb" width="1%" nowrap>
+<!-- </label> -->
+</div>
+<div class="formEntryArea">
+<!-- <label for="pin2"> -->
+<span class="formLabel">
 <!--{pin2prompt}-->
-</TD><TD>
+</span>
 <!--{pin2}-->
-</TD></TR>
+<!-- </label> -->
+</div>
+
 <!--{else}-->
-<TR><TD></TD><TD class="blurb">
-<!--{pininstructions}-->
-</TD></TR><TR><TD class="blurb" width="1%" nowrap>
+<div class="formEntryArea">
 <!--{pinprompt}-->
-</TD><TD>
 <!--{pin}-->
-</TD></TR>
+<div class="formLabelExample">
+<!--{pininstructions}-->
+</div>
+</div>
+
 <!--{xif}-->
 <!--{xif}-->
 <!--{xif}-->
-<tr><td colspan="2">
-<br>
+
+    <!--{ifalternate_id}-->
+    <!--{user_name}-->
+    <!--{xif}-->
+
+<div class="formButtonArea">
+<!--{ifneedspin}-->
+<!--{pinresetrequest}-->
+<!--{xif}-->
 <!--{submit}-->
-</td></tr>
-</TABLE>
+<input type="submit" class="submitHidden">
+</div>
+</fieldset>
+<!--{formend}-->
 
-</td>
+</div>
 
-<td valign="top" align="right">
-<table width="200" border="0" cellspacing="0" cellpadding="2" bgcolor="#FFCC99">
-  <tr> 
-    <td> 
-      <p><b><font size="-1" face="Arial, Helvetica, sans-serif">Campus ID Help</font></b></p>
-      <p class="blurb"><font size="-2" face="Arial, Helvetica, sans-serif">
-		&middot; Conception Abbey - <b>CA</b><br>
-		&middot; Missouri Western State University - <b>MW</b><br>
-		&middot; North Central Missouri College - <b>NCMC</b><br>
-		&middot; Northwest Missouri State University - <b>NW</b></font></p>
-		
-	  <p class="blurb"><font size="-2" face="Arial, Helvetica, sans-serif">
-	&nbsp;&nbsp;&nbsp; Type your ID number (dashes are not necessary) plus your institution code.
-	  <br>&nbsp;&nbsp;&nbsp; For example: <tt><font size="-1" color="#CC0000">999999999NCMC</font></tt> would be a Campus 
-        ID for a student at North Central Missouri College.<br><br></font></p>
+<div id="locationHelp">
+<h2>Location Code Help</h2>
+<p>Campus ID# + Campus Code (CA, MW, NCMC, or NW)</p>
 
-	  <p class="blurb"><font size="-1" face="Arial, Helvetica, sans-serif"><b><u>NORTHWEST PATRONS</u><br>
-      <b>Use ID number listed on<br>
-      university ID card.  Phone<br>
-      660-562-1193 for assistance.</b></p>
+<table>
+<tr>
+    <td>
+    123456789<span class="campusCode">CA</span>
     </td>
-  </tr>
-</table>
-
-</td>
+    <td>
+    Conception Abbey
+    </td>
+</tr>
+<tr>
+    <td>
+    G12345678<span class="campusCode">MW</span>
+    </td>
+    <td>
+    Missouri Western State University
+    </td>
+</tr>
+<tr>
+    <td>
+    000123456<span class="campusCode">ncmc</span>
+    </td>
+    <td>
+    North Central Missouri College
+    </td>
+</tr>
+<tr>
+    <td>
+    919123456<span class="campusCode">NW</span>
+    </td>
+    <td>
+    Northwest Missouri State University
+    </td>
 </tr>
 </table>
+</div>
 
-<P>
-
-<!--{formend}-->
-<TABLE WIDTH=100%>
-<TR><TD>
-<!--{startover}-->
-</TD></TR>
-</TABLE>
-
+</div><!-- pageContentInner -->
 <!--{botlogo}-->
-
-</BODY>
-</HTML>
-
+<script type="text/javascript"><!--//--><![CDATA[//><!--
+try { document.forms[0].elements[1].focus(); }
+catch(err) {}
+//--><!]]></script>

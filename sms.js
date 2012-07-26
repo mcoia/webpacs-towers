@@ -3,11 +3,11 @@
 // set this to be the URL for the SMS script
 var smsurl = "http://mobiusconsortium.org/sms/sms-towers.php?";
 
-function showsms() {
+   function showsms() {
 
 	/*   This function shows the SMS layer and creates the form   */
 
-  try {
+try {
 
   var title = '';										// we'll save the title here
   var debug = 0;										// enable this to show alerts
@@ -51,9 +51,9 @@ function showsms() {
     var x=tr[i].getElementsByTagName('TD');			// get each cell
     if (x.length == 3) {								// if there's only 3 cells (like our ITEM table)
       var loc = x[0].innerHTML.replace(/(<([^>]+)>|&nbsp;)/ig,"");		// get the location (remove tags)
-	  var callLinks = x[1].getElementsByTagName("a"); //get the call number without extras
-	  var call = callLinks[0].innerHTML.replace(/(<([^>]+)>|&nbsp;)/ig,"");
-	  // var call = x[1].innerHTML.replace(/(<([^>]+)>|&nbsp;)/ig,"");	// get the call number + copies if any (remove tags)
+	 // var callLinks = x[1].getElementsByTagName("a"); //get the call number without extras
+	  // var call = callLinks[0].innerHTML.replace(/(<([^>]+)>|&nbsp;)/ig,"");
+	  var call = x[1].innerHTML.replace(/(<([^>]+)>|&nbsp;)/ig,"");	// get the call number + copies if any (remove tags)
 	  var status = x[2].innerHTML.replace(/(<([^>]+)>|&nbsp;)/ig,"");	// get the status (remove tags)
 	  
 	  var chck = '';
@@ -66,7 +66,7 @@ function showsms() {
  }	
 	// close the list and add note
    out += "</ol></p>";
-   out += "<p><strong>NOTE:</strong> Carrier charges may apply if you cell phone service plan does not include free text messaging.</p>";
+   out += "<p><strong>NOTE:</strong> Carrier charges may apply if your cell phone service plan does not include free text messaging.</p>";
    // add buttons at bottom.  note the return false which stops the forms from actually doing anything
    out += "<p><a href='#here' id='sendmessage' onClick='sendSMS();return false;'><img src='/screens/smssend.gif' border=0></a> <a href='#here' id='clearmessage' onClick='clearsms();return false;'><img src='/screens/smsclear.gif' border=0></a></p>";
 
@@ -77,7 +77,7 @@ function showsms() {
    sms.style.visibility = 'visible';
    sms.style.display = 'block';
 	// some fancy positioning
-findPos(document.getElementById('smsbutton'),sms,0,-320);
+    findPos(document.getElementById('smsbutton'),sms,25,-329);
 } catch (e) {
 	// doesn't work?  hide the SMS buttons
 document.getElementById('smsfeatures').style.visibility='hidden';
@@ -86,7 +86,7 @@ return false;
 }
 
 
-function sendSMS(location) {
+   function sendSMS(location) {
     var frm = document.sms_form;			// get the SMS form
 	var phone = frm.phone.value;			// get the phone #
 	phone = phone.replace(/[^\d]/ig,"");	// remove all non-digit characters
