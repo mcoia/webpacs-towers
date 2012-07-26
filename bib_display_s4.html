@@ -1,197 +1,231 @@
 <!--{toplogo}-->
+<script>
+$(document).ready(function () {
+    var ISSN = $(".bibInfoLabel:contains('ISSN')")
+    if (ISSN.length > 0){
+        var title = $(".bibInfoLabel:contains('Title'):eq(0)").siblings(".bibInfoData").text()
+        $("#fullText").html("<a href='http://rl6vs2mp4m.search.serialssolutions.com/?V=1.0&N=100&L=RL6VS2MP4M&S=AC_T_M&C=" + encodeURI(title) + "'><img src='/screens/checkfulltext.png' alt='Check for Full Text'></a>")
+    }
+});
+</script>
 
+<div class="pageNavColumn"><!-- nav menu column-->
+<h1 class="navHeader">Additional Info</h1>
+<div id="amazon" class="button" name="amazon"></div>
+<div id="googlebooks" class="button" name="googlebooks"></div>
+<div id="fullText" class="button" name="fullText"></div>
+</div>
+<div class="pageContentColumn"><!-- content container -->
 <!--{ifbibdisplay}-->
 <!--{xif}-->
-<div class="topDiv">
-
-<div>
 <!--{catedit}-->
-<!--{navrow}-->
-<!--{searchhistory}-->
 
-<div style="margin-top:5px">
-<div id="bibLeft">&nbsp;</div>
-<div id="bibContent">
-<div class="raised">
-<b class="top"><b class="b1"></b><b class="b2"></b><b class="b3"></b><b class="b4"></b></b>
-<div class="tool">
+<div id="bibDisplayBody">
+<div class="navigationRowRecord">
+<!--{navrow}-->
+<!--{innreach}-->
+</div>
+<div id="bibDisplayContent">
+<div class="bibSearch">
 <!--{searchtool}-->
-<!--{availlim}-->
+<div class="bibSearchHistory">
+<!--{searchhistory}-->
 </div>
-<b class="bottom"><b class="b4b"></b><b class="b3b"></b><b class="b2b"></b><b class="b1b"></b></b>
-</div>
-</div>
-<div id="bibRight"></div>
-</div>
-<div class="clear"></div>
-</div>
-</div>
-<div style="margin:0 0 0 2px;">
-<div id="infoTable">
+</div><!-- bibSearch -->
+
 <div class="bibPager">
 <!--{pager}-->
 </div>
-<!--{recordinfo:!}-->
-<!-- this is the button set we'll hide it if the BIB has no items -->
-<!--{linkeddocs}-->
-<!--{URLS}-->
+
+<div class="bibClear"></div>
+
+<div class="bibDisplayJacket">
+<div class="bibDisplayJacketImage">
+<!--{bibimage}-->
+</div>
+<div class="bibMedia">
+<!--{media}-->
+</div>
+</div>
+
+<div class="bibDisplayContentMain">
+
+<!-- just a placeholder for the sms form -->
+<div id='sms' style="visibility:hidden;display:none">
+</div>  
+
+<!--{recordinfo:a}-->
+
+<h1 class="bibDisplayTitle">
+<!--{recordinfo:t}-->
+</h1>
+
+<!--{recordinfo:pRe}-->
+
+<!--{ifhaspatrate}-->
+<div class="bibDisplayRatings">
+    <!--{ratings}-->
+</div>
+<!--{xif}-->
+
+<!--{booking}-->
 <!--{holdingslink}-->
+<div class="testlinkeddocs">
+<!--{linkeddocs}-->
+</div>
+<div class="bibDisplayUrls">
+<!--{URLS}-->
+</div>
+
 <!--{bloblinks}-->
 <!--{imagelinks}-->
 <!--{artthumb}-->
-<br/>
 <!--{xmlframe}-->
-<div>
-
-<div id="bibFullRecord" class="bibTabOff">
-<b class="tabTop"><b id="fullB1" class="option1"></b><b id="fullB2" class="option2"></b><b id="fullB3" class="option3"></b><b id="fullB4" class="option4"></b></b>
-<div class="bibContentBox"><div id="fullContent" class="bibTabContent">
-<a href="#" id="fullSelect">Full Record</a></div></div>
-</div>
-
-<div id="bibCopyStatus" class="bibTabOn">
-<b class="tabTop"><b id="copyB1" class="selected1"></b><b id="copyB2" class="selected2"></b><b id="copyB3" class="selected3"></b><b id="copyB4" class="selected4"></b></b>
-<div class="bibContentBox"><div id="copyContent" class="bibTabSelected"><a href="#" id="copySelect">Find It</a></div></div>
-</div>
-
-<div id="bibSimilarItems" class="bibSimTabOff">
-<b class="tabTop"><b id="simItB1" class="option1"></b><b id="simItB2" class="option2"></b><b id="simItB3" class="option3"></b><b id="simItB4" class="option4"></b></b>
-<div class="bibContentBox"><div id="simContent" class="bibSimTabContent">
-<a href="#" id="simSelect">Find Similar Items</a></div></div>
-</div>
-
-<div id="printView"><a href="#" id="printcss">Print Version</a></div>
-<div id="webView"><a href="#" id="webcss">Web View</a></div>
-</div>
-<div>
-<div class="bibContentWrapper">
-<br/>
-<span id="copySection" class="bibContentSectionDefault">
-<span style="text-align:left;font-size:85%;">
 <!--{holds}-->
 <!--{holdings}-->
-</span>
-<span class="booking">
-<!--{booking}-->
-</span>
-<span class="bibItems">
-<!--{items}-->
-</span>
 
-<span class="bibItems">
-<!--{orders}-->
-</span>
-</span>
-
-<span id="similarSection" class="bibContentSectionOptions">
-<!--{recordinfo:sdmbuqxz}-->
-</span>
-<span id="fullSection" class="bibContentSectionOptions">
-<span style="text-align:left;font-size:85%;">
-<!--{holds}-->
-<!--{holdings}-->
-</span>
-<span class="booking">
-<!--{booking}-->
-</span>
-<span class="bibItems">
+<div class="bibDisplayItems">
+<div class="bibDisplayItemsMain">
 <!--{items}-->
-</span>
-<!-- just a placeholder for the sms form -->
-<div id='sms' style="visibility:hidden;display:none"></div>
-<!-- this div starts hidden and is just a note -->
-<div align="center">
-<div style='visibility:hidden' id='info'>You can text the information to your phone<br> or write it down so you can find it.<br><a href="#here" onClick="document.getElementById('info').style.visibility='hidden';return false" style='text-align:center'>close</a></div>
-</div>
-<span class="bibItems">
-<!--{orders}-->
-</span>
+<!--{navrow}-->
+<a href="#here" name=smsbutton id=smsbutton onClick="showsms();return false;">
 <div id="smsfeatures">
-<a href="#here" name=smsbutton id=smsbutton onClick="showsms();return false;"><img src="/screens/smsbutton_s4.gif" border=0></a>&nbsp;&nbsp;
-<a href="#here" onClick="findPos(document.getElementById('smsbutton'),document.getElementById('info'),18,-68);document.getElementById('info').style.visibility='visible';return false;"><img src='/screens/smsq_s4.gif' border=0></a><br>
+    <span class="button centerButton">
+    <img src="/screens/ico_phone.gif" border=0 style="margin:0">
+       <span class="buttonText">Text item location</span>
+    </span>
+    </div>
+   
+</a>
 </div>
-<!--{recordinfo:crnfvwiolsdkmbuqxz}--> 
+</div>
 
+<!--{orders}-->
+
+<div class="bibDisplayContentMore">
 <!--{ifTOC}-->
 <!--{TOC}-->
 <!--{xif}-->
-</span>
+<!--{recordinfo:#}-->
 </div>
-<b class="conbottom"><b class="conb4"></b><b class="conb3"></b><b class="conb2"></b><b class="conb1"></b></b>
-</div>
-<br>
 
-<div id="cite_link">
+<!--{IFELCONTENT:365}-->
+<!-- Replace the number for your enhanced content in Pathfinder Pro -->
+<div class="bibDisplayContentMore">
+<ul id="elContent">
+<!--{ELCONTENT:365}-->
+</ul>
+</div>
+<!--{xif}-->
+
+<div class="bibDisplayContentMore bibDisplayReviews">
+<div class="bibDisplayPermLink actionButtonArea">
 <!--{recordlink}-->
 </div>
+<!--{patronreviewsfull}-->
 
+</div>
 
-</div>
-</div>
-<br/>
-
-<div id="sidebarContent">
-<div id="revandRate">
-<div class="sidecontentHeading">Additional Info:</div>
-<!--{bibimage}-->
-<div id="syn_summary_link"></div>
-<div id="syn_toc_link"></div>
-<div id="syn_chreview_link"></div>
-<div id="syn_dbchatper_link"></div>
-<div id="syn_ljreview_link"></div>
-<div id="syn_pwreview_link"></div>
-<div id="syn_avsummary_link"></div>
-<div id="syn_fiction_link"></div> 
-<div id="syn_fiction_search_link"></div> 
-<br/>
-<!--{ifhaspatrate}-->
-<!--{ratings}-->
-<!--{xif}-->
-<div class="resTab">
-<div id="fulltext_link"></div>
-<!--{innreach}-->
-<script src="//www.nwmissouri.edu/library/app/AddLinks/AddLinks.js"></script>
-<div id="amazon_link"></div>
-<div id="google_link"></div>
-<!--{relsearch}-->
-</div>
-</div>
-</div>
-<div class="clear2"></div>
-
-<div class=syn_div>
-<div id="syn_summary"></div>
-<div id="syn_toc"></div>
-<div id="syn_chreview"></div>
-<div id="syn_dbchatper"></div>
-<div id="syn_ljreview"></div>
-<div id="syn_pwreview"></div>
-<div id="syn_avsummary"></div>
-<div id="syn_fiction"></div> 
-<div id="syn_fiction_search"></div>
 </div>
 
 
+</div><!-- close bibDisplayContent -->
+<div class="clear"></div>
+</div><!-- close bibDisplayBody -->
+</div><!-- pageContent  -->
 
-<!-- a quick script to hide the SMS menu if there are no items. same as the javascript in the SMS form, but it's really just to see if the items exist.  If they don't, we hide the buttons -->
+    <!-- a quick script to hide the SMS menu if there are no items. same as the javascript in the SMS form, but it's really just to see if the items exist.  If they don't, we hide the buttons -->
+       <script>
+       var f = document.getElementById('bib_detail');
+       try { 
+        var itms = document.getElementById('bib_items');
+        var tr = itms.getElementsByTagName('TR');
+        for(i = 1; i < tr.length; i++) {
+         var x=tr[i].getElementsByTagName('TD');
+         if (x.length == 3) {
+          var loc = x[0].innerHTML.replace(/(<([^>]+)>|&nbsp;)/ig,"");
+          var call = x[1].innerHTML.replace(/(<([^>]+)>|&nbsp;)/ig,"");
+          var status = x[2].innerHTML.replace(/(<([^>]+)>|&nbsp;)/ig,"");
+         }
+        }
+       } catch (e) {
+         document.getElementById('smsfeatures').style.visibility='hidden';
+       }
 
-<script>
-try { 
- var itms = document.getElementById('bib_items');
- var tr = itms.getElementsByTagName('TR');
-  for(i = 1; i < tr.length; i++) {
-    var x=tr[i].getElementsByTagName('TD');
-    if (x.length == 3) {
-      var loc = x[0].innerHTML.replace(/(<([^>]+)>|&nbsp;)/ig,"");
-      var call = x[1].innerHTML.replace(/(<([^>]+)>|&nbsp;)/ig,"");
-      var status = x[2].innerHTML.replace(/(<([^>]+)>|&nbsp;)/ig,"");
+    </script>
+<script type='text/javascript'> 
+    var ProcessResults = function(bookInfo) {
+        var buttonImg = "<img src='/screens/googlebutton.gif' alt='Google Preview'>"
+        var textGBS = "";
+        for (ISBN in bookInfo) {
+            var b = bookInfo[ISBN];
+            var bookJacket =  "<img src='" + b.thumbnail_url + "&zoom=1'>";
+            //form the text of Google Book contents
+            if (b && (b.preview == "full")) {
+                textGBS = "<p>Full Text</p>";
+                //"Google Book Search";
+                document.getElementById("googlebooks").innerHTML = "<a href='" + b.preview_url + "'>" + buttonImg + "</a>"
+            }
+            else if (b && (b.preview == "partial")) {
+                textGBS = "<p>Limited Preview</p>"
+                //"Preview at Google Book Search";
+                document.getElementById("googlebooks").innerHTML = "<a href='" + b.preview_url + "'>" + buttonImg + "</a>"
+            }
+            else if (b && (b.preview == "noview")) {
+                //"Preview at Google Book Search";
+                if (b.thumbnail_url != undefined){
+                document.getElementById("googlebooks").innerHTML = "<a href='" + b.preview_url + "'>" + buttonImg + "</a>"
+                }
+            }
+            else {
+                //document.getElementById("googlebooks").innerHTML = "None available.";
+            }
     }
- }	
-
-} catch (e) {
-document.getElementById('smsfeatures').style.visibility='hidden';
 }
 </script>
+<script type='text/javascript'>
+       
+var ISBNcell = $(".bibInfoLabel:contains('ISBN')").siblings(".bibInfoData");
+var ISBN = ISBNcell.text().replace(/[^0123456789]/g,"");
+var ISBNrow = ISBNcell.closest("tr");
+var ISBN2 = ISBNrow.next().text().replace(/[^0123456789]/g,"");
+var mattype = $(".bibMedia").html()
+var film = mattype.search("film");
 
-<div class="clear2"></div>
+var cburl = "http://books.google.com/books";
+// Retrieve the info for these bibkeys
+var api_url = cburl + "?jscmd=viewapi&bibkeys=ISBN:" + ISBN;
+var s = document.createElement("script");
+s.setAttribute("type", "text/javascript");
+//alert("searching for: " + ISBN);
+s.setAttribute("src", "http://books.google.com/books?jscmd=viewapi&bibkeys=ISBN:" + ISBN + "&callback=ProcessResults");
+document.documentElement.firstChild.appendChild(s);
+//alert (api_url);
+
+</script>
+<script>
+
+	  if (film == -1) {
+            
+        
+	    
+	       if (ISBN.length == 13) {
+		    if (ISBN2.length == 10) {
+		        var amazon_isbn = ISBN2;
+	         }
+		        else {
+			      document.getElementById('amazon').style.display = 'none';
+			 }
+	       
+	       } else if (ISBN.length == 10) {
+	            var amazon_isbn = ISBN;;
+	       }
+	  
+	       else {
+                    document.getElementById('amazon').style.display = 'none';
+               }
+            document.getElementById("amazon").innerHTML = '<a href="http://amazon.com/dp/' + amazon_isbn + '" target="_blank"><img src="screens/amazon.png"></a>';
+               
+          }
+</script>
 <!--{botlogo}-->

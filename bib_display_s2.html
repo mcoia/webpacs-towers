@@ -1,175 +1,214 @@
-<!-- 2006 WebPAC Pro Version, set from 21 November, 2006 -->
-<!-- This file last changed: 15 October, 2006 -->
-<!-- In order for the tabbed display to work when using the bib_display.html and bibdisplay.js provided in the Pro sample set, the
-     customer needs to have bibdisplay.js and the conditional IE comments added into the INSERTTAG_INHEAD wwwoption.
-	 See release notes for exact wwwoption details -->
 <!--{toplogo}-->
-<br>
 <!--{ifbibdisplay}-->
 <!--{xif}-->
 <!--{catedit}-->
-<center>
+
+<div id="bibDisplayBody">
+<div class="navigationRowRecord">
 <!--{navrow}-->
-</center>
-<center>
 <!--{innreach}-->
-<!--{searchhistory}-->
-</center>
-<br>
-<center>
+</div>
+<div id="bibDisplayContent">
+<div class="bibSearch">
 <!--{searchtool}-->
-</center>
-<center>
+<div class="bibSearchHistory">
+<!--{searchhistory}-->
+</div>
+</div><!-- bibSearch -->
+
+<div class="bibPager">
 <!--{pager}-->
-</center>
-<table width="100%">
-	<tr>
-		<td width="75%" align="left"
-<!--{recordinfo:!}-->
-<table id="citationTable" width="100%" cellspacing="1" border="0">
-<tr class="bibInfoEntry">
-<td class="bibInfoLabel" width="20%" valign="top">
-Citation
-</td>
-<td class="bibInfoData">
-<span id="citeoclc">
-</td>
-</tr>
-</table>
-		</td>
-		<td width="25%" align="center">
+</div>
+
+<div class="bibClear"></div>
+
+<div class="bibResourceSidebar">
+<!--{ifhasresourcetable}-->
+<!--{resourcetable}-->
+<!--{xif}-->
+
+<div class="bibResourceTableHeader">Resources</div>
+
+<div class="bibResourceContent">
+<div id="citeoclc"></div>
+</div>
+</div>
+
+
+<div class="bibDisplayJacket">
 <!--{bibimage}-->
-<br />
-<a href="#syndetics">Reviews & More</a>
-		</td>
-	</tr>
-</table>
-<!--{linkeddocs}-->
-<!--{URLS}-->
+<div class="bibMedia">
+<!--{media}-->
+</div>
+<div id="googlebooks" class="button" name="googlebooks"></div>
+</div>
+
+<div class="bibDisplayContentMain">
+    
+<!-- just a placeholder for the sms form -->
+<div id='sms' style="visibility:hidden;display:none">
+</div>  
+
+<!--{recordinfo:a}-->
+
+<h1 class="bibDisplayTitle">
+<!--{recordinfo:t}-->
+</h1>
+
+<!--{recordinfo:pRe}-->
+
+<!--{ifhaspatrate}-->
+<div class="bibDisplayRatings">
+<!--{ratings}-->
+</div>
+<!--{xif}-->
+
+<!--{booking}-->
 <!--{holdingslink}-->
+<div class="testlinkeddocs">
+<!--{linkeddocs}-->
+</div>
+<div class="bibDisplayUrls">
+<!--{URLS}-->
+</div>
+
 <!--{bloblinks}-->
 <!--{imagelinks}-->
 <!--{artthumb}-->
 <!--{xmlframe}-->
 <!--{holds}-->
 <!--{holdings}-->
-<!--{booking}-->
+
+<div class="bibDisplayItems">
+<div class="bibDisplayItemsMain">
+<!--{navrow}-->
 <!--{items}-->
-<!-- this div starts hidden and is just a note -->
-<div style='visibility:hidden' id='info'>You could get out a piece of paper, find a pencil, and write down this call 
-number so that you can find it in the stacks.  Or you could text it to your 
-phone!  The text message will contain the location, call number, and title 
-of the item on this page.  Be careful if you don't have a text messaging 
-plan for your phone - carrier charges may apply.<br><a href="#here" onClick="document.getElementById('info').style.visibility='hidden';return false" style='text-align:center'>close</a></div>
-
-
-<!-- this is the button set we'll hide it if the BIB has no items -->
-<div id=smsfeatures align="center" style="margin-top:10px">
-     
-<!-- just a placeholder for the sms form -->
-<div id='sms' style="visibility:hidden;display:none">
+<a href="#here" name=smsbutton id=smsbutton onClick="showsms();return false;">
+<div id="smsfeatures" class="resourceButton">
+    <span class="button">
+    <img src="/screens/ico_phone.gif" border=0 style="margin:0">
+       <span class="buttonText">Text item location</span>
+    </span>
+    </div>
+   
+</a>
 </div>
-
-<a href="#here" name=smsbutton id=smsbutton onClick="showsms();return false;"><img src="/screens/b_send.png" border=0></a>&nbsp;&nbsp;
-<a href="#here" onClick="findPos(document.getElementById('smsbutton'),document.getElementById('info'),-350,-100);document.getElementById('info').style.visibility='visible';return false;"><img src='/screens/b_help.png' border=0></a><br>
 </div>
-
-
-<!-- a quick script to hide the SMS menu if there are no items. same as the javascript in the SMS form, but it's really just to see if the items exist.  If they don't, we hide the buttons -->
-
-<script>
-  var f = document.getElementById('bib_detail');
-try { 
- var itms = document.getElementById('bib_items');
- var tr = itms.getElementsByTagName('TR');
-  for(i = 1; i < tr.length; i++) {
-    var x=tr[i].getElementsByTagName('TD');
-    if (x.length == 3) {
-      var loc = x[0].innerHTML.replace(/(<([^>]+)>|&nbsp;)/ig,"");
-      var call = x[1].innerHTML.replace(/(<([^>]+)>|&nbsp;)/ig,"");
-      var status = x[2].innerHTML.replace(/(<([^>]+)>|&nbsp;)/ig,"");
-    }
- }	
-
-} catch (e) {
-document.getElementById('smsfeatures').style.visibility='hidden';
-}
-
-</script>
 
 <!--{orders}-->
-<br>
+
+<div class="bibDisplayContentMore">
 <!--{ifTOC}-->
 <!--{TOC}-->
 <!--{xif}-->
-<!--{recordlink}-->
-<!--{recordinfo:crnfvwsdkmiolbuxz}-->
-<div class="syn_div">
-<a name="syndetics"></a>
+<!--{recordinfo:snrfxzdmbukgioly}-->
 <div id="syn_anotes"></div>
-</div>
-
-<div class="syn_div">
 <div id="syn_awards"></div>
-</div>
-
-
-<div class="syn_div">
+<div id="syn_blreview"></div>
+<div id="syn_abreview"></div>
 <div id="syn_chreview"></div>
-</div>
-
-<div class="syn_div">
-<div id="syn_fiction"></div>
-</div>
-
-<div class="syn_div">
-<div id="syn_fiction_search"></div>
-</div>
-
-<div class="syn_div">
+<div id="syn_criticasreview"></div>
+<div id="syn_dbchapter"></div>
+<div id="syn_gmsummary"></div>
 <div id="syn_hbreview"></div>
-</div>
-
-<div class="syn_div">
+<div id="syn_itasummary"></div>
+<div id="syn_kireview"></div>
 <div id="syn_ljreview"></div>
-</div>
-
-<div class="syn_div">
+<div id="syn_nyreview"></div>
+<div id="syn_pwreview"></div>
+<div id="syn_sljreview"></div>
+<div id="syn_series"></div>
+<div id="syn_spreview"></div>
+<div id="syn_spsummary"></div>
 <div id="syn_summary"></div>
-</div>
-
-<div class="syn_div">
+<div id="syn_swedreview"></div>
+<div id="syn_swedsummary"></div>
+<div id="syn_swedtoc"></div>
 <div id="syn_toc"></div>
-</div>
-
-<div class="syn_div">
-<div id="syn_avsummary"></div>
-</div>
-
-<div class="syn_div">
+<div id="syn_fiction"></div>
 <div id="syn_avprofile"></div>
+<div id="syn_avsummary"></div>
+<div id="syn_video_clip"></div>
 </div>
-<center>
-<!--{pager}-->
-</center>
-<center>
-<!--{navrow}-->
-</center>
-<center>
-<!--{searchhistory}-->
-</center>
+
+<!--{IFELCONTENT:365}-->
+<!-- Replace the number for your enhanced content in Pathfinder Pro -->
+<div class="bibDisplayContentMore">
+<ul id="elContent">
+<!--{ELCONTENT:365}-->
+</ul>
+</div>
+<!--{xif}-->
+
+<div class="bibDisplayContentMore bibDisplayReviews">
+<div class="bibDisplayPermLink actionButtonArea">
+<!--{recordlink}-->
+</div>
+<!--{patronreviewsfull}-->
+
+</div>
+
+</div>
 
 
-
-<!--{botlogo}-->
+</div><!-- close bibDisplayContent -->
+<div class="clear"></div>
+</div><!-- close bibDisplayBody -->
 <script src="http://plus.syndetics.com/widget.php?id=mwsumob" type="text/javascript"></script>
+<script type='text/javascript'> 
+    var ProcessResults = function(bookInfo) {
+        var buttonImg = "<img src='/screens/googlebutton.gif' alt='Google Preview'>"
+        var textGBS = "";
+        for (ISBN in bookInfo) {
+            var b = bookInfo[ISBN];
+            var bookJacket =  "<img src='" + b.thumbnail_url + "&zoom=1'>";
+            //form the text of Google Book contents
+            if (b && (b.preview == "full")) {
+                textGBS = "<p>Full Text</p>";
+                //"Google Book Search";
+                document.getElementById("googlebooks").innerHTML = "<a href='" + b.preview_url + "'>" + buttonImg + "</a>"
+            }
+            else if (b && (b.preview == "partial")) {
+                textGBS = "<p>Limited Preview</p>"
+                //"Preview at Google Book Search";
+                document.getElementById("googlebooks").innerHTML = "<a href='" + b.preview_url + "'>" + buttonImg + "</a>"
+            }
+            else if (b && (b.preview == "noview")) {
+                //"Preview at Google Book Search";
+                if (b.thumbnail_url != undefined){
+                document.getElementById("googlebooks").innerHTML = "<a href='" + b.preview_url + "'>" + buttonImg + "</a>"
+                }
+            }
+            else {
+                //document.getElementById("googlebooks").innerHTML = "None available.";
+            }
+    }
+}
+</script>
+<script type='text/javascript'>
+       
+var ISBN = $(".bibInfoLabel:contains('ISBN')").siblings(".bibInfoData").text().replace(/[^0123456789]/g,"")
+
+var cburl = "http://books.google.com/books";
+// Retrieve the info for these bibkeys
+var api_url = cburl + "?jscmd=viewapi&bibkeys=ISBN:" + ISBN;
+var s = document.createElement("script");
+s.setAttribute("type", "text/javascript");
+//alert("searching for: " + ISBN);
+s.setAttribute("src", "http://books.google.com/books?jscmd=viewapi&bibkeys=ISBN:" + ISBN + "&callback=ProcessResults");
+document.documentElement.firstChild.appendChild(s);
+//alert (api_url);
+
+</script>
+
 <script type="text/javascript">
 var OCLC = $(".bibInfoLabel:contains('OCLC')").siblings(".bibInfoData").text().replace(/[^0123456789]/g,"")
 var ISBN = $(".bibInfoLabel:contains('ISBN')").siblings(".bibInfoData").text().replace(/[^0123456789]/g,"")
 if (OCLC > 0) {
-     document.getElementById("citeoclc").innerHTML = "<a href='http://worldcat.org/wcpa/oclc/" + OCLC + "?page=citation'>Cite this item (from WorldCat)</a>";}
+     document.getElementById("citeoclc").innerHTML = "<a href='http://worldcat.org/wcpa/oclc/" + OCLC + "?page=citation'><span class='button'><img src='/screens/ico_browse_brief.png' alt=''><span class='buttonText'>Cite This</span></span></a>";}
 else if (ISBN > 0) {
-     document.getElementById("citeoclc").innerHTML = "<a href='http://worldcat.org/wcpa/search?q=isbn%3A" + ISBN + "&qt=advanced'>Check for citation</a> (click on \"Cite\" in WorldCat)";}
+     document.getElementById("citeoclc").innerHTML = "<a href='http://worldcat.org/wcpa/search?q=isbn%3A" + ISBN + "&qt=advanced'><span class='button'><img src='/screens/ico_browse_brief.png' alt=''><span class='buttonText'>Check for citation.<br/>(Click on &#34;Cite&#34; in WorldCat)</span></span></a>";}
 else {
      document.getElementById("citeoclc").innerHTML = "No citation available. Visit our <a href='http://libguides.missouriwestern.edu/content.php?pid=170814'>citation help page</a>.";}
 </script>
+<!--{botlogo}-->
