@@ -1,0 +1,45 @@
+#accessibleForm {
+    width:750px;
+}
+
+.bibDisplayContentMain, .resourceDisplayContentMain { width: 65%; }
+
+.bibDisplayJacket {
+    margin-left:10px;
+}
+
+.briefcitCell {
+    border-bottom-color: #858484;
+}
+
+.browseSuperEntry td {font-weight: bold;}
+
+#chat_icon { display:block; }
+
+.linkBanner {
+    background-color:#000000;
+    padding:0;
+}
+
+.linkBannerLeft ul, .linkBannerRight ul{
+    height:25px;
+    margin:6px 0 3px;
+}
+
+.rateLabel { width:8.5%; }
+
+.rrUserQuery {
+    color: #457029;
+}
+
+.searchNavBut {
+    margin: 0 10px 0 5px;
+}
+
+#specializedSearch { margin-bottom:0px; }
+
+.topLogoImage {
+    padding:40px 20px;
+}
+
+#worldcat { display:inline; }

@@ -1,198 +1,104 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html lang="en">
+<!-- Rel 2009B Example Set -->
+<!-- This File Last Changed: 23 Mar 2010 -->
+<head>
+<title>Towers Catalog - Keyword Search</title>
+<script language="JavaScript">
+<!-- Hide the JS
+startTimeout(600000, "/");
+// -->
 
-
-
-
-<HTML>
-<HEAD>
-	<TITLE></TITLE>
-<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
-
-
-<LINK REL="STYLESHEET" TYPE="TEXT/CSS" HREF="/screens/towers_styles.css">
-
-
-<meta http-equiv="Refresh" CONTENT="300;URL=/search----->">
-
-</HEAD>
-
-<!--{advancedsearchbody}-->
+</script>
+<noscript>
+<meta http-equiv="Refresh" content="600;URL=/" />
+</noscript>
+<meta http-equiv="X-UA-Compatible" content="IE=8;FF=3;OtherUA=4">
+<link rel="stylesheet" type="text/css" href="/screens/styles_print.css" media="print">
+</head>
+<body>
 <!--{toplogo}-->
+<div class="pageContentInner">
 
+<h1 class="pageHeader">Keyword Search</h1>
 
-
-
-	<br>
-
-<!--{patron}-->
-<!--{logout}-->
-
-<!-- Begin Search Help Text -->
-
-<!--Begin the main content table-->
-<table width="740" border="0" cellspacing="0" cellpadding="5" align="center">
-<tr valign="top">
-<td>&nbsp;
-
-<!--Beginning main page content-->
-<!-- This table is purely cosmetic. It's only cell has a background color which is visible in the cellspacing gaps of the content table nested in that cell. -->
-<table width="90%" border="0" align="center" cellpadding="0" cellspacing="0">
-<tr>
-<td> 
-<!-- This table has the content -->
-<table width="100%" border="0" align="center" cellpadding="2" cellspacing="5">
-<tr>  
-
-  
-<td colspan="3"> <h3><b>Advanced Keyword Search</b></h3> 
-<!--{msg}-->
-<!--{spellcheck}-->
-<table width="740" ALIGN="center" CELLPADDING="5" CELLSPACING="0" BORDER="1" bordercolor="#FFCC99">
-<tr>
-<td>
-Type the WORD(S) you want, select limits, and click Submit: 
-</td>
-<td>
-<center>Limit to:</center>
-</td>
-</tr>
-<!-- Note: if you use a character set other than utf-8, change the charset declaration in the enctype attribute below accordingly. -->
-<tr>
-<td NOWRAP="true" VALIGN="top">
-
-<form enctype="multipart/form-data: charset=utf-8" name="search" id="search" onsubmit="return submitSearch(this);">
-<div class="form3Part" id="accessibleForm">
-
-<!--{advancedsearchformbegin}-->
-<div class="form3PartAbove">
+<div class="formsTogether" id="accessibleForm">
+<div class="form1Part">
+<form method="get">
+<fieldset>
+<!-- Optional legend:
+<legend>Type the keyword(s) in the box below then press Enter or click the Submit button.</legend>
+-->
 <div class="formEntryArea">
-<!--{advancedsearch}-->
-</div>
-<input type="hidden" name="startLimit" >
-<div class="formEntryArea">
-<!--{availlim}-->
-</div>
-<div class="formButtonArea">
-<span>
-<!--{advancedsubmit}-->
+<span class="formLabel">
+<label for="SEARCH">Search for:</label>
 </span>
-
+<!--{search}-->
 </div>
-</div> <!-- form3PartAbove -->
-
-</td>
-<div class="form3PartBelow">
-
-<td>
-<div class="formLeft advancedSearch">
-
-
-<div class="formEntryArea">
-<table><tr>
-<td><label for="searchscope">Scope:</label></td>
-<td>
+<div class="formEntryArea formScopeSearch">
+<span class="formLabel">
+<label for="searchscope">Search in the:</label>
+</span>
 <!--{scope}-->
-</td></tr></table>
-</div> 
-
-<div class="formEntryArea">
-<!--{branch}-->
-</div>
-<div class="formEntryArea">
-<!--{lang}-->
-</div>
-<div class="formEntryArea">
-<!--{mattype}-->
-</div>
-<div class="formEntryArea">
-<!--{DOCDATE}-->
-</div>
-<div class="formEntryArea">
-<!--{publish}-->
-</div>
-<div class="formEntryArea">
-<!--{serbk}-->
-</div>
-<div class="formEntryArea" id="form3PartAdvLimitSort">
-<!--{sort}-->
 </div>
 
-<input type="hidden" name="endLimit" >
-</div> <!-- formLeft -->
+<div class="formButtonArea">
+<!--{submit}-->
+</div>
+</fieldset>
+</form>
+</div><!--form1Part -->
+
+<div class="clear"></div>
+
+<div>
+<p>Type the keyword you want to find. For example:</p>
+<ul>
+<li>design</li>
+<li>bleachers grisham</li>
+</ul>
+<table class="tipsTable">
+<caption>Search Tips</caption>
+<!-- <tr valign="top"><th align="left">Adjacency</th>
+<td>Multiple words are searched together as one phrase.<br>
+<span style="text-decoration:underline">Example</span> : world health organization</td>
+</tr> -->
+<tr valign="top"><th align="left">Wildcards</th>
+<td>
+Words may be right-hand truncated using an asterisk ('*') in place of other characters. <!-- Use '**' for open-ended truncation of over five characters.--> The '*' wildcard may also be embedded in a search string. You may use '?' to replace a single character anywhere within a word.<br>
+<span style="text-decoration:underline">Examples</span> : environment* polic*, wom?n</td>
+</tr>
+<tr valign="top"><th align="left">Boolean Operators</th>
+<td>
+Use "and" or "or" to specify multiple words in any field, any order. Use "and not" to exclude words.<br>
+<span style="text-decoration:underline">Example</span> : stocks and bonds<br>
+<span style="text-decoration:underline">Example</span> : (alaska or canada) and (adventure and not vacation)</td>
+</tr>
+<tr valign="top"><th align="left">Field limits</th>
+<td>
+A field limit causes the system to search only the specified field for the specified word(s).</td>
+</tr>
+<tr valign="top">
+<th align="left">Grouping</th>
+<td>
+Keyword search results are usually grouped by relevance to bring the most likely titles to the top of the list. Each group represents a similar level of relevance and results are sorted within the group by date or title. To get an ungrouped result set, use boolean operators to form a complex query.
 </td>
 </tr>
-
+<!-- <tr valign="top"><th align="left">Proximity Operators</th>
+<td>
+Use "near" to specify words close to each other, in any order.<br>
+<span style="text-decoration:underline">Example</span> : california near university</td>
+</tr> -->
 </table>
 
-<table width="740" align="center" border="1" bordercolor="#FFCC99" cellspacing="0" cellpadding="5" style="margin-top:.5em">
-  <tr>
-    <td colspan="3" BGCOLOR="#FFCC99"><div align="center"><STRONG>Search Tips </STRONG></div></td>  </tr>
-  <tr>
-    <td>&nbsp;</td>
-    <td>&nbsp;</td>
-    <td><div align="center"><em><strong>Examples:</strong></em></div></td>
-  </tr>
-  <tr>
-    <td valign="top"><em><strong>Adjacency</strong></em> </td>
-    <td valign="top"> The order of words matters. Multiple words are searched together as one phrase. For different results, use <i><b>and</b></i> between each word or phrase.</td>
-    <td valign="top"> water resources<br>
-                colorado <b>and</b> geology<br>
-                electronic serial <b>and</b> physics </td>
-  </tr>
-  <tr>
-    <td valign="top"><em><strong>Truncation</strong></em> </td>
-    <td valign="top"> Words may be internally or right-hand truncated using an asterisk *. Use double asterisks ** for more than 6 characters. </td>
-    <td valign="top"> wom*n and librar*<br>
-                math**</td>
-  </tr>
-  <tr>
-    <td valign="top"><em><strong>Operators</strong></em> </td>
-    <td valign="top"> Use <i><b>and</b></i> or <i><b>or</b></i> to specify multiple words in any field, any order. Use the words <i><b>and 
-                not</b></i> to omit certain keywords. Use parentheses to group words when using multiple operators. </td>
-    <td valign="top"> cat <b>or</b> feline <br>
-                (alaska <b>or</b> canada)<b> and</b> (South America<b> and not</b> 
-                Brazil) </td>
-  </tr>
-  <tr>
-    <td valign="top"><em><strong>Proximity</strong></em> </td>
-    <td valign="top"> Use <i><b>near</b></i> to specify words close to each other, in any order. Use <i><b>within #</b></i> to specify 
-                words within a set range of each other. Symbol # may stand for any number.  </td>
-    <td valign="top"> California <b>near</b> university<br>
-                colorado<b> within 12 </b>wyoming </td>
-  </tr>
-  <tr>
-    <td valign="top"><em><strong>Fields</strong></em> </td>
-    <td valign="top"> Specify fields to search, using field abbreviation. Fields available for this database are <b>a:</b> (author),<b> 
-                t:</b> (title),<b> s:</b> (subject), and<b> n:</b> (additional keywords.) Subjects are NOT cross-referenced. </td>
-    <td valign="top"> "><b> a:</b>twain <b>and t:</b>huck<br>
-                (<b>a:</b>frost <b> or a:</b>whitman) <b>and s:</b>poet* <br>
-                <b>t:</b>medicine <b>and (n:</b>research<b> or s:</b>information) </td>
-  </tr>
-</table>
-<!--End of main page content-->
+</div><!--bottom part -->
+</div><!--formsTogether -->
+</div><!-- pageContentInner -->
 
-<!-- End Search Help Text -->
-<p align="center"><A HREF="/search~"><IMG SRC="/screens/b_newsrch.gif" BORDER=0 ALT="[START OVER]"></A></p> 
-<center>
-<table border="0" cellpadding="6" cellspacing="0">
-    <tr valign="top"> 
-      <td>&nbsp;</td>
-    </tr>
-    <tr valign="top"> 
-            <td align="center"> <font color="#993300" face="Arial, Helvetica, sans-serif" size="-1"><b><font color="#993300">Towers</font></b> <font color="#993300"><b>&middot;</b> 
-                a MOBIUS Library Catalog</font></font></td>
-    </tr>
-    <tr valign="top"> 
-            <td align="center"> <font face="Arial, Helvetica, sans-serif" size="-2">
-				<a href="http://searchmobius.org/search/">MOBIUS</a> &middot; 
-				<a href="/search~">Towers Catalog</a><br>
-                <a href="/search~S1">Conception Abbey</a> &middot; 
-				<a href="/search~S2">Missouri Western State University</a><br>
-				<a href="/search~S5">National Military Heritage Museum</a> &middot;
-                <a href="/search~S3">North Central Missouri College</a><br>
-				<a href="/search~S4">Northwest Missouri State University</a></font></td>
-    </tr>
-</table>
-</center>
-</BODY>
-</HTML>
+<!--{botlogo}-->
+<script type="text/javascript"><!--//--><![CDATA[//><!--
+try { document.forms[0].SEARCH.focus(); }
+catch(err) {}
+//--><!]]></script>
+</body>
+</html>

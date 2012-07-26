@@ -1,63 +1,140 @@
-<!-- 2006 WebPAC Pro Version, set from 21 November, 2006 -->
-<!-- This file last changed: 15 October, 2006 -->
-<!-- In order for the tabbed display to work when using the bib_display.html and bibdisplay.js provided in the Pro sample set, the
-     customer needs to have bibdisplay.js and the conditional IE comments added into the INSERTTAG_INHEAD wwwoption.
-	 See release notes for exact wwwoption details -->
 <!--{toplogo}-->
-<br>
 <!--{ifbibdisplay}-->
 <!--{xif}-->
 <!--{catedit}-->
-<center>
+
+<div id="bibDisplayBody">
+<div class="navigationRowRecord">
 <!--{navrow}-->
-</center>
-<center>
 <!--{innreach}-->
-<!--{searchhistory}-->
-</center>
-<br>
-<center>
+</div>
+<div id="bibDisplayContent">
+<div class="bibSearch">
 <!--{searchtool}-->
-</center>
-<center>
+<div class="bibSearchHistory">
+<!--{searchhistory}-->
+</div>
+</div><!-- bibSearch -->
+
+<div class="bibPager">
 <!--{pager}-->
-</center>
-<table width="100%">
-	<tr>
-		<td width="75%" align="left">
-<!--{recordinfo:!}-->
-		</td>
-		<td width="25%" align="center">
+</div>
+
+<div class="bibClear"></div>
+
+<div class="bibDisplayJacket">
+<div class="bibDisplayJacketImage">
 <!--{bibimage}-->
-		</td>
-	</tr>
-</table>
-<!--{linkeddocs}-->
-<!--{URLS}-->
+</div>
+<div class="bibMedia">
+<!--{media}-->
+</div>
+</div>
+
+<div class="bibDisplayContentMain">
+
+<!-- just a placeholder for the sms form -->
+<div id='sms' style="visibility:hidden;display:none">
+</div>  
+
+<!--{recordinfo:a}-->
+
+<h1 class="bibDisplayTitle">
+<!--{recordinfo:t}-->
+</h1>
+
+<!--{recordinfo:pRe}-->
+
+<!--{ifhaspatrate}-->
+<div class="bibDisplayRatings">
+    <!--{ratings}-->
+</div>
+<!--{xif}-->
+
+<!--{booking}-->
 <!--{holdingslink}-->
+<div class="testlinkeddocs">
+<!--{linkeddocs}-->
+</div>
+<div class="bibDisplayUrls">
+<!--{URLS}-->
+</div>
+
 <!--{bloblinks}-->
 <!--{imagelinks}-->
 <!--{artthumb}-->
 <!--{xmlframe}-->
 <!--{holds}-->
 <!--{holdings}-->
-<!--{booking}-->
+
+<div class="bibDisplayItems">
+<div class="bibDisplayItemsMain">
+<div id="requestButton">
+<!--{navrow}-->
+</div>
 <!--{items}-->
+<a href="#here" name=smsbutton id=smsbutton onClick="showsms();return false;">
+<div id="smsfeatures" class="resourceButton">
+    <span class="button">
+    <img src="/screens/ico_phone.gif" border=0 style="margin:0">
+       <span class="buttonText">Text item location</span>
+    </span>
+    </div>
+   
+</a>
+</div>
+</div>
+
 <!--{orders}-->
-<br>
+
+<div class="bibDisplayContentMore">
 <!--{ifTOC}-->
 <!--{TOC}-->
 <!--{xif}-->
-<!--{recordlink}-->
-<!--{recordinfo:crnfvwsdkmiolbuxz}-->
-<center>
-<!--{pager}-->
-</center>
-<center>
-<!--{navrow}-->
-</center>
-<center>
-<!--{searchhistory}-->
-</center>
-<!--{botlogo}-->
+<!--{recordinfo:#}-->
+</div>
 
+<!--{IFELCONTENT:365}-->
+<!-- Replace the number for your enhanced content in Pathfinder Pro -->
+<div class="bibDisplayContentMore">
+<ul id="elContent">
+<!--{ELCONTENT:365}-->
+</ul>
+</div>
+<!--{xif}-->
+
+<div class="bibDisplayContentMore bibDisplayReviews">
+<div class="bibDisplayPermLink actionButtonArea">
+<!--{recordlink}-->
+</div>
+<!--{patronreviewsfull}-->
+
+</div>
+
+</div>
+
+
+</div><!-- close bibDisplayContent -->
+<div class="clear"></div>
+</div><!-- close bibDisplayBody -->
+
+    <!-- a quick script to hide the SMS menu if there are no items. same as the javascript in the SMS form, but it's really just to see if the items exist.  If they don't, we hide the buttons -->
+       <script>
+       var f = document.getElementById('bib_detail');
+       try { 
+        var itms = document.getElementById('bib_items');
+        var tr = itms.getElementsByTagName('TR');
+        for(i = 1; i < tr.length; i++) {
+         var x=tr[i].getElementsByTagName('TD');
+         if (x.length == 3) {
+          var loc = x[0].innerHTML.replace(/(<([^>]+)>|&nbsp;)/ig,"");
+          var call = x[1].innerHTML.replace(/(<([^>]+)>|&nbsp;)/ig,"");
+          var status = x[2].innerHTML.replace(/(<([^>]+)>|&nbsp;)/ig,"");
+         }
+        }
+       } catch (e) {
+         document.getElementById('smsfeatures').style.visibility='hidden';
+       }
+
+    </script>
+<!--{botlogo}-->

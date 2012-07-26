@@ -1,271 +1,250 @@
-<!-- 2006 WebPAC Pro Version, set from 26 March, 2007 -->
-<!-- This file last changed: 15 October, 2006 -->
-<!-- In order for the tabbed display to work when using the bib_display.html and bibdisplay.js provided in the Pro sample set, the
-     customer needs to have bibdisplay.js and the conditional IE comments added into the INSERTTAG_INHEAD wwwoption.
-	 See release notes for exact wwwoption details -->
 <!--{toplogo}-->
 <!--{ifbibdisplay}-->
 <!--{xif}-->
-<br>
-<!--{ifbibdisplay}-->
-<!--{xif}-->
 <!--{catedit}-->
-<center>
+
+<div id="bibDisplayBody">
+<div class="navigationRowRecord">
 <!--{navrow}-->
-</center>
-<center>
 <!--{innreach}-->
-<!--{searchhistory}-->
-</center>
-<br>
-<center>
+</div>
+<div id="bibDisplayContent">
+<div class="bibSearch">
 <!--{searchtool}-->
-</center>
-<center>
+<div class="bibSearchHistory">
+<!--{searchhistory}-->
+</div>
+</div><!-- bibSearch -->
+
+<div class="bibPager">
 <!--{pager}-->
-</center>
-<div style="margin:0 0 0 2px;">
-<div id="infoTable">
-<!--{recordinfo:!}-->
-<!--{linkeddocs}-->
-<!--{URLS}-->
+</div>
+
+<div class="bibClear"></div>
+
+<div class="bibDisplayJacket">
+<div class="bibDisplayJacketImage">
+<!--{bibimage}-->
+</div>
+<div class="bibMedia">
+<!--{media}-->
+</div>
+<div id="googlebooks" class="button" name="googlebooks"></div>
+<div id="amazon" class="button" name="amazon"></div>
+<div id="barnesandnoble" class="button" name="barnesandnoble"></div>
+</div>
+
+<div class="bibDisplayContentMain">
+
+<!-- just a placeholder for the sms form -->
+<div id='sms' style="visibility:hidden;display:none">
+</div>  
+
+<!--{recordinfo:a}-->
+
+<h1 class="bibDisplayTitle">
+<!--{recordinfo:t}-->
+</h1>
+
+<!--{recordinfo:pRe}-->
+
+<!--{ifhaspatrate}-->
+<div class="bibDisplayRatings">
+    <!--{ratings}-->
+</div>
+<!--{xif}-->
+
+<!--{booking}-->
 <!--{holdingslink}-->
+<div class="testlinkeddocs">
+<!--{linkeddocs}-->
+</div>
+<div class="bibDisplayUrls">
+<!--{URLS}-->
+</div>
+
 <!--{bloblinks}-->
 <!--{imagelinks}-->
 <!--{artthumb}-->
-     <br/>
 <!--{xmlframe}-->
-     <div>
 <!--{holds}-->
 <!--{holdings}-->
-<!--{booking}-->
-<!--{items}-->
 
-<!-- just a placeholder for the sms form -->
-<div id='sms' style="visibility:hidden;display:none;">
+<div class="bibDisplayItems">
+<div class="bibDisplayItemsMain">
+<!--{navrow}-->
+<!--{items}-->
+<a href="#here" name=smsbutton id=smsbutton onClick="showsms();return false;">
+<div id="smsfeatures" class="resourceButton">
+    <span class="button">
+    <img src="/screens/smsbutton.gif" border=0 style="margin:0">
+    </span>
+    </div>
+   
+</a>
+</div>
 </div>
 
 <!--{orders}-->
-          <br>
+
+<div class="bibDisplayContentMore">
 <!--{ifTOC}-->
 <!--{TOC}-->
 <!--{xif}-->
-<!--{recordlink}-->
-<!--{recordinfo:crnfvwsdkmiolbuxz}-->
-
-
-
-     </div>   
-
-<div class="syn_div">
-<div id="syn_summary"></div>
-
-<div id="syn_blreview"></div>
-
-<div id="syn_chreview"></div>
-
-<div id="syn_kireview"></div>
-
-<div id="syn_ljreview"></div>
-
-<div id="syn_pwreview"></div>
-
-<div id="syn_toc"></div>
-
+<!--{recordinfo:#}-->
 <div id="syn_anotes"></div>
-
 <div id="syn_awards"></div>
-
+<div id="syn_blreview"></div>
+<div id="syn_abreview"></div>
+<div id="syn_chreview"></div>
+<div id="syn_criticasreview"></div>
+<div id="syn_dbchapter"></div>
+<div id="syn_gmsummary"></div>
+<div id="syn_hbreview"></div>
+<div id="syn_itasummary"></div>
+<div id="syn_kireview"></div>
+<div id="syn_ljreview"></div>
+<div id="syn_nyreview"></div>
+<div id="syn_pwreview"></div>
+<div id="syn_sljreview"></div>
+<div id="syn_series"></div>
+<div id="syn_spreview"></div>
+<div id="syn_spsummary"></div>
+<div id="syn_summary"></div>
+<div id="syn_swedreview"></div>
+<div id="syn_swedsummary"></div>
+<div id="syn_swedtoc"></div>
+<div id="syn_toc"></div>
 <div id="syn_fiction"></div>
-
-<div id="syn_fiction_search"></div>
-
-<div id="syn_avsummary"></div>
-
 <div id="syn_avprofile"></div>
+<div id="syn_avsummary"></div>
+<div id="syn_video_clip"></div>
 </div>
+
+<!--{IFELCONTENT:365}-->
+<!-- Replace the number for your enhanced content in Pathfinder Pro -->
+<div class="bibDisplayContentMore">
+<ul id="elContent">
+<!--{ELCONTENT:365}-->
+</ul>
+</div>
+<!--{xif}-->
+
+<div class="bibDisplayContentMore bibDisplayReviews">
+<div class="bibDisplayPermLink actionButtonArea">
+<!--{recordlink}-->
+</div>
+<!--{patronreviewsfull}-->
+
 </div>
 
-<br/>
-
-<div id="sidebarContent">
-<div id="revandRate">
-<!--{bibimage}-->
-
-<div id="syn_summary_link"></div>
-
-<div id="syn_blreview_link"></div>
-
-<div id="syn_chreview_link"></div>
-
-<div id="syn_kireview_link"></div>
-
-<div id="syn_ljreview_link"></div>
-
-<div id="syn_pwreview_link"></div>
-
-<div id="syn_toc_link"></div>
-
-<div id="syn_anotes_link"></div>
-
-<div id="syn_awards_link"></div>
-
-<div id="syn_fiction_link"></div>
-
-<div id="syn_fiction_search_link"></div>
-
-<div id="syn_avsummary_link"></div>
-
-<div id="syn_avprofile_link"></div>
-
-<div id="googlebooks" align="center"> </div>
-
-<div id="amazonlink" align="center"></div>
-
-<div id="barneslink" align="center"></div>
-
-
-
-
-<!-- this is the button set we'll hide it if the BIB has no items -->
-<div id=smsfeatures align="center">
-     
-
-<a href="#here" name=smsbutton id=smsbutton onClick="showsms();return false;"><img src="/screens/b_send_small.png" class="resourceButton"></a>
-<br>
 </div>
 
 
-<!-- a quick script to hide the SMS menu if there are no items. same as the javascript in the SMS form, but it's really just to see if the items exist.  If they don't, we hide the buttons -->
+</div><!-- close bibDisplayContent -->
+<div class="clear"></div>
+</div><!-- close bibDisplayBody -->
 
-<script>
-  var f = document.getElementById('bib_detail');
-try { 
- var itms = document.getElementById('bib_items');
- var tr = itms.getElementsByTagName('TR');
-  for(i = 1; i < tr.length; i++) {
-    var x=tr[i].getElementsByTagName('TD');
-    if (x.length == 3) {
-      var loc = x[0].innerHTML.replace(/(<([^>]+)>|&nbsp;)/ig,"");
-      var call = x[1].innerHTML.replace(/(<([^>]+)>|&nbsp;)/ig,"");
-      var status = x[2].innerHTML.replace(/(<([^>]+)>|&nbsp;)/ig,"");
+    <!-- a quick script to hide the SMS menu if there are no items. same as the javascript in the SMS form, but it's really just to see if the items exist.  If they don't, we hide the buttons -->
+       <script>
+       var f = document.getElementById('bib_detail');
+       try { 
+        var itms = document.getElementById('bib_items');
+        var tr = itms.getElementsByTagName('TR');
+        for(i = 1; i < tr.length; i++) {
+         var x=tr[i].getElementsByTagName('TD');
+         if (x.length == 3) {
+          var loc = x[0].innerHTML.replace(/(<([^>]+)>|&nbsp;)/ig,"");
+          var call = x[1].innerHTML.replace(/(<([^>]+)>|&nbsp;)/ig,"");
+          var status = x[2].innerHTML.replace(/(<([^>]+)>|&nbsp;)/ig,"");
+         }
+        }
+       } catch (e) {
+         document.getElementById('smsfeatures').style.visibility='hidden';
+       }
+
+    </script>
+<script src="http://plus.syndetics.com/widget.php?id=caumob" type="text/javascript"></script>
+<script type='text/javascript'> 
+    var ProcessResults = function(bookInfo) {
+        var buttonImg = "<img src='/screens/googlebutton.gif' alt='Google Preview'>"
+        var textGBS = "";
+        for (ISBN in bookInfo) {
+            var b = bookInfo[ISBN];
+            var bookJacket =  "<img src='" + b.thumbnail_url + "&zoom=1'>";
+            //form the text of Google Book contents
+            if (b && (b.preview == "full")) {
+                textGBS = "<p>Full Text</p>";
+                //"Google Book Search";
+                document.getElementById("googlebooks").innerHTML = "<a href='" + b.preview_url + "'>" + buttonImg + "</a>"
+            }
+            else if (b && (b.preview == "partial")) {
+                textGBS = "<p>Limited Preview</p>"
+                //"Preview at Google Book Search";
+                document.getElementById("googlebooks").innerHTML = "<a href='" + b.preview_url + "'>" + buttonImg + "</a>"
+            }
+            else if (b && (b.preview == "noview")) {
+                //"Preview at Google Book Search";
+                if (b.thumbnail_url != undefined){
+                document.getElementById("googlebooks").innerHTML = "<a href='" + b.preview_url + "'>" + buttonImg + "</a>"
+                }
+            }
+            else {
+                //document.getElementById("googlebooks").innerHTML = "None available.";
+            }
     }
- }	
-
-} catch (e) {
-document.getElementById('smsfeatures').style.visibility='hidden';
 }
+</script>
+<script type='text/javascript'>
+
+var ISBNcell = $(".bibInfoLabel:contains('ISBN')").siblings(".bibInfoData");
+var ISBN = ISBNcell.text().replace(/[^0123456789]/g,"");
+var ISBNrow = ISBNcell.closest("tr");
+var ISBN2 = ISBNrow.next().text().replace(/[^0123456789]/g,"");
+var mattype = $(".bibMedia").html()
+var film = mattype.search("film");
+
+
+var cburl = "http://books.google.com/books";
+// Retrieve the info for these bibkeys
+var api_url = cburl + "?jscmd=viewapi&bibkeys=ISBN:" + ISBN;
+var s = document.createElement("script");
+s.setAttribute("type", "text/javascript");
+//alert("searching for: " + ISBN);
+s.setAttribute("src", "http://books.google.com/books?jscmd=viewapi&bibkeys=ISBN:" + ISBN + "&callback=ProcessResults");
+document.documentElement.firstChild.appendChild(s);
+//alert (api_url);
 
 </script>
 
-<!--{ifhaspatrate}-->
-<!--{ratings}-->
-<!--{xif}-->
-<div class="resTab">
-<!--{ifhasresourcetable}-->
-<!--{resourcetable}-->
-<!--{xif}-->
-<!--{relsearch}-->
+<script>
 
-
-</div>
-</div>
-</div>
-<div class="clear2"></div>
-<!-- Script borrowed from http://library.wmitchell.edu -->
-<!-- googlebook search -->
-
-<script type="text/javascript">
-
-
+	  if (film == -1) {
+            
         
-
-		var tr = document.getElementsByTagName('TR');
-		var isbnnumber = "";
-		for(i = 0; i < tr.length; i++) {
-			var x=tr[i].getElementsByTagName('td');
-			/*Look for the string "DVD" in the item location*/
-			if (x.length == 3) {
-			      var tdContents = x[0].innerHTML;
-			      var dvd = tdContents.search("DVD");
-			      
-			 /*Look for the ISBN*/
-			}
-			if (x.length == 2 && x[0].innerHTML == "ISBN") {
-			      //Grab the first ISBN
-				isbn_1 = x[1].innerHTML;
-				isbn_1 = isbn_1.replace(/[^\d]+/ig,"");
-				
-				if (isbn_1.length == 13) {
-				   var next_tr= i + 1;
-				   var y=tr[next_tr];
-				   var y_data=y.getElementsByTagName('td');
-				   var isbn_2=y_data[1].innerHTML;
-				   isbn_2 = isbn_2.replace(/[^\d]+/ig,"");
-				}
-
-			}
-		}
-	  
-	  if (dvd == -1) {
 	    
-	       if (isbn_1.length == 13) {
-		    var google_isbn = isbn_1;
-		    var barnes_isbn = isbn_1
-		    if (isbn_2.length == 10) {
-		        var amazon_isbn = isbn_2;
+	       if (ISBN.length == 13) {
+		    var barnes_isbn = ISBN
+		    if (ISBN2.length == 10) {
+		        var amazon_isbn = ISBN2;
 	         }
 		        else {
-			      document.getElementById('amazonlink').style.visibility = 'hidden';
+			      document.getElementById('amazon').style.display = 'none';
 			 }
 	       
-	       } else if (isbn_1.length == 10) {
-	            var google_isbn = isbn_1;
-	            var amazon_isbn = isbn_1;
-	            var barnes_isbn = isbn_1;
+	       } else if (ISBN.length == 10) {
+	            var amazon_isbn = ISBN;
+	            var barnes_isbn = ISBN;
 	       }
 	  
-	       if (isbn_1.length > 0) {
-
-
-	  
-
-	       var cburl = "http://books.google.com/books";
-    
-	       // Retrieve the info for these bibkeys           
-
-       
-	       var api_url = cburl + "?jscmd=viewapi&bibkeys=" + google_isbn;
-	       document.write(unescape("%3Cscript src=" + api_url +
-	       " type='text/javascript'%3E%3C/script%3E"));
-                  
-	       }else {
-          
-	       }
-	  
-	  }
-      </script>
-
-           <script type="text/javascript">
-        var buttonImg =
-          'http://code.google.com/apis/books/images/gbs_preview_button1.gif';
-        for (isbn in _GBSBookInfo) {
-          var b = _GBSBookInfo[isbn];
-          if (b && (b.preview == "full" || b.preview == "partial")) {
-          
-            document.getElementById("googlebooks").innerHTML = "<a href='"+ b.preview_url + "' target='_blank'><img src='"+ buttonImg + "' class='resourceButton'></a>";
-
+	       else {
+                    document.getElementById('amazon').style.display = 'none';
+                    document.getElementById('barnesandnoble').style.display = 'none';
+               }
+            document.getElementById("amazon").innerHTML = '<a href="http://amazon.com/dp/' + amazon_isbn + '" target="_blank"><img src="screens/amazon.png"></a>';
+	    document.getElementById("barnesandnoble").innerHTML = '<a href="http://search.barnesandnoble.com/booksearch/isbninquiry.asp?EAN=' + barnes_isbn + '" target="_blank"><img src="/screens/barnesandnoble.gif"></a>';
+               
           }
-        }
-	
-	     document.getElementById("amazonlink").innerHTML = '<a href="http://amazon.com/dp/' + amazon_isbn + '" target="_blank"><img src="screens/amazon.png" class="resourceButton"/></a>';
-	     document.getElementById("barneslink").innerHTML = '<a href="http://search.barnesandnoble.com/booksearch/isbninquiry.asp?EAN=' + barnes_isbn + '" target="_blank"><img src="/screens/barnesandnoble.gif" class="resourceButton"/></a>';
-      </script>
-	   
-      
-      <!-- end of googlebook search -->
-
+</script>
 <!--{botlogo}-->
-
-
 
