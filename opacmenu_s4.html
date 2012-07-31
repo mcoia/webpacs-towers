@@ -7,28 +7,6 @@
 <meta http-equiv="X-UA-Compatible" content="IE=8;FF=3;OtherUA=4">
 <link rel="stylesheet" type="text/css" href="/screens/styles_print.css" media="print">
 <!--<link rel="stylesheet" type="text/css" href="/screens/stylesmain.css" > Un-comment to offer a larger logo on mainmenu.-->
-<script type="text/javascript">/* <![CDATA[ */
-function iiiSearchValidate() {
-	try{
-	  if (document.getElementById('search').searcharg.value==null||document.getElementById('search').searcharg.value=="") {
-		return false;
-		}
-	}
-	catch(err) {
-	}
-  return true;
-}
-
-function iiiDoSubmit_1()
-{
-//getFormHandleForm() is in common.js
-var obj = getFormHandleForm(1);
-if(iiiSearchValidate()){
-obj.submit();
-}
-}
-/* ]]> */
-</script>
 </head>
 <body>
 <!--{toplogo}-->
@@ -63,12 +41,50 @@ obj.submit();
  
 
 <div class="innerTab">
-<form action="/search/" method="get" name="search" id="search" 
-onSubmit="return iiiSearchValidate();">
-<input type="hidden" id="iiiFormHandle_1">
+<div class="innerTabForm Y">
+<select name="searchtype" class="searchtype">
+<option value="Y" selected="selected">Keyword
+<option value="t">Title
+<option value="a">Author
+<option value="s">Journals, Magazines, Newspapers
+
+<option value="">------------------</option>
+<option value="d">Subject (Library of Congress)
+<option value="m">Children's Subject
+
+<option value="">------------------</option>
+<option value="c">Call Number (Library of Congress)
+<option value="e">Call Number (Dewey Decimal)
+<option value="f">Local Call Number
+<option value="g">Government Document Number
+<option value="i">ISBN, ISSN, Music, Etc. Number
+<option value="o">OCLC Number
+</select>
+<form action="/search~S4/Y" method="get">
 
 <label for="searchtype" class="accessibleAddInfo">Search type</label>
-<select name="searchtype" id="searchtype">
+<input maxlength="75" name="SEARCH" size="28" >
+<select name="m">
+<option value="">All Collections</option>
+<option value="2">E-Books</option>
+<option value="i">Spoken Audio</option>
+<option value="g">Video/Film</option>
+</select>
+<!--{nosort}-->
+<input type="hidden" name="searchscope" value="4">
+<span class="nowrap formButtonArea">
+
+<input value="Search" type="submit">
+
+</span>
+
+</form>
+</div>
+<div class="innerTabForm otherIndexes">
+<form action="/search/" method="get" name="search" id="search">
+
+<label for="searchtype" class="accessibleAddInfo">Search type</label>
+<select name="searchtype" class="searchtype">
 <option value="Y" selected="selected">Keyword
 <option value="t">Title
 <option value="a">Author
@@ -88,28 +104,15 @@ onSubmit="return iiiSearchValidate();">
 </select>
 <!--{nosort}-->
 <input maxlength="75" name="searcharg" size="28" >
-<select name="m">
-<option value="">All Collections</option>
-<option value="2">E-Books</option>
-<option value="i">Spoken Audio</option>
-<option value="g">Video/Film</option>
-</select>
 <input type="hidden" name="searchscope" value="4">
 <span class="nowrap formButtonArea">
 
-<input type="hidden" id="iiiFormHandle_1"/>
-<a href="#" onclick="iiiDoSubmit_1();"><div 
-onmousedown="this.className='pressedState';" onmouseout="this.className='';" 
-onmouseup="this.className='';"><div class="buttonSpriteDiv"><span 
-class="buttonSpriteSpan1"><span 
-class="buttonSpriteSpan2">Submit</span></span></div></div></a>
-
-<input type="submit" class="submitHidden">
+<input value="Search" type="submit">
 
 </span>
 
 </form>
-
+</div>
 <div id="exampleText">
 
 <p>Search for a word or words. For example:</p>
