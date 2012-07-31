@@ -335,7 +335,7 @@ ICON_BUT_PAT_SORTBYDUE=<div onmousedown="this.className='pressedState';" onmouse
 ICON_BUT_PAT_SUBMIT=<div onmousedown="this.className='pressedState';" onmouseout="this.className='';" onmouseup="this.className='';"><div class="buttonSpriteDiv"><span class="buttonSpriteSpan1"><span class="buttonSpriteSpan2">Submit</span></span></div></div>
 ICON_BUT_PSTARTOVER=<span class="button"><img src="/screens/ico_startover.png" alt=""><span class="buttonText">Start Over</span></span>
 ICON_BUT_RET2PREC=Return to My Account
-ICON_BUT_UPDATE_HOLDS=<div onmousedown="this.className='pressedState';" onmouseout="this.className='';" onmouseup="this.className='';"><div class="buttonSpriteDiv"><span class="buttonSpriteSpan1"><span class="buttonSpriteSpan2">Update List</span></span></div></div>
+ICON_BUT_UPDATE_HOLDS=<div onmousedown="this.className='pressedState';" onmouseout="this.className='';" onmouseup="this.className='';"><div class="buttonSpriteDiv"><span class="buttonSpriteSpan1"><span class="buttonSpriteSpan2">Cancel Selected Items</span></span></div></div>
 CHANGE_HOLD_LOC=true
 #FREEZE_HOLDS=true
 ICON_CLOSEWINDOW=<span class="button"><img src="/screens/ico_x.png" alt=""><span class="buttonText">Close Window</span></span>
