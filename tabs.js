@@ -16,10 +16,18 @@ $.extend({
 });
 
 function change_tab(tabId) {
-	$("#searchtype").val(tabId);
+	$(".searchtype").val(tabId);
 	$("#tabList li").css("background-color", "#F1F4EB");
 	$("#tabList #" + tabId).css("background-color", "#DFE6D4");
 	$("#exampleText").load("/screens/" + tabId + ".inc");
+	if (tabId == "Y"){
+	  $('.Y.innerTabForm').show();
+	  $('.otherIndexes.innerTabForm').hide();
+	}else{
+	  $('.otherIndexes.innerTabForm').show();
+	  $('.Y.innerTabForm').hide();
+	}
+	$
 }
 
 function front_tabs(){
@@ -36,7 +44,7 @@ function front_tabs(){
 	  var tabId = $(this).attr('id');
 	  change_tab(tabId);
       });
-  $('#searchtype').change(function(){
+  $('.searchtype').change(function(){
 	  var tabId = $(this).val()
 	  change_tab(tabId);
       }); 
@@ -44,7 +52,14 @@ function front_tabs(){
 }
 
 $(document).ready(function () {
-    var tabId = $('#searchtype').val();
+    var tabId = $('.searchtype').val();
     $("#tabList #" + tabId).css("background-color", "#DFE6D4");
+	if (tabId == "Y"){
+	  $('.Y.innerTabForm').show();
+	  $('.otherIndexes.innerTabForm').hide();
+	}else{
+	  $('.otherIndexes.innerTabForm').show();
+	  $('.Y.innerTabForm').hide();
+	}
     front_tabs();
 });
