@@ -408,7 +408,7 @@ READING_HISTORY=optin|true|
 TOPLOGO_LOGGEDIN=T
 
 # Patron Ratings
-ICON_PATRATE=<span class="button"><img src="/screens/patrate.gif" alt=""><span class="buttonText">My Ratings</span></span>
+ICON_PATRATE=<span class="button" id="myRatings"><img src="/screens/patrate.gif" alt=""><span class="buttonText">My Ratings</span></span>
 ICON_RATE_GROUP=<img src="/screens/rate_group.gif" border="0" width="15" height="14" alt="Rated %d stars out of 5 based on %n ratings" title="Rated %d stars out of 5 based on %n ratings">
 ICON_RATE_MY=<img src="/screens/rate_my.gif" border="0" width="15" height="14" alt="You rated this %d stars out of 5" title="You rated this %d stars out of 5">
 ICON_RATE_NEED=<img src="/screens/rate_need.gif" border="0" width="15" height="14" alt="Rate this material!" title="Rate this material!">
