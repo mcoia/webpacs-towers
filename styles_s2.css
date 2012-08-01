@@ -26,6 +26,9 @@
     margin:6px 0 3px;
 }
 
+
+#myRatings { display:block; }
+
 .rateLabel { width:8.5%; }
 
 .rrUserQuery {

@@ -794,6 +794,8 @@ div .bibResourceSidebar { display:none; }
 
 .mylistsSavePage .pageMainAreaHeader { font-size:1.3333em; font-weight:bold; }
 
+#myRatings { display:none; }
+
 span.navButton, span.navButtonOneLine {
     background: transparent url('button_blank.gif') no-repeat;
     display:block;
