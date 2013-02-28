@@ -297,7 +297,7 @@ ICON_BUT_EXPORT_VIEW_SAVES4=<span class="button"><img src="/screens/ico_bag.png"
 ICON_BUT_VIEW_SAVES=<span class="navButton">View Bag</span>
 ICON_BUT_VIEW_SAVES2=<span class="navButton">View Saved Records</span>
 ICON_BUT_VIEW_SAVES4=<span class="button"><img src="/screens/ico_bag.png" alt=""><span class="buttonText">View Bag</span></span>
-EMAILOP=From the library catalog|exporter|
+EMAILOP=From the library catalog|mcohelp@mobiusconsortium.org|
 EXPORT_SELECT_TABLE=Sendto:browser,email,local|Format:full,brief,marc,procite,endnote
 XRECTYPE=boi
 
