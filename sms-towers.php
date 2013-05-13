@@ -20,7 +20,7 @@ $bib 			= trim($_GET['bib']);
 
 $item 			= $_GET['item']; //parse the item
 $itemArray 		= explode("|", $item);
-$title			= trim($_GET['title']);
+//$title			= trim($_GET['title']);
 $location 		= trim($itemArray[0]);
 
 //strip strange characters not handled by Safari from location
@@ -32,14 +32,14 @@ $item 			= "\nLoc: ".$location."\nCall: ".$callNumber;
 //echo "document.write('Debug: ".$location." ".$callNumber."');";
 
 //Change this url to your own catalog
-// $url = "http://towers.searchmobius.org/record=".$bib;
-$url = "http://towers.searchmobius.org/search~S0?/." .$bib. "/." .$bib. "/1,1,1,B/holdings";  
+$url = "http://towers.searchmobius.org/record=".$bib;
+//$url = "http://towers.searchmobius.org/search~S0?/." .$bib. "/." .$bib. "/1,1,1,B/holdings";  
 
 //Use the bib number to get the title information for the item from the catalog
 $catalogItemPage = get_url_contents($url);
-//preg_match('/fieldtag=t(.*)fieldtag=p/s', $catalogItemPage, $matches); //get the right secton of code
-//preg_match('/<strong>([^:]*).*<\/strong>/s', $matches[1], $matches2); //grab the title text before the colon
-//$title = trim($matches2[1]);
+preg_match('/fieldtag=t(.*)fieldtag=p/s', $catalogItemPage, $matches); //get the right secton of code
+preg_match('/<strong>([^:]*).*<\/strong>/s', $matches[1], $matches2); //grab the title text before the colon
+$title = trim($matches2[1]);
 
 //verify that the call number and location are listed on the page for extra security
 if(!strstr($catalogItemPage, $callNumber) || !strstr($catalogItemPage, $location)){
