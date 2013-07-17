@@ -126,7 +126,7 @@ return false;
 	 sms.style.visibility = 'hidden';
 	 sms.style.display = 'none';
 	 }
-	 
+ 
 
 
 // get the position of an item, good for putting the SMS form in a useful place
