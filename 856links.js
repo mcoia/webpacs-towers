@@ -1,7 +1,7 @@
 function hideLinks(){
     
     var stringsToHide = new Array ();
-    stringsToHide[1] = new Array ("CA");
+    stringsToHide[1] = new Array ("Conception Abbey");
     stringsToHide[2] = new Array ("missouriwestern");
     stringsToHide[3] = new Array ("ncmissouri");
     stringsToHide[4] = new Array ("nwmissouri");
