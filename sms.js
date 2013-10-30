@@ -33,6 +33,7 @@ out += '<input type=hidden name=title value=\"'+title+'\">';	//dump the title in
  out += "<p class=eg>(use the full 10 digits of your phone #, no spaces, no dashes eg. 6105265000)</p>";
 out += "<p><b>Select your provider:</b><select name=provider>";	// pull-down for each of phone carriers the values will be parsed by the perl script
 	out += "<option value=cingular>Cingular/AT&amp;T</option>"
+	out += "<option value=chatmobility>Chat Mobility</option>"
 	out += "<option value=cricket>Cricket</option>";
 	out += "<option value=nextel>Nextel</option>";
 	out += "<option value=northwest>Northwest Cellular</option>";
