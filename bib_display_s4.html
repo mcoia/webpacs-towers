@@ -4,7 +4,9 @@ $(document).ready(function () {
     var ISSN = $(".bibInfoLabel:contains('ISSN')")
     if (ISSN.length > 0){
         var title = $(".bibInfoLabel:contains('Title'):eq(0)").siblings(".bibInfoData").text()
-        $("#fullText").html("<a href='http://rl6vs2mp4m.search.serialssolutions.com/?V=1.0&N=100&L=RL6VS2MP4M&S=AC_T_M&C=" + encodeURI(title) + "'><img src='/screens/checkfulltext.png' alt='Check for Full Text'></a>")
+      var newSearchTerm = title.replace(".", " ");
+       $("#fullText").html("<a href='http://rl6vs2mp4m.search.serialssolutions.com/?V=1.0&N=100&L=RL6VS2MP4M&S=AC_T_M&C=" + encodeURIComponent(newSearchTerm) + "'><img src='/screens/checkfulltext.png' alt='Check for Full Text'></a>")
+
     }
 });
 </script>
