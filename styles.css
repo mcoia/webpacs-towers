@@ -149,9 +149,13 @@ a:visited#addMore { color:#014184 }
 #accessibleForm .advancedSearch fieldset fieldset { border:none; padding:0; text-align:left; margin:0 0 6px 0; }
 
 #alertMessage {
-    margin-left:1em;
+    margin:auto 1em;
     font-size:1.2em;
-    color:#6c0000;
+    color:black;
+    border: 3px solid black;
+    text-align: center;
+    background-color: pink;
+    padding: 1em;
 }
 
 #alertMessage a {
