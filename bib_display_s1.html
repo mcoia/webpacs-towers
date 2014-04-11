@@ -165,86 +165,9 @@
 
     </script>
 <script src="http://plus.syndetics.com/widget.php?id=caumob" type="text/javascript"></script>
-<script type='text/javascript'> 
-    var ProcessResults = function(bookInfo) {
-        var buttonImg = "<img src='/screens/googlebutton.gif' alt='Google Preview'>"
-        var textGBS = "";
-        for (ISBN in bookInfo) {
-            var b = bookInfo[ISBN];
-            var bookJacket =  "<img src='" + b.thumbnail_url + "&zoom=1'>";
-            //form the text of Google Book contents
-            if (b && (b.preview == "full")) {
-                textGBS = "<p>Full Text</p>";
-                //"Google Book Search";
-                document.getElementById("googlebooks").innerHTML = "<a href='" + b.preview_url + "'>" + buttonImg + "</a>"
-            }
-            else if (b && (b.preview == "partial")) {
-                textGBS = "<p>Limited Preview</p>"
-                //"Preview at Google Book Search";
-                document.getElementById("googlebooks").innerHTML = "<a href='" + b.preview_url + "'>" + buttonImg + "</a>"
-            }
-            else if (b && (b.preview == "noview")) {
-                //"Preview at Google Book Search";
-                if (b.thumbnail_url != undefined){
-                document.getElementById("googlebooks").innerHTML = "<a href='" + b.preview_url + "'>" + buttonImg + "</a>"
-                }
-            }
-            else {
-                //document.getElementById("googlebooks").innerHTML = "None available.";
-            }
-    }
-}
-</script>
-<script type='text/javascript'>
-
-var ISBNcell = $(".bibInfoLabel:contains('ISBN')").siblings(".bibInfoData");
-var ISBN = ISBNcell.text().replace(/[^0123456789]/g,"");
-var ISBNrow = ISBNcell.closest("tr");
-var ISBN2 = ISBNrow.next().text().replace(/[^0123456789]/g,"");
-var mattype = $(".bibMedia").html()
-var film = mattype.search("film");
 
 
-var cburl = "http://books.google.com/books";
-// Retrieve the info for these bibkeys
-var api_url = cburl + "?jscmd=viewapi&bibkeys=ISBN:" + ISBN;
-var s = document.createElement("script");
-s.setAttribute("type", "text/javascript");
-//alert("searching for: " + ISBN);
-s.setAttribute("src", "http://books.google.com/books?jscmd=viewapi&bibkeys=ISBN:" + ISBN + "&callback=ProcessResults");
-document.documentElement.firstChild.appendChild(s);
-//alert (api_url);
 
-</script>
 
-<script>
-
-	  if (film == -1) {
-            
-        
-	    
-	       if (ISBN.length == 13) {
-		    var barnes_isbn = ISBN
-		    if (ISBN2.length == 10) {
-		        var amazon_isbn = ISBN2;
-	         }
-		        else {
-			      document.getElementById('amazon').style.display = 'none';
-			 }
-	       
-	       } else if (ISBN.length == 10) {
-	            var amazon_isbn = ISBN;
-	            var barnes_isbn = ISBN;
-	       }
-	  
-	       else {
-                    document.getElementById('amazon').style.display = 'none';
-                    document.getElementById('barnesandnoble').style.display = 'none';
-               }
-            document.getElementById("amazon").innerHTML = '<a href="http://amazon.com/dp/' + amazon_isbn + '" target="_blank"><img src="screens/amazon.png"></a>';
-	    document.getElementById("barnesandnoble").innerHTML = '<a href="http://search.barnesandnoble.com/booksearch/isbninquiry.asp?EAN=' + barnes_isbn + '" target="_blank"><img src="/screens/barnesandnoble.gif"></a>';
-               
-          }
-</script>
 <!--{botlogo}-->
 
