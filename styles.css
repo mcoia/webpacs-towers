@@ -443,7 +443,12 @@ table.browseResourceTable { border:0; }
 
 .browseScreen td { vertical-align:top; }
 
-.browseSearchtool  td { border:none; }
+.browseSearchtool  td { border:none; padding: 5px; text-align: left;}
+
+.frontLimits {
+    margin: auto;
+    width: 37%;
+}
 
 .browseSearchtool { background:url('tile_search.jpg') repeat-x bottom left; border-color:#D3D3D3; border-style:solid; border-width:0 0 1px 0; font-size:.9em; padding:0; }
 
