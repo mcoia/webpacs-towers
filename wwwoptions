@@ -643,7 +643,6 @@ LOC_w4vii=http://www.nwmissouri.edu/library/maps/second.html
 LOC_w4a*=http://www.nwmissouri.edu/library/maps/second.html
 LOC_w4p*=http://www.nwmissouri.edu/library/maps/second.html
 LOC_w4c*=http://www.nwmissouri.edu/library/maps/second.html
-LOC_w4j*=http://www.nwmissouri.edu/library/maps/second.html
 LOC_w4wii=http://www.nwmissouri.edu/library/maps/third.html
 LOC_w4sii=http://www.nwmissouri.edu/library/maps/third.html
 LOC_w4chi=http://www.nwmissouri.edu/library/maps/third.html
@@ -651,7 +650,7 @@ LOC_w4cdi=http://www.nwmissouri.edu/library/maps/third.html
 LOC_w4hii=http://www.nwmissouri.edu/library/maps/third.html
 LOC_w4m*=http://www.nwmissouri.edu/library/maps/third.html
 LOC_w4aii=http://www.nwmissouri.edu/library/maps/third.html
-LOC_w4j**=http://www.nwmissouri.edu/library/maps/third.html
+LOC_w4j*=http://www.nwmissouri.edu/library/maps/third.html
 LOC_w4cii=http://www.nwmissouri.edu/library/maps/third.html
 
 LOC_m2acx=/screens/MWSU_CD_Reserves.pdf
