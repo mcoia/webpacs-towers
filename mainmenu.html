@@ -38,19 +38,71 @@ obj.submit();
 <h1 class="accessibleAddInfo">Search</h1>
 
 <div id="accessibleForm" class="form1Part">
-<div class="browseSearchtool">
-<form action="/search/" method="get" name="search" id="search" onSubmit="return iiiSearchValidate();">
+<div class="browseSearchtool">    
 
+  <div id="tabs">
+    <div id="tab-1" class="tabContent">
 
-<input type="hidden" id="iiiFormHandle_1">
+<div class="innerTab">
+<div class="innerTabForm X">
+    <div class="inlineBlock">
+<select name="searchtype" class="searchtype">
+<option value="X" selected="selected">Keyword
+<option value="t">Title
+<option value="a">Author
+<option value="s">Journals, Magazines, Newspapers
 
-<!-- Optional legend:
-<fieldset>
-<legend>Type the search term you want to find.</legend>-->
-<div class="formEntryArea">
+<option value="">------------------</option>
+<option value="d">Subject (Library of Congress)
+<option value="m">Children's Subject
+
+<option value="">------------------</option>
+<option value="c">Call Number (Library of Congress)
+<option value="e">Call Number (Dewey Decimal)
+<option value="f">Local Call Number
+<option value="g">Government Document Number
+<option value="i">ISBN, ISSN, Music, Etc. Number
+<option value="o">OCLC Number
+</select>
+<form method="get" action="http://towers.searchmobius.org/search/X?"enctype="multipart/form-data">
+</div><!-- inlineBlock -->       
+<input type="text" name="SEARCH" id="search">
 <div class="inlineBlock">
+    <select id="searchscope" name="searchscope">
+        <option value="1"> Conception Abbey</option>
+        <option value="2"> Missouri Western State University</option>
+        <option value="3"> North Central Missouri College</option>
+        <option value="4"> Northwest Missouri State University</option>
+        <option value="5"> National Military Heritage Museum</option>
+        <option selected="selected" value="6"> View Entire Collection</option>
+    </select>
+</div><!-- inlineBlock -->
+    <input type="hidden" name="SORT" value="D">
+<div class="frontLimits">
+<table>
+<tr class="limitBox">
+    <p>Check one or more formats, or leave all unchecked for no limit.</p>
+    <td>
+    <label for="formata"><input type="checkbox" name="m" id="m" value="a" /> Book/Journal<br /></label>
+    <label for="format2"><input type="checkbox" name="m" id="m" value="2" /> eBook<br /></label>
+    <label for="formatc"><input type="checkbox" name="m" id="m" value="c" /> Music Score<br /></label>
+    </td>
+    <td>
+    <label for="formatg"><input type="checkbox" name="m" id="m" value="g" /> Video/Film<br /></label>
+    <label for="formatj"><input type="checkbox" name="m" id="m" value="j" /> Music Audio<br /></label>
+    <label for="formati"><input type="checkbox" name="m" id="m" value="i" /> Spoken Audio<br /></label>
+    </td>
+</tr>
+</table>
+</div>
+    <input type="submit" value="Submit">
+</form>
+</div><!-- innerTabForm X -->
+<div class="innerTabForm otherIndexes">
+<form action="/search/" method="get" name="search" id="search">
+
 <label for="searchtype" class="accessibleAddInfo">Search type</label>
-<select name="searchtype" id="searchtype">
+<select name="searchtype" class="searchtype">
 <option value="X" selected="selected">Keyword
 <option value="t">Title
 <option value="a">Author
@@ -71,31 +123,35 @@ obj.submit();
 <!--{nosort}-->
 <label for="searcharg" class="accessibleAddInfo">Search term</label>
 <input maxlength="75" name="searcharg" size="20" >
-</div>
-<div class="inlineBlock">
-<label for="scope" class="accessibleAddInfo">Location</label>
-<!--{scope}-->
-<span class="formButtonArea">
+<select id="searchscope" name="searchscope">
+        <option value="1"> Conception Abbey</option>
+        <option value="2"> Missouri Western State University</option>
+        <option value="3"> North Central Missouri College</option>
+        <option value="4"> Northwest Missouri State University</option>
+        <option value="5"> National Military Heritage Museum</option>
+        <option selected="selected" value="6"> View Entire Collection</option>
+<span class="nowrap formButtonArea">
 
-  <!--{submit}-->
-
-<input type="hidden" id="iiiFormHandle_1"/>
-<a href="#" onclick="iiiDoSubmit_1();"><div onmousedown="this.className='pressedState';" onmouseout="this.className='';" onmouseup="this.className='';"><div class="buttonSpriteDiv"><span class="buttonSpriteSpan1"><span class="buttonSpriteSpan2">Submit</span></span></div></div></a>
-
-<input type="submit" class="submitHidden">
+<input value="Submit" type="submit">
 
 </span>
-</div>
-</div><!-- formEntryArea -->
-<!--</fieldset> optional-->
+
 </form>
+</div>
+</div><!-- innertab -->
+</div>
+</div>
 </div><!-- browseSearchtool -->
 </div><!-- form1Part -->
 
-<!--{botlogo}-->
+
+
+
+
+
 
 </div><!--pageContentInner -->
-
+<!--{botlogo}-->
 <script type="text/javascript"><!--//--><![CDATA[//><!--
 try { document.forms[0].searcharg.focus(); }
 catch(err) {}
