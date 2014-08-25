@@ -686,7 +686,7 @@ div .bibResourceSidebar { display:none; }
 
 .indexList li {list-style-type:none;}
 
-.inlineBlock {display:inline-block; zoom: 1; *display: inline;}
+.inlineBlock {display:inline-block; *zoom: 1; *display: inline; margin-right:1px; }
 
 .itemSelect { width:50em; }
 
