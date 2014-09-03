@@ -65,18 +65,18 @@ obj.submit();
 <option value="o">OCLC Number
 </select>
 <form method="get" action="http://towers.searchmobius.org/search/X?"enctype="multipart/form-data">
- </div><!-- inlineBlock -->      
+</div><!-- inlineBlock -->       
 
-<input type="text" name="SEARCH" id="search" size="39" maxlength="75">
+<input type="text" name="SEARCH" id="search" maxlength="75" size="39">
 
 <div class="inlineBlock">
     <select id="searchscope" name="searchscope">
-        <option value="1"> Conception Abbey</option>
+        <option selected="selected" value="1"> Conception Abbey</option>
         <option value="2"> Missouri Western State University</option>
         <option value="3"> North Central Missouri College</option>
         <option value="4"> Northwest Missouri State University</option>
         <option value="5"> National Military Heritage Museum</option>
-        <option selected="selected" value="6"> View Entire Collection</option>
+        <option value="6"> View Entire Collection</option>
     </select>
 </div><!-- inlineBlock -->
     <input type="hidden" name="SORT" value="D">
@@ -87,12 +87,10 @@ obj.submit();
     <td>
     <label for="formata"><input type="checkbox" name="m" id="m" value="a" /> Book/Journal<br /></label>
     <label for="format2"><input type="checkbox" name="m" id="m" value="2" /> eBook<br /></label>
-    <label for="formatc"><input type="checkbox" name="m" id="m" value="c" /> Music Score<br /></label>
     </td>
     <td>
-    <label for="formatg"><input type="checkbox" name="m" id="m" value="g" /> Video/Film<br /></label>
+    <label for="formatg"><input type="checkbox" name="m" id="m" value="g" /> Video/Film<br /></label>    
     <label for="formatj"><input type="checkbox" name="m" id="m" value="j" /> Music Audio<br /></label>
-    <label for="formati"><input type="checkbox" name="m" id="m" value="i" /> Spoken Audio<br /></label>
     </td>
 </tr>
 </table>
@@ -124,14 +122,14 @@ obj.submit();
 </select>
 <!--{nosort}-->
 <label for="searcharg" class="accessibleAddInfo">Search term</label>
-<input maxlength="75" name="searcharg" size="39" >
+<input maxlength="75" name="searcharg" size="39">
 <select id="searchscope" name="searchscope">
-        <option value="1"> Conception Abbey</option>
+        <option selected="selected" value="1"> Conception Abbey</option>
         <option value="2"> Missouri Western State University</option>
         <option value="3"> North Central Missouri College</option>
         <option value="4"> Northwest Missouri State University</option>
         <option value="5"> National Military Heritage Museum</option>
-        <option selected="selected" value="6"> View Entire Collection</option>
+        <option value="6"> View Entire Collection</option>
 <span class="nowrap formButtonArea">
 
 <input value="Submit" type="submit">
