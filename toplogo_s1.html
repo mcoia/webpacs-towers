@@ -23,6 +23,15 @@ $(document).ready(function () {
 	$('#b option:not([value^="c"])').detach(); 
 	selectAny.prependTo("#b")
 	//Hides the out-of-scope locations
+    //hides out of scope featured lists
+    var pathnameFtList = window.location.href.slice(window.location.href.indexOf('/') + 1).split('/')[3];
+    if(pathnameFtList.indexOf('ftlist') > -1){
+    $('.browseEntry:not(:contains("Conception Abbey"))').addClass('hideMe');
+    $(".hideMe").hide();
+    text = $('.ftlistHeader').text();
+	listName = text.replace(/[^a-z0-9]/gmi, " ").replace(/[\d]{1,2}/m, " ").replace("entries", " ");
+	namewoNum = $('.ftlistHeader').replaceWith("<th colSpan='3'>" + listName + "</th>");
+    }
 });
 </script>
 
@@ -97,7 +106,6 @@ if (document.body){document.body.className = "bodybg";}
 <li><a href="/illj">Interlibrary Loan - Journal Articles</a></li>
 <li><a href="/search/b">Course Reserves</a></li>
 <li><a href="/search~S1/ftlist">New Library Items</a></li>
-<li><a href="/search~S1?/ftlist^bib03%2C1%2C0%2C115/mode=2">New Library Items</a></li>
 </ul>
         
 </div>
