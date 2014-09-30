@@ -23,6 +23,15 @@ $(document).ready(function () {
 	selectAny.prependTo("#b")
 	//Hides the out-of-scope locations
 	$('#myRatings').parent().show(); //Shows the My Ratings link;
+	//hides out of scope featured lists
+    var pathnameFtList = window.location.href.slice(window.location.href.indexOf('/') + 1).split('/')[3];
+    if(pathnameFtList.indexOf('ftlist') > -1){
+    $('.browseEntry:not(:contains("MWSU"))').addClass('hideMe');
+    $(".hideMe").hide();
+    text = $('.ftlistHeader').text();
+	listName = text.replace(/[^a-z0-9]/gmi, " ").replace(/[\d]{1,2}/m, " ").replace("entries", " ");
+	namewoNum = $('.ftlistHeader').replaceWith("<th colSpan='3'>" + listName + "</th>");
+    }
 });
 </script>
 
@@ -97,7 +106,7 @@ return false;
 <option value="/search/o">OCLC Number</option>
 <option value="/illb">Interlibrary Loan - Books</option>
 <option value="/illj">Interlibrary Loan - Journal Articles</option>
-<option value="/ftlists">Featured Lists</option>
+<option value="/search~S2/ftlists">Featured Lists</option>
 </select>
 <input type="image" src="/screens/ico_go_smaller.png" class="searchNavBut" value="Go" onclick="GotoURL();" >
     </li>
