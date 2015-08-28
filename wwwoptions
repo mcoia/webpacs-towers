@@ -90,7 +90,7 @@ STAFF_LOGGEDIN_MSG=<span class="loggedInMessage">You are logged into staff mode 
 
 # General and Phrase Searching
 ICON_BUT_ANOTHER=<span class="navButton anotherSearch">Another Search</span>
-ICON_BUT_ANOTHER4=<span class="button"><img src="/screens/ico_magnifyingglass.png" alt=""><span class="buttonText">Another Search</span></span>
+ICON_BUT_ANOTHER4=<span class="button"><img src="/screens/ico_magnifyingglass.png" alt=""><span class="buttonText anotherSearch">Another Search</span></span>
 ICON_BUT_NEWSRCH=New Search
 ICON_BUT_WORDSRCH=<span class="navButton">Search as Words</span>
 ICON_BUT_WORDSRCH4=<span class="button"><img src="/screens/ico_magnifyingglass.png" alt=""><span class="buttonText">Search as Words</span></span>
