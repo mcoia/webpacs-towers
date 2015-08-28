@@ -89,7 +89,7 @@ STAFF=91
 STAFF_LOGGEDIN_MSG=<span class="loggedInMessage">You are logged into staff mode at %s as %s</span>
 
 # General and Phrase Searching
-ICON_BUT_ANOTHER=<span class="navButton">Another Search</span>
+ICON_BUT_ANOTHER=<span class="navButton anotherSearch">Another Search</span>
 ICON_BUT_ANOTHER4=<span class="button"><img src="/screens/ico_magnifyingglass.png" alt=""><span class="buttonText">Another Search</span></span>
 ICON_BUT_NEWSRCH=New Search
 ICON_BUT_WORDSRCH=<span class="navButton">Search as Words</span>
@@ -461,8 +461,11 @@ ILL_HOME=/screens/ill.html
 
 # INN-Reach
 IR_PLACEMENT=1
-INNREACH=<span class="navButton">Search MOBIUS</span>@searchmobius.org(X=X;Y=Y;d=d;m=h;t=t;c=c;e=e;a=a;s=s;g=g;i=i;o=o)
-INNREACH4=<span class="button"><img src="/screens/ico_mobius.png" alt=""><span class="buttonText">Search MOBIUS</span></span>@searchmobius.org(X=X;Y=Y;d=d;m=h;t=t;c=c;e=e;a=a;s=s;g=g;i=i;o=o)
+#ICON_INNREACH_ENCORE=<span class="navButton">Search MOBIUS</span>
+#ICON_INNREACH_ENCORE4=<span class="button"><img src="/screens/ico_mobius.png" alt=""><span class="buttonText">Search MOBIUS</span></span>
+#INNREACH_ENCORE=http://searchmobius.org/iii/encore/search/C__S%s__Orightresult__U?lang=eng&suite=cobalt
+#INNREACH=<span class="navButton">Search MOBIUS</span>@searchmobius.org(X=X;Y=Y;d=d;m=h;t=t;c=c;e=e;a=a;s=s;g=g;i=i;o=o)
+#INNREACH4=<span class="button"><img src="/screens/ico_mobius.png" alt=""><span class="buttonText">Search MOBIUS</span></span>@searchmobius.org(X=X;Y=Y;d=d;m=h;t=t;c=c;e=e;a=a;s=s;g=g;i=i;o=o)
 
 # Media Management
 ICON_BUT_RET2CRS=<span class="navButton">Return to Course</span>
