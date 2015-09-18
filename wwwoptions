@@ -489,7 +489,7 @@ FEATURED_LIST=01,02,03|Towers New Titles|Campus|# Titles
 
 # Content Linking and Other Resources
 # If your system uses SSL, use the https example, to avoid secure/nonsecure warning on Internet Explorer.
-BIBIMAGE=http://www.syndetics.com/index.aspx?isbn=%s/SC.GIF&client=northmsu|I|http://syndetics.com/hw7.pl?isbn=%s/LC.gif&client=northmsu
+BIBIMAGE=http://www.syndetics.com/index.aspx?isbn=%s/SC.GIF&client=caumob|I|http://www.syndetics.com/index.aspx?isbn=%s/LC.GIF&client=caumob
 BIBIMAGE_TEXT=Book Jacket
 BUT_ENCYCPD=/screens/encycpd.gif
 BUT_FULL_TEXT=/screens/full_text.gif
