@@ -462,10 +462,11 @@ ILL_HOME=/screens/ill.html
 # INN-Reach
 IR_PLACEMENT=1
 #ICON_INNREACH_ENCORE=<span class="navButton">Search MOBIUS</span>
-#ICON_INNREACH_ENCORE4=<span class="button"><img src="/screens/ico_mobius.png" alt=""><span class="buttonText">Search MOBIUS</span></span>
+#ICON_INNREACH_ENCORE4=<span class="button"><img src="/screens/ico_mobius.png" alt=""><span class="buttonText">Search MOBIUS</span></span></span>
 #INNREACH_ENCORE=http://searchmobius.org/iii/encore/search/C__S%s__Orightresult__U?lang=eng&suite=cobalt
-#INNREACH=<span class="navButton">Search MOBIUS</span>@searchmobius.org(X=X;Y=Y;d=d;m=h;t=t;c=c;e=e;a=a;s=s;g=g;i=i;o=o)
-#INNREACH4=<span class="button"><img src="/screens/ico_mobius.png" alt=""><span class="buttonText">Search MOBIUS</span></span>@searchmobius.org(X=X;Y=Y;d=d;m=h;t=t;c=c;e=e;a=a;s=s;g=g;i=i;o=o)
+INNREACH=<span class="navButton">Search MOBIUS</span>@searchmobius.org(X=X;Y=Y;d=d;m=h;t=t;c=c;e=e;a=a;s=s;g=g;i=i;o=o)
+INNREACH4=<span class="button"><img src="/screens/ico_mobius.png" alt=""><span class="buttonText">Search MOBIUS</span></span>@searchmobius.org(X=X;Y=Y;d=d;m=h;t=t;c=c;e=e;a=a;s=s;g=g;i=i;o=o)
+
 
 # Media Management
 ICON_BUT_RET2CRS=<span class="navButton">Return to Course</span>
