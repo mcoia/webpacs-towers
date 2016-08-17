@@ -71,6 +71,7 @@ STATGROUP=login
 STYLESHEET=/screens/styles.css
 SUPPRESS_OPTION=NEWSRCH
 TIMEOUT=600;URL=/
+TIMEOUT2=600;URL=/search~S2
 TOPLOGO=@screens/toplogo.html
 TOPLOGO1=@screens/toplogo_s1.html
 TOPLOGO2=@screens/toplogo_s2.html
