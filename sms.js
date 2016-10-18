@@ -1,7 +1,7 @@
 // JavaScript Document
 
 // set this to be the URL for the SMS script
-var smsurl = "https://dropbox.mobiusconsortium.org/sms/sms-email-gateway.php?scope=towers
+var smsurl = "https://dropbox.mobiusconsortium.org/sms/sms-email-gateway.php?scope=towers"
 
 
    function showsms() {
