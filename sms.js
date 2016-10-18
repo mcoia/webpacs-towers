@@ -1,7 +1,8 @@
 // JavaScript Document
 
 // set this to be the URL for the SMS script
-var smsurl = "https://dropbox.mobiusconsortium.org/sms/sms-email-gateway.php?scope=towers";
+var smsurl = "https://dropbox.mobiusconsortium.org/sms/sms-email-gateway.php?scope=towers
+
 
    function showsms() {
 
@@ -28,11 +29,12 @@ try {
  // we'll load the 'out' variable with all the html and then put it into the sms div
  var out = "<h3>Send the title, location, and call number of this item to your cell phone.</h3><form name='sms_form' method=post><p><b>Title</b>: "+ title +"</p>";
 
-out += '<input type=hidden name=title value=\"'+title+'\">';	//dump the title into a hidden form variable
+ out += '<input type=hidden name=title value=\"'+title+'\">';	//dump the title into a hidden form variable
  out += '<p><b>Enter your cell phone #</b>: <input name=phone type=text></p>';	// input for the phone #
  out += "<p class=eg>(use the full 10 digits of your phone #, no spaces, no dashes eg. 6105265000)</p>";
-out += "<p><b>Select your provider:</b><select name=provider>";	// pull-down for each of phone carriers the values will be parsed by the perl script
-	out += "<option value=att>AT&amp;T</option>"
+ out += "<p><b>Select your provider:</b><select name=provider>";	// pull-down for each of phone carriers the values will be parsed by the perl script 
+	out += "<option value=att>AT&amp;T</option>";
+	out += "<option value=cingular>Cingular</option>";
 	out += "<option value=cricket>Cricket</option>";
 	out += "<option value=nextel>Nextel</option>";
 	out += "<option value=northwest>Northwest Cellular</option>";
@@ -52,9 +54,9 @@ out += "<p><b>Select your provider:</b><select name=provider>";	// pull-down for
     var x=tr[i].getElementsByTagName('TD');			// get each cell
     if (x.length == 3) {								// if there's only 3 cells (like our ITEM table)
       var loc = x[0].innerHTML.replace(/(<([^>]+)>|&nbsp;)/ig,"");		// get the location (remove tags)
-	 //var callLinks = x[1].getElementsByTagName("a"); //get the call number without extras
-	  //var call = callLinks[0].innerHTML.replace(/(<([^>]+)>|&nbsp;)/ig,"");
-	  var call = x[1].innerHTML.replace(/(<([^>]+)>|&nbsp;)/ig,"");	// get the call number + copies if any (remove tags)
+	  var callLinks = x[1].getElementsByTagName("a"); //get the call number without extras
+	  var call = callLinks[0].innerHTML.replace(/(<([^>]+)>|&nbsp;)/ig,"");
+	  //var call = x[1].innerHTML.replace(/(<([^>]+)>|&nbsp;)/ig,"");	// get the call number + copies if any (remove tags)
 	  var status = x[2].innerHTML.replace(/(<([^>]+)>|&nbsp;)/ig,"");	// get the status (remove tags)
 	  
 	  var chck = '';
@@ -78,7 +80,7 @@ out += "<p><b>Select your provider:</b><select name=provider>";	// pull-down for
    sms.style.visibility = 'visible';
    sms.style.display = 'block';
 	// some fancy positioning
-    findPos(document.getElementById('smsbutton'),sms,25,-329);
+   findPos(document.getElementById('smsbutton'),sms,25,-320);
 } catch (e) {
 	// doesn't work?  hide the SMS buttons
 document.getElementById('smsfeatures').style.visibility='hidden';
@@ -94,8 +96,7 @@ return false;
 	if (phone.length == 10) {				// if 10 chars, we're good
 	var url = smsurl;						// start creating the URL
 		url += "&number="+encodeURIComponent(frm.phone.value);	// html escape #
-		url += "&provider="+encodeURIComponent(frm.provider.options[frm.provider.selectedIndex].value);	// html escpae provider
-		//url += "&title="+encodeURIComponent(frm.title.value);
+		url += "&provider="+encodeURIComponent(frm.provider.options[frm.provider.selectedIndex].value);	// html escape provider
 		for (i=0;i<frm.loc.length;i++) {		// for each item, get the checked one 
 //		alert(i+" "+frm.loc[i].checked);
 			if (frm.loc[i].checked == true) {	// if checked, add it to the URL
@@ -117,7 +118,7 @@ return false;
    	 script.setAttribute('src',url);							// the script is actually the PERL script 
    	 head.appendChild(script);									// append the script
 	} else {		// invalid phone #, send message
-	  alert('please enter a valid phone #');
+	  alert('Please enter a valid phone #.');
       }
    }
 	
@@ -127,7 +128,7 @@ return false;
 	 sms.style.visibility = 'hidden';
 	 sms.style.display = 'none';
 	 }
- 
+	 
 
 
 // get the position of an item, good for putting the SMS form in a useful place
